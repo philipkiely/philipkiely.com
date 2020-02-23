@@ -1,0 +1,77 @@
+* {
+  font-family: 'Amiko', sans-serif;
+}
+
+.container-fluid.full-width {
+    padding-left: 0;
+    padding-right: 0;
+    overflow-x: hidden;
+}
+
+.img-full-width {
+    width: 100%;
+    height: auto;
+}
+
+.to-right-grad {
+    background: linear-gradient(to right, black , #ff2400);
+}
+
+.navbar {
+    border-style: none;
+}
+
+.divider {
+    text-align: /*neutral good*/ center; 
+    color: white;
+}
+
+.divider h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.black-text a{
+    color: black;
+}
+
+.black-text h3{
+    color: black;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.black-text:hover {
+    text-decoration: none;
+}
+
+.black-text:hover h3{
+    background: linear-gradient(to right, black , #ff2400);
+    color: white;
+    text-decoration: none;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.black-text:hover a{
+    color: #ff2400;
+    text-decoration: none;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.list-group-item:first-child {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#resume-link {
+    color: black;
+}
