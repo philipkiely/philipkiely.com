@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141915528-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-141915528-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Transcribing Audio as...</title>
+    <!--boostrap 4 CSS-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="/assets/style.css" type="text/css">
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <!--boostrap 4 JS-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>    <!--Font Awsome 5.8 (free version)-->
+    <!--font awesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/brands.js" integrity="sha384-rUOIFHM3HXni/WG5pzDhA1e2Js5nn4bWudTYujHbbI9ztBIxK54CL4ZNZWwcBQeD" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/fontawesome.js" integrity="sha384-EMmnH+Njn8umuoSMZ3Ae3bC9hDknHKOWL2e9WJD/cN6XLeAN7tr5ZQ0Hx5HDHtkS" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <a class="navbar-brand" href="/"><img id="nav-headshot" src="/assets/img/square_headshot.jpg" width="50" height="50" class="d-inline-block align-top rounded-img" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Main</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/products/">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/essays/">Essays</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+            <a target="_blank" href="http://youtube.kiely.xyz" class=""><i class="fab fa-youtube red-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://github.com/philipkiely" class=""><i class="fab fa-github white-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://twitter.com/philip_kiely" class=""><i class="fab fa-twitter blue-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://news.ycombinator.com/user?id=philipkiely" class=""><i class="fab fa-hacker-news orange-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://linkedin.com/in/philipkiely" class=""><i class="fab fa-linkedin-in white-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://www.facebook.com/philip.kiely.9/" class=""><i class="fab fa-facebook blue-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://www.snapchat.com/add/philipkiely" class=""><i class="fab fa-snapchat yellow-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://www.instagram.com/philip_kiely/" class=""><i class="fab fa-instagram pink-text"></i></a>
+            &NonBreakingSpace;
+            &NonBreakingSpace;
+        </li>
+    </ul>
+        <a href="mailto:philip@kiely.xyz" class="nav-link btn btn-outline-primary">Email</a>
+  </div>
+</nav>
+ <div class="container">
+<div class="row">
+ <div class="col-md-8 offset-md-2">
+  <h1>Transcribing Audio as a&nbsp;Programmer</h1>
+  <code class="post-info">| First Posted <b>02 March 2020</b> | Last Edited <b>02 March 2020</b> | Philip Kiely |</code>
+  <hr/>
+  <p>Recently, I had tens of thousands of spoken words that need to be transcribed into written text. &#8220;Hang on,&#8221; you might be thinking, &#8220;why would a college student who, by all accounts, spends his time on reputable pursuits such as Python, need to convert audio into text?&#8221; While I was doing interviews for <a href="https://philipkiely.com/wfsd/">my book</a>, I transcribed about 8 hours of audio, a process that took somewhere between 24 and 32 hours of very focused work over the course of a month or so. Here&#8217;s what I learned in the&nbsp;process.</p>
+<p>How would you do it? First, you might think of an automated solution. Dictation software has been around for years, so speech-to-text must be good by now, right? Unfortunately, as gathered from <a href="https://www.smashingmagazine.com/2019/10/text-to-speech-aws-part-2/">my experiments with <span class="caps">AWS</span> speech-to-text</a>, the technology isn&#8217;t a viable option for any level of readability. If you have the money, by the time you&#8217;re done reading this post you&#8217;ll want to outsource it, and probably should (at a cost of around a hundred dollars per hour of audio, less if you can wait a week or more for delivery). My only recommendation is that if you&#8217;re going to spend money, spend enough to get a good result. If spending that kind of money isn&#8217;t viable, and you&#8217;re not going to single-handedly decrease the error rate of <span class="caps">AI</span> speech-to-text systems by a couple orders of magnitude, then you&#8217;re left with only one option: transcribe it&nbsp;yourself.</p>
+<p>These notes only apply to transcribing audio/video files, where you have the ability to pause and rewind the audio. I have no idea how real-time transcription is possible, I assume it is by the use of some sort of shorthand or specialized input device. Ultimately, transcribing is not a fun physical act, but it does help you get familiar with the material you&#8217;re listening to. With just a few simple pieces of equipment and a sufficient time investment, transcribing audio is an accomplishable&nbsp;task.</p>
+<h3>Use a Foot&nbsp;Pedal</h3>
+<p>Here&#8217;s how transcribing works on a minute-to-minute basis. You press play on the recording. You type as you listen. Inevitably, you fall behind, so you pause the recording and type out the rest of the sentence as cached in your short-term memory. Caught up, you press play. Repeat. If you don&#8217;t pause in time, you&#8217;ll forget some words and need to rewind. Occasionally, you&#8217;ll have trouble understanding something and have to rewind and listen to it a few times. The problem isn&#8217;t the typing or the remembering. The biggest problem with transcribing is hitting the play/pause&nbsp;button.</p>
+<p>If you&#8217;re the type of person who uses custom keyboard shortcuts, hear me out, you&#8217;re going to love this. Keyboard shortcuts are usually great, but in this case any keyboard shortcut has the same problem: it distracts your already overloaded hands from their primary task of trying to keep up with the speaker. However, other parts of your body are just sitting there idling. Make like a Crossfit instructor and get your whole body in on this movement. Use a foot pedal to play and pause&nbsp;audio.</p>
+<p>If I had a foot pedal to recommend, I&#8217;d be linking it right here. However, I didn&#8217;t use a foot pedal, I used my mouse. More specifically, I mapped the thumb button on my Logitech <span class="caps">MX</span> Master 2S to audio play/pause, put it on the floor, and got to work. With a touch of my toe, I could start and stop the recording. Immediately, my speed and comfort doubled with this physical equivalent of the sort of if-it-works-it-works code that I&#8217;d be churning out at a hackathon. If you have a spare keyboard, multifunction mouse, macro pad, video game controller, or anything else that you can connect to your computer, remap to play/pause, and operate with your foot, use it. Otherwise, go ahead and buy a foot pedal, I&#8217;m sure you&#8217;ll find other uses for&nbsp;it.</p>
+<h3>Be(come) a Decent&nbsp;Typist</h3>
+<p>I don&#8217;t want to wade too deep into the holy war of <a href="https://blog.codinghorror.com/we-are-typists-first-programmers-second/">the importance of typing for a programmer</a>, but I&#8217;ll say this. A person talks somewhere around <a href="https://en.wikipedia.org/wiki/Words_per_minute#Speech_and_listening">150 words per minute</a> in casual conversation. The average person types below <a href="https://en.wikipedia.org/wiki/Words_per_minute">40 words per minute</a>. Unless you have some limiting physical disability, you should be able to get up above a sixty-word-per-minute typing speed with practice. When I say &#8220;limiting,&#8221; I have nine fingers, only six of which are fully functional. I type above sixty words per minute,&nbsp;asterisk.</p>
+<p>The asterisk here is sustained versus peak typing speed. When people talk about how fast they can type, they&#8217;re usually referring to their score on a one-minute typing test. Just like sprinting is faster than jogging, you&#8217;ll type slower when typing actually non-stop for an hour or more straight. My sustained transcribing pace is between 40 and 45 words per minute, which also accounts for play/pause and&nbsp;rewind.</p>
+<p>Even an extremely fast typist won&#8217;t be able to keep up with an average speaker. That&#8217;s not the point. Per the earlier discussion of play/pause, increasing your sustained typing rate by N-percent will result in a greater-than-N-percent increase in your transcription speed because you&#8217;ll need to play, pause, and rewind less&nbsp;often.</p>
+<h3>Consider&nbsp;Ergonomics</h3>
+<p>I shelled out 220 of my hard-earned dollars for a Kinesis Gaming Freestyle Edge <span class="caps">RGB</span> Keyboard for general writing purposes last year. It is split in half, with the halves positionable up to 20 inches apart, and tilted up to about a 20 degree angle. The difference in typing experience when transcribing is monumental. I typed over 9,000 words in a single day on that keyboard without any pain, whereas days before I&#8217;d experienced pain typing 4,000 words on my laptop keyboard. Use a keyboard that&#8217;s comfortable for you. Taking breaks is also important, I stopped for 5 minutes at the end of every hour. Ergonomics are not my hill to die on, but whatever efforts you make for normal desk work should be strongly applied&nbsp;here.</p>
+  <hr/>
+  <h3 class="text-center">&#9997;</h3>
+  <hr/>
+  <script async data-uid="992c3e1540" src="https://awesome-artisan-5909.ck.page/992c3e1540/index.js"></script>
+  <br/>
+  <hr/>
+ </div>
+ <div class="col-md-2">
+   <div class="card">
+   <img class="card-img-top" src="/assets/img/FloatingBook.jpg" alt="WFSD Background">
+   <div class="card-img-overlay">
+    <h5 class="card-title white-text">Writing for Software Developers</h5>
+    <p class="card-text white-text">Technologist's Content Handbook</p>
+    <a href="/wfsd/" class="btn btn-primary stretched-link">Read More</a>
+  </div>
+</div>
+ </div>
+</div>
+<script>
+   $(document).ready(function () {
+      $("table").attr("class","table table-condensed table-bordered");
+   });
+   if (document.getElementById("audio-link").href == "/transcribe.html" || document.getElementById("audio-link").href == "http://127.0.0.1:8000/transcribe.html") {
+       document.getElementById("audio-player").hidden = true;
+   }
+</script>
+ </div>
+ <footer class="py-5 bg-dark main-footer">
+   <div class="container">
+     <p class="text-center white-text">philipkiely.com V3.1 | Proudly Handcrafted Since 2017 | <a href="/old/V2/index.html">V2</a> | <a href="/old/V1/index.html">V1</a> | <a href="/old/V0/index.html">V0</a> | <a href="/sitemap/">sitemap</a></p>
+     <p class="text-center white-text">Built with <a href="https://github.com/getpelican/pelican">Pelican</a>, <a href="https://jinja.palletsprojects.com/">Jinja</a>, <a href="https://getbootstrap.com">Bootstrap</a>, <a href="http://fontawesome.io">Font Awesome</a>, and <a href="https://fonts.google.com">Google Fonts</a>. Hosted with <a href="https://netlify.com">Netlify</a>.</p>
+     <h5 class="text-center">
+     <a target="_blank" href="http://youtube.kiely.xyz" class=""><i class="fab fa-youtube red-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://github.com/philipkiely" class=""><i class="fab fa-github white-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://twitter.com/philip_kiely" class=""><i class="fab fa-twitter blue-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://news.ycombinator.com/user?id=philipkiely" class=""><i class="fab fa-hacker-news orange-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://linkedin.com/in/philipkiely" class=""><i class="fab fa-linkedin-in white-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://www.facebook.com/philip.kiely.9/" class=""><i class="fab fa-facebook blue-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://www.snapchat.com/add/philipkiely" class=""><i class="fab fa-snapchat yellow-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://www.instagram.com/philip_kiely/" class=""><i class="fab fa-instagram pink-text"></i></a>
+     &NonBreakingSpace;
+      <a target="_blank" href="mailto:philip@kiely.xyz" class="">Email</a>
+     </h5>
+     <hr>
+     <p class="text-center white-text">Copyright &copy; <span id="year">2019</span> Philip Kiely & Company</p>
+   </div><!-- /.container -->
+ </footer>
+ <script src="/assets/script.js"></script>
+ </body>
+ </html>
