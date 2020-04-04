@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141915528-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-141915528-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Making Useful Charts and...</title>
+    <!--boostrap 4 CSS-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="/assets/style.css" type="text/css">
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <!--boostrap 4 JS-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>    <!--Font Awsome 5.8 (free version)-->
+    <!--font awesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/brands.js" integrity="sha384-rUOIFHM3HXni/WG5pzDhA1e2Js5nn4bWudTYujHbbI9ztBIxK54CL4ZNZWwcBQeD" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/fontawesome.js" integrity="sha384-EMmnH+Njn8umuoSMZ3Ae3bC9hDknHKOWL2e9WJD/cN6XLeAN7tr5ZQ0Hx5HDHtkS" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <a class="navbar-brand" href="/"><img id="nav-headshot" src="/assets/img/square_headshot.jpg" width="50" height="50" class="d-inline-block align-top rounded-img" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Main</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/products/">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/essays/">Essays</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+            <a target="_blank" href="http://youtube.kiely.xyz" class=""><i class="fab fa-youtube red-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://github.com/philipkiely" class=""><i class="fab fa-github white-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://twitter.com/philip_kiely" class=""><i class="fab fa-twitter blue-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://news.ycombinator.com/user?id=philipkiely" class=""><i class="fab fa-hacker-news orange-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://linkedin.com/in/philipkiely" class=""><i class="fab fa-linkedin-in white-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://www.facebook.com/philip.kiely.9/" class=""><i class="fab fa-facebook blue-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://www.snapchat.com/add/philipkiely" class=""><i class="fab fa-snapchat yellow-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://www.instagram.com/philip_kiely/" class=""><i class="fab fa-instagram pink-text"></i></a>
+            &NonBreakingSpace;
+            &NonBreakingSpace;
+        </li>
+    </ul>
+        <a href="mailto:philip@kiely.xyz" class="nav-link btn btn-outline-primary">Email</a>
+  </div>
+</nav>
+ <div class="container">
+<div class="row">
+ <div class="col-md-8 offset-md-2">
+  <h1>Making Useful Charts and Diagrams when you Suck at&nbsp;Drawing</h1>
+  <code class="post-info">| First Posted <b>03 April 2020</b> | Last Edited <b>03 April 2020</b> | Philip Kiely |</code>
+  <hr/>
+  <p>I write <a href="/essays/posts.html">technical articles</a>. As part of that work, I make charts and diagrams to explain concepts to my readers. I also irredeemably suck at drawing and my handwriting defaults to illegible. Nevertheless, I manage to deliver useful diagrams with my articles that explain complex ideas with intuitive visual metaphors. <strong>I&#8217;m able to do this because most aesthetic properties are not relevant to a diagram&#8217;s usefulness, and the ones that are can be achieved relatively&nbsp;easily.</strong></p>
+<p>I&#8217;m not a designer, illustrator, or painter, and I have no formal training to speak of in any kind of visual art. This is not a guide for actually getting good at this stuff, it&#8217;s a hastily-scrawled note in the margins of a much better work on how to hack it at this one aspect of the job of technical content development that&#8217;s disproportionately difficult and time-consuming and requires skills and equipment outside of the normal scope of our work. I harbor no delusions about any ability to show you how to become a better artist. I do believe that you can use a few simple techniques to create more effective graphics at whatever your current skill level&nbsp;is.</p>
+<h3>What Makes a Diagram&nbsp;Useful?</h3>
+<p>A diagram is a succinct visual representation of an idea. Diagrams are great at showing relationships and providing visual&nbsp;metaphors.</p>
+<p>I&#8217;m using the term &#8220;relationship&#8221; pretty loosely here. Sure, database diagrams show relationships quite literally within a relational database, but concepts like cause-and-effect, relative quantities, and matching are prime diagram material. Diagrams are uniquely good at conveying connection and structure and text is quite bad at it. Trying to explain a many-to-many relationship takes O(n squared) phrases for n objects but only O(1)&nbsp;diagrams.</p>
+<p>Visual metaphor is another compelling use case for graphics in your technical content. Like with relationships, visual metaphors help the reader gain an intuition for the concepts described, allowing your text to focus on specific details and concrete aspects of the topic at&nbsp;hand.</p>
+<h3>On the Benefits of&nbsp;Approximation</h3>
+<p>If your drawings are imprecise, they communicate to the reader that the ideas you&#8217;re presenting are an approximation or intuition. This is probably what you want. If you don&#8217;t want this, fire up Python or R and make a graph with data; the computer-generated image will give readers an accurate impression that the information communicated is precise. Even computer-generated plots sometimes want to signal approximation with this visual effect, which is why <code>matplotlib</code> offers <a href="https://matplotlib.org/xkcd/examples/showcase/xkcd.html">a package for making your charts look hand-drawn, xkcd style</a>.</p>
+<p>Lean into this general effect. If you can&#8217;t get something unimportant exactly right, get it deliberately wrong. Make slight asymmetries larger. If something is two pixels off of center, push it another twenty in that direction. If your lines aren&#8217;t straight, your circles aren&#8217;t round, your squares aren&#8217;t even, embrace it and make sure that you&#8217;re not accidentally signaling the importance of some trivial aspect of your diagram by inconsistently achieving aesthetic&nbsp;patterns.</p>
+<h3>Good Artists Borrow&nbsp;&#8230;</h3>
+<p>Great artists reverse engineer. Reverse engineering, or the practice of observing an object or system and reconstructing it, applies outside of technical systems. A couple of months ago, very disappointed in the quality of graphics I was producing, I sat down to figure out specific changes I could make to improve my work. Knowing that it would be a long and difficult process to legitimately improve my artistic skills, I tried to find a style of drawing that was achievable and acceptable. I found it in the ever-relevant <a href="https://xkcd.com">xkcd</a> by Randall Munroe. The incredibly popular comic demonstrates the magnitude of what is possible using very simple techniques in an unsophisticated style, relying on content rather than raw artistry. xkcd&#8217;s art is simple, not bad, and that means that its style is&nbsp;achievable.</p>
+<p>Renaissance artists like Michelangelo learned painting technique by copying their mentors&#8217; work stroke for stroke. I learned martial arts by copying moves then sequences from instructors. Similarly, I improved my illustrating style by copying specific elements from xkcd, re-drawing my work to incorporate these&nbsp;changes.</p>
+<p>Here are some things that I took from&nbsp;xkcd.</p>
+<ul>
+<li><strong>Small Caps</strong>: My handwriting is atrocious. Not only are the individual letters misshapen, but the kerning is inconsistent, the lines are uneven, and I tend to write smaller at the end of the line than the beginning. Munroe writes entirely in capital letters in xkcd, which I adopted to address this problem. It works great, as writing in caps forces me to write slower, gives me more tools to address character spacing and size, and improves overall legibility for short&nbsp;phrases.</li>
+<li><strong>Straight Borders</strong>: Every line in my work is hand-drawn except for the box around a graphic, which I use a software rectangle tool to draw. This is based on xkcd&#8217;s panel design, where the panels are perfect boxes and the contents are&nbsp;hand-drawn.</li>
+<li><strong>Consistent Stroke Weight</strong>: In xkcd, most comics use the same stroke weight. All of my drawings use a single pen tool, and most of them use a single stroke&nbsp;size.</li>
+<li><strong>Make Legends</strong>: While Munroe&#8217;s legends are often for humorous effect, embedding a guide to interpreting a graphic within the graphic itself helps all readers grasp the information you&#8217;re trying to&nbsp;communicate.</li>
+<li><strong>Limit use of Color</strong>: Most xkcd comics are black and white. Using color is extra work, presents accessibility challenges to colorblind readers, and often doesn&#8217;t contribute information that can&#8217;t be conveyed in greyscale. When I do use color, which is rare, I rely on another element like shape or position to communicate the same&nbsp;information.</li>
+<li><strong>Keep it 2D</strong>: If Munroe only needs two dimensions to entertain and educate millions, I only need two dimensions in my graphs and diagrams. I do not have the artistic skill for any kind of forced three-dimensional perspective and thus I do not attempt it, as a third dimension would add visual complexity without efficiently communicating additional&nbsp;information.</li>
+</ul>
+<p>Of course, it is important to develop your own style. I don&#8217;t think anyone would mistake my work for Munroe&#8217;s, if for no other reason than that he is so much more practiced in the style. My graphics are generally one or two panels, rather than a whole comic, and focus on a diagram or other non-character aspect, while his tend to prominently feature stick figures. This points to an important note when emulating style: it&#8217;s much better to emulate style from one genre and topic and apply it to yours than to find something within your own sphere and copy that. The former is taking inspiration, the latter is being&nbsp;derivative.</p>
+<h3>Four&nbsp;Examples</h3>
+<p>Here are four examples of effective graphics with limited artistry, three from my own work published with clients and one from Nathan Barry&#8217;s blog. The first two demonstrate diagrams showing relationships, the latter two exemplify visual&nbsp;metaphor.</p>
+<h4>Semantic <span class="caps">HTML</span></h4>
+<p><img alt="Semantic page layout on computer and phone: Website Setup" src="https://websitesetup.org/wp-content/uploads/2020/03/SemanticHTML-1536x1073.jpg" /></p>
+<p>In <a href="https://websitesetup.org/html-vs-html5/">an article for Website Setup</a>, I wanted to demonstrate how semantic elements could be rearranged on screens of different sizes without embedding a CodePen or similar because the intended audience was somewhat less technical than I&#8217;m used to writing for. Thus, I created a diagram to express a relationship between a semantic element and its intended location on the page. This diagram incorporates many of the lessons from xkcd. It also is full of crooked lines and unevenly sized text. However, it&#8217;s a decent approximation of how an actual webpage would look because I included only the essential elements of the diagram and nothing&nbsp;more.</p>
+<h4>Spectrum of&nbsp;Automation</h4>
+<p><img alt="HTML Spectrum of Automation: Smashing Magazine" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/4d0b8556-c7f8-40a8-bb26-ab876e11945c/htmlspectrum.png" /></p>
+<p>In <a href="https://www.smashingmagazine.com/2020/04/django-highlights-templating-saves-lines/">an article for Smashing Magazine</a>, I added one simple diagram showing how explicit a programmer had to be in hand-writing <span class="caps">HTML</span> for web development approaches with different levels of automation in <span class="caps">HTML</span> generation. This graphic relies on the principle of approximation: there is no real scale or quantitative measurement for level of automation, the diagram simply presents approaches relative to each other for the reader&#8217;s&nbsp;understanding. </p>
+<h4>Content&nbsp;Blocking</h4>
+<p><img alt="Content Security Policy blocking scripts: Website Setup" src="https://websitesetup.org/wp-content/uploads/2020/03/ContentSecurityPolicy-1536x702.jpg" /></p>
+<p>In <a href="https://websitesetup.org/html-vs-html5/">the above article for Website Setup</a>, one graphic I created was intended to give non-technical or newly technical readers an intuition of how a content security policy works. I&#8217;ve already discussed much of what makes this graphic effective in previous examples, but there are two things left to highlight: color and&nbsp;metaphor.</p>
+<p>Above, I said to limit color and always indicate the same concept with a secondary attribute. In this example, I use red and green, nearly universally recognized as stop and go, to indicate that some scripts go through a content security policy and others are stopped by it. However, red-green colorblindness is one of the most common kinds of colorblindness, so I indicate the same information by making the green icon a check and the red icon an X, similarly universal&nbsp;symbols.</p>
+<p>As a visual metaphor, I insert the content security policy between the scripts and the client and show scripts entering and exiting the policy after being compared to a whitelist. While that is not exactly the process, it&#8217;s a useful way to think about blocking scripts without distracting the reader with a more involved metaphor achieved by textually mapping components of the technical process to real-world non-technical&nbsp;systems.</p>
+<h4>Ladders of Wealth&nbsp;Creation</h4>
+<p><img alt="Ladders of Wealth Creation: Nathan Barry" src="https://lh3.googleusercontent.com/qWcgH_BoOwaDJ3f5lo9YG5f4WCKaLRwWYQZCb4aEJWA41Fm1KDVjLu5B9LudqY_1W6NwI0eSTtb5R8F1FmD2fcmSg-UcnhebLyh2dDyCQ_f1WpoWGna3WyuM1txea36M2T54v_T5" /></p>
+<p>I&#8217;m not solely here to talk up my own work. One of my favorite examples of an essay centered around a visual metaphor is <a href="https://nathanbarry.com/wealth-creation/">The Ladders of Wealth Creation</a> by <a href="https://nathanbarry.com/">Nathan Barry</a>. Barry favors a very different style from my own, using entirely typed text, color and background, and a variety of stroke styles. Still, the image leans into the approximation allowed by a rough sketch, with wavering lines and uneven positioning. Barry&#8217;s work is, while more aesthetically pleasing than my own, far from passing as professional illustration. Still, it anchors a six-thousand-word blog post as one of the only graphics, providing readers an early insight into the contents of the article and a touchstone to refer to as they parse Barry&#8217;s extended metaphor on different types of income generation. If that simple illustration were missing from the post, readers would have more trouble understanding the directional moves that Barry relies on in communicating his&nbsp;ideas.</p>
+<h3>A Note on&nbsp;Equipment</h3>
+<p>Currently, I use an 11 inch 2018 iPad Pro with the 2nd generation Apple Pencil. For software, I use the free Autodesk Sketchbook for creating charts and diagrams and the default &#8220;Photos&#8221; app&#8217;s built-in markup features for annotating existing images. I&#8217;m very happy with this setup as it provides all of the features I need and, importantly, very few features that I don&#8217;t need. Airdrop makes the process of moving files between devices pretty seamless. I recommend every part of this equipment set and workflow, but not particularly strongly, as even slightly different needs might merit different&nbsp;tools.</p>
+<p>Everyone is going to have a set of equipment that works well for them. I&#8217;d say the minimum viable set of equipment is pen or pencil, paper, and a smartphone camera, although taking a good photograph of a sketch is difficult because you don&#8217;t want the camera&#8217;s shadow hanging over the image. There are several hardware options like Wacom and other drawing tablets, various types of iPads, and Microsoft&#8217;s Surface line. For each hardware option, there are dozens of software options that I won&#8217;t even start to list. The important thing is to find something that works for you. You don&#8217;t need the best tool, or even the best tool for you, just something that gets the job done. Don&#8217;t feel compelled to spend a bunch of money on equipment, see what you can do with what you&nbsp;have.</p>
+<h3>General&nbsp;Encouragement</h3>
+<p>If you like creating graphics and want to make more artistic and beautiful charts and diagrams for your articles, you should by all means invest the time in learning to do so and then acquire good equipment that helps your work. Your well-drafted creations will stand out from a scrawled crowd and garner admiration. There are a number of ways to make your technical content stand out, and having legitimately excellent graphics is a great method of doing&nbsp;so.</p>
+<p>For the rest of us, remember to focus on the important aspects of a design that actually communicate useful information to the reader. It is possible to learn enough drawing to be dangerous, I&#8217;m missing a couple fingers and I&#8217;m able to draw at a level that is practical though not pretty. Find an illustrator in another genre whose work you admire, like I did with Munroe&#8217;s xkcd, and practice recreating specific craft elements of their work into your own drawing. Over time, you&#8217;ll develop confidence in your ability to create graphics and use them to help educate your&nbsp;readers.</p>
+<p>If you&#8217;re interested in creating technical content, check out my book <a href="/wfsd">Writing for Software Developers</a>.</p>
+  <hr/>
+  <h3 class="text-center">&#9997;</h3>
+  <hr/>
+  <script async data-uid="992c3e1540" src="https://awesome-artisan-5909.ck.page/992c3e1540/index.js"></script>
+  <br/>
+  <hr/>
+ </div>
+ <div class="col-md-2">
+   <div class="card">
+   <img class="card-img-top" src="/assets/img/FloatingBook.jpg" alt="WFSD Background">
+   <div class="card-img-overlay">
+    <h5 class="card-title white-text">Writing for Software Developers</h5>
+    <p class="card-text white-text">Technologist's Content Handbook</p>
+    <a href="/wfsd/" class="btn btn-primary stretched-link">Read More</a>
+  </div>
+</div>
+ </div>
+</div>
+<script>
+   $(document).ready(function () {
+      $("table").attr("class","table table-condensed table-bordered");
+      [].forEach.call(document.getElementsByTagName("img"), function (img) {img.classList.add("img-fluid");});
+   });
+   if (document.getElementById("audio-link").href == "/useful_charts.html" || document.getElementById("audio-link").href == "http://127.0.0.1:8000/useful_charts.html") {
+       document.getElementById("audio-player").hidden = true;
+   }
+</script>
+ </div>
+ <footer class="py-5 bg-dark main-footer">
+   <div class="container">
+     <p class="text-center white-text">philipkiely.com V3.1 | Proudly Handcrafted Since 2017 | <a href="/old/V2/index.html">V2</a> | <a href="/old/V1/index.html">V1</a> | <a href="/old/V0/index.html">V0</a> | <a href="/sitemap/">sitemap</a></p>
+     <p class="text-center white-text">Built with <a href="https://github.com/getpelican/pelican">Pelican</a>, <a href="https://jinja.palletsprojects.com/">Jinja</a>, <a href="https://getbootstrap.com">Bootstrap</a>, <a href="http://fontawesome.io">Font Awesome</a>, and <a href="https://fonts.google.com">Google Fonts</a>. Hosted with <a href="https://netlify.com">Netlify</a>.</p>
+     <h5 class="text-center">
+     <a target="_blank" href="http://youtube.kiely.xyz" class=""><i class="fab fa-youtube red-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://github.com/philipkiely" class=""><i class="fab fa-github white-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://twitter.com/philip_kiely" class=""><i class="fab fa-twitter blue-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://news.ycombinator.com/user?id=philipkiely" class=""><i class="fab fa-hacker-news orange-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://linkedin.com/in/philipkiely" class=""><i class="fab fa-linkedin-in white-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://www.facebook.com/philip.kiely.9/" class=""><i class="fab fa-facebook blue-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://www.snapchat.com/add/philipkiely" class=""><i class="fab fa-snapchat yellow-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://www.instagram.com/philip_kiely/" class=""><i class="fab fa-instagram pink-text"></i></a>
+     &NonBreakingSpace;
+      <a target="_blank" href="mailto:philip@kiely.xyz" class="">Email</a>
+     </h5>
+     <hr>
+     <p class="text-center white-text">Copyright &copy; <span id="year">2019</span> Philip Kiely & Company</p>
+   </div><!-- /.container -->
+ </footer>
+ <script src="/assets/script.js"></script>
+ </body>
+ </html>

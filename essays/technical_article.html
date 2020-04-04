@@ -127,6 +127,7 @@
 <script>
    $(document).ready(function () {
       $("table").attr("class","table table-condensed table-bordered");
+      [].forEach.call(document.getElementsByTagName("img"), function (img) {img.classList.add("img-fluid");});
    });
    if (document.getElementById("audio-link").href == "/technical_article.html" || document.getElementById("audio-link").href == "http://127.0.0.1:8000/technical_article.html") {
        document.getElementById("audio-player").hidden = true;
