@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141915528-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-141915528-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Improving Technical...</title>
+    <!--boostrap 4 CSS-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="/assets/style.css" type="text/css">
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <!--boostrap 4 JS-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>    <!--Font Awsome 5.8 (free version)-->
+    <!--font awesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/brands.js" integrity="sha384-rUOIFHM3HXni/WG5pzDhA1e2Js5nn4bWudTYujHbbI9ztBIxK54CL4ZNZWwcBQeD" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/fontawesome.js" integrity="sha384-EMmnH+Njn8umuoSMZ3Ae3bC9hDknHKOWL2e9WJD/cN6XLeAN7tr5ZQ0Hx5HDHtkS" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <a class="navbar-brand" href="/"><img id="nav-headshot" src="/assets/img/square_headshot.jpg" width="50" height="50" class="d-inline-block align-top rounded-img" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Main</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/products/">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/essays/">Essays</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+            <a target="_blank" href="http://youtube.kiely.xyz" class=""><i class="fab fa-youtube red-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://github.com/philipkiely" class=""><i class="fab fa-github white-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://twitter.com/philip_kiely" class=""><i class="fab fa-twitter blue-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://news.ycombinator.com/user?id=philipkiely" class=""><i class="fab fa-hacker-news orange-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://linkedin.com/in/philipkiely" class=""><i class="fab fa-linkedin-in white-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://www.facebook.com/philip.kiely.9/" class=""><i class="fab fa-facebook blue-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://www.snapchat.com/add/philipkiely" class=""><i class="fab fa-snapchat yellow-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://www.instagram.com/philip_kiely/" class=""><i class="fab fa-instagram pink-text"></i></a>
+            &NonBreakingSpace;
+            &NonBreakingSpace;
+        </li>
+    </ul>
+        <a href="mailto:philip@kiely.xyz" class="nav-link btn btn-outline-primary">Email</a>
+  </div>
+</nav>
+ <div class="container">
+<div class="row">
+ <div class="col-md-8 offset-md-2">
+  <h1>Improving Technical Tutorials by Providing Sample&nbsp;Data</h1>
+  <code class="post-info">| First Posted <b>22 April 2020</b> | Last Edited <b>22 April 2020</b> | Philip Kiely |</code>
+  <hr/>
+  <p>Let&#8217;s say you&#8217;re writing a technical tutorial (or if you&#8217;re really fancy, a video tutorial) about how to do something in Django. This post should be applicable to the web framework of your choice, but I&#8217;ll use Django as an example because I usually write about Django. Django&#8217;s fixtures make this process easy, I hope that your framework of choice has a comparable feature or available&nbsp;package.</p>
+<p>Anyway, you&#8217;re writing a technical article, so you&#8217;re probably whipping up a nice simple example project, maybe a todo list. Your readers will begin the tutorial by cloning the repository from GitHub and getting the application up and running in their dev environment. Assuming nothing went wrong, in a couple of minutes they are ready to go through your article and take in whatever aspect of developing in Django you have written about. Our scene is&nbsp;set.</p>
+<p><strong>If you have a sample application in your article, consider including sample&nbsp;data.</strong></p>
+<p>Without sample data, after your reader has set everything up, they load the application on localhost and see &#8230; probably very little. While the database is set up, it is mostly empty, except for the superuser you may have had them create so that they can access the admin panel. The first thing you&#8217;ll need to direct your readers to do is add a few rows to the database, possibly first requiring the implementation of a function to do so. Sometimes, this is fine, but often it is just more boilerplate in between your reader and the point of your article. This is where distributing sample data can come in handy: you can present the application in any&nbsp;state.</p>
+<p>I used this technique in <a href="https://www.smashingmagazine.com/2020/04/django-highlights-templating-saves-lines/">a tutorial on front-end development</a> and <a href="https://www.smashingmagazine.com/2020/04/django-highlights-models-admin-relational-database/">another on models and admin</a> for Smashing Magazine. It made the process of writing both articles much smoother. In the first tutorial, I used a fixture to fill in a table presented in the template I was recreating. In the second link, I created a few example books and patrons so that readers could instantly see how the models connected when poking around in the admin&nbsp;panel.</p>
+<p><strong>In Django, you can distribute sample data using&nbsp;fixtures.</strong></p>
+<p>A <a href="https://docs.djangoproject.com/en/3.0/howto/initial-data/">fixture</a> is some sort of formatted text file (I use <span class="caps">JSON</span>) that contains structured data that Django&#8217;s admin can read into the&nbsp;database.</p>
+<p>You create this data using <a href="https://docs.djangoproject.com/en/3.0/ref/django-admin/#django-admin-dumpdata">dumpdata</a></p>
+<p>Your readers use the data using <a href="https://docs.djangoproject.com/en/3.0/ref/django-admin/#django-admin-loaddata">loaddata</a>.</p>
+<p>Using fixtures, you can make a dump of only some tables from the database, and if the included options aren&#8217;t enough you can generate or modify the data in your text editor. For the todo list example, you could distribute only data for the todos model without including anything from your users&nbsp;table.</p>
+<p>Fixtures are mostly intended for testing, not distributing sample data with an article, so there are a few things you need to keep in mind. First, fixtures do not update with migrations, so you must ensure that the data you distribute has the same schema as the the database your readers will be using. Also, IDs and foreign keys are hardcoded. Django generates primary key ids sequentially, so if you create a superuser as your first user and instruct your readers to do the same, you will want to remove your superuser from the data dump. The trick with using fixtures in a technical tutorial is to have your reader load them at the correct time and check that everything works with a run-through of the article in a clean environment prior to&nbsp;publication.</p>
+  <hr/>
+  <h3 class="text-center">&#9997;</h3>
+  <hr/>
+  <script async data-uid="992c3e1540" src="https://awesome-artisan-5909.ck.page/992c3e1540/index.js"></script>
+  <br/>
+  <hr/>
+ </div>
+ <div class="col-md-2">
+   <div class="card">
+   <img class="card-img-top" src="/assets/img/FloatingBook.jpg" alt="WFSD Background">
+   <div class="card-img-overlay">
+    <h5 class="card-title white-text">Writing for Software Developers</h5>
+    <p class="card-text white-text">Technologist's Content Handbook</p>
+    <a href="/wfsd/" class="btn btn-primary stretched-link">Read More</a>
+  </div>
+</div>
+ </div>
+</div>
+<script>
+   $(document).ready(function () {
+      $("table").attr("class","table table-condensed table-bordered");
+      [].forEach.call(document.getElementsByTagName("img"), function (img) {img.classList.add("img-fluid");});
+   });
+   if (document.getElementById("audio-link").href == "/sample_databases.html" || document.getElementById("audio-link").href == "http://127.0.0.1:8000/sample_databases.html") {
+       document.getElementById("audio-player").hidden = true;
+   }
+</script>
+ </div>
+ <footer class="py-5 bg-dark main-footer">
+   <div class="container">
+     <p class="text-center white-text">philipkiely.com V3.1 | Proudly Handcrafted Since 2017 | <a href="/old/V2/index.html">V2</a> | <a href="/old/V1/index.html">V1</a> | <a href="/old/V0/index.html">V0</a> | <a href="/sitemap/">sitemap</a></p>
+     <p class="text-center white-text">Built with <a href="https://github.com/getpelican/pelican">Pelican</a>, <a href="https://jinja.palletsprojects.com/">Jinja</a>, <a href="https://getbootstrap.com">Bootstrap</a>, <a href="http://fontawesome.io">Font Awesome</a>, and <a href="https://fonts.google.com">Google Fonts</a>. Hosted with <a href="https://netlify.com">Netlify</a>.</p>
+     <h5 class="text-center">
+     <a target="_blank" href="http://youtube.kiely.xyz" class=""><i class="fab fa-youtube red-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://github.com/philipkiely" class=""><i class="fab fa-github white-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://twitter.com/philip_kiely" class=""><i class="fab fa-twitter blue-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://news.ycombinator.com/user?id=philipkiely" class=""><i class="fab fa-hacker-news orange-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://linkedin.com/in/philipkiely" class=""><i class="fab fa-linkedin-in white-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://www.facebook.com/philip.kiely.9/" class=""><i class="fab fa-facebook blue-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://www.snapchat.com/add/philipkiely" class=""><i class="fab fa-snapchat yellow-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://www.instagram.com/philip_kiely/" class=""><i class="fab fa-instagram pink-text"></i></a>
+     &NonBreakingSpace;
+      <a target="_blank" href="mailto:philip@kiely.xyz" class="">Email</a>
+     </h5>
+     <hr>
+     <p class="text-center white-text">Copyright &copy; <span id="year">2019</span> Philip Kiely & Company</p>
+   </div><!-- /.container -->
+ </footer>
+ <script src="/assets/script.js"></script>
+ </body>
+ </html>
