@@ -40,3 +40,13 @@
         height: 50%;
     }
 }
+
+.article-content p, .article-content li {
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.article-summary {
+    font-size: 20px;
+    line-height: 1.7;
+}
