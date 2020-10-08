@@ -72,14 +72,14 @@
 </nav>
  <div class="container">
 <div class="row">
- <div class="col-md-8 offset-md-2">
-  <br />
-  <br />
-  <h1>How to Write a Technical&nbsp;Article</h1>
-  <code class="post-info">| First Posted <b>20 August 2019</b> | Last Edited <b>20 August 2019</b> | Philip Kiely |</code>
-  <hr/>
-  <div class="article-content">
-  <p>Every great writer tells stories, and so do all of the good&nbsp;ones. </p>
+	<div class="col-12 col-md-8 offset-md-2">
+		<br />
+		<br />
+		<h1>How to Write a Technical&nbsp;Article</h1>
+		<code class="post-info">| First Posted <b>20 August 2019</b> | Last Edited <b>20 August 2019</b> | Philip Kiely |</code>
+		<hr/>
+		<div class="article-content">
+		<p>Every great writer tells stories, and so do all of the good&nbsp;ones. </p>
 <p>Technical writers are not immune from this requirement, nor are we barred from the tools of the craft. Stories have conflict. Consider the vulnerability disclosure: a simple battle of wits, Man against Man. The introductory guide? Man versus Nature, squeezing bits against entropy into a useful form. A post detailing how to fix a certain bug masquerades as Man versus Technology but ultimately reveals itself as Man versus&nbsp;Self.</p>
 <p>Our writing has characters, these characters have motivations, desire outcomes. Through expository technical writing we have a unique privilege of delivering our character an outcome and having the outcome repeat itself for real people indefinitely, or at least until it is obviated by the next minor version of the framework in&nbsp;question.</p>
 <p>Despite this legacy and these tools, technical writing is often held to a lower standard than even the humble blog post. A bit of <code>inline code</code> does not remove the need for clear, engaging communication. On the contrary, it increases the need. Nontrivial code without context is worse than useless; it tricks its way into systems as dark magic, an untouchable solution to an unknown problem. Furthermore, it does not diminish the need for proofreading and&nbsp;copyediting.</p>
@@ -112,41 +112,42 @@
 <p>If this process seems appealing to you, the real first step is finding a client. The first client is always the hardest; I published my first article for a company that I had worked with previously on website updates. However, even a small publication history can quickly lead to a strong response rate to your&nbsp;queries.</p>
 <p>In addition to publishing on your own blog, I recommend querying somewhere like FloydHub or Smashing Magazine for your first article, depending on your skill set. You want your first client to have a strong, established editorial process and a wide readership to help develop your content and your audience. I suppose I should say that though I am proud to count both of those sites among my clients, neither paid or asked me to write this article or to call their editorial processes &#8220;strong and&nbsp;established.&#8221;</p>
 <p>Technical writing is a fantastic way to grow your skills, get your name out there, and make a bit of money on the side. Most importantly, it is a great way to tell a&nbsp;story.</p>
-  </div>
-  <hr/>
-  <h3 class="text-center">&#9997;</h3>
-  <div class="text-center"><a href="https://twitter.com/philip_kiely?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-dnt="true" data-show-count="true">Follow @philip_kiely</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
-  <hr/>
-  <!--<script async data-uid="992c3e1540" src="https://awesome-artisan-5909.ck.page/992c3e1540/index.js"></script>-->
-  <br/>
- </div>
- <div class="col-md-2">
- <br>
- <br />
- <br />
-   <div class="card">
-   <img class="card-img-top" src="/assets/img/wfsd.jpg" alt="WFSD Background">
-   <div class="card-img-overlay align-items-center text-center">
-   <h1>&nbsp;</h1>
-   <h1>&nbsp;</h1>
-    <a href="/wfsd/" class="btn btn-danger stretched-link">Read More</a>
-  </div>
-</div>
- </div>
+		</div>
+		<hr/>
+		<h3 class="text-center">&#9997;</h3>
+		<div class="text-center"><a href="https://twitter.com/philip_kiely?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-dnt="true" data-show-count="true">Follow @philip_kiely</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+		<hr/>
+		<!--<script async data-uid="992c3e1540" src="https://awesome-artisan-5909.ck.page/992c3e1540/index.js"></script>-->
+		<br/>
+	</div>
+   <div class="col-md-2">
+      <br>
+      <br />
+      <div class="img-fluid">
+         <a class="book-container" href="/wfsd?source=sidebar">
+            <div class="book">
+               <img id="cover-image" alt="Writing for Software Developers" src="/assets/img/wfsd.jpg" />
+            </div>
+         </a>
+      </div>
+      <br>
+      <br />
+   </div>
 </div>
 <script>
-   $(document).ready(function () {
-      $("table").attr("class","table table-condensed table-bordered");
+	$(document).ready(function () {
+		$("table").attr("class","table table-condensed table-bordered");
       [].forEach.call(document.getElementsByTagName("img"), function (img) {img.classList.add("img-fluid");});
-   });
-   if (document.getElementById("audio-link").href == "/technical_article.html" || document.getElementById("audio-link").href == "http://127.0.0.1:8000/technical_article.html") {
-       document.getElementById("audio-player").hidden = true;
+      document.getElementById("cover-image").classList.remove("img-fluid")
+	});
+	if (document.getElementById("audio-link").href == "/technical_article.html" || document.getElementById("audio-link").href == "http://127.0.0.1:8000/technical_article.html") {
+		document.getElementById("audio-player").hidden = true;
    }
 </script>
  </div>
  <footer class="py-5 bg-dark main-footer">
    <div class="container">
-     <p class="text-center white-text">philipkiely.com V3.2.<!--PATCH-->7<!--PATCH--> | Proudly Handcrafted Since 2017 | <a href="/old/V2/index.html">V2</a> | <a href="/old/V1/index.html">V1</a> | <a href="/old/V0/index.html">V0</a> | <a href="/sitemap/">sitemap</a></p>
+     <p class="text-center white-text">philipkiely.com V3.2.<!--PATCH-->8<!--PATCH--> | Proudly Handcrafted Since 2017 | <a href="/old/V2/index.html">V2</a> | <a href="/old/V1/index.html">V1</a> | <a href="/old/V0/index.html">V0</a> | <a href="/sitemap/">sitemap</a></p>
      <p class="text-center white-text">Built with <a href="https://github.com/getpelican/pelican">Pelican</a>, <a href="https://jinja.palletsprojects.com/">Jinja</a>, <a href="https://getbootstrap.com">Bootstrap</a>, <a href="http://fontawesome.io">Font Awesome</a>, and <a href="https://fonts.google.com">Google Fonts</a>. Hosted with <a href="https://netlify.com">Netlify</a>.</p>
      <h5 class="text-center">
        <a target="_blank" href="http://youtube.kiely.xyz" class=""><i class="fab fa-youtube red-text"></i></a>

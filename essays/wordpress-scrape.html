@@ -72,53 +72,54 @@
 </nav>
  <div class="container">
 <div class="row">
- <div class="col-md-8 offset-md-2">
-  <br />
-  <br />
-  <h1>Archiving a Wordpress Blog with Web&nbsp;Scraping</h1>
-  <code class="post-info">| First Posted <b>09 July 2019</b> | Last Edited <b>09 July 2019</b> | Philip Kiely |</code>
-  <hr/>
-  <div class="article-content">
-  <p>My mother wrote a blog, Overneath it All, for many years. <a href="https://www.goodreads.com/author/show/5430737.Robin_Bourjaily/blog">Goodreads has an archive</a> as far back as 2015, but she wrote from well before that, starting in 2011. I didn&#8217;t read much of it, but I was featured in it regularly. She never referenced me by name, instead using my age (at the time, &#8220;Fifteen did this&#8221; or &#8220;Eighteen did that&#8221;). In January 2019, she decided to shut the blog down after not writing for it for six months, but she wanted an editable archive in case she wanted to use anything from it in the future. At her request, I scraped the entire blog into a giant Microsoft Word&nbsp;file.</p>
+	<div class="col-12 col-md-8 offset-md-2">
+		<br />
+		<br />
+		<h1>Archiving a Wordpress Blog with Web&nbsp;Scraping</h1>
+		<code class="post-info">| First Posted <b>09 July 2019</b> | Last Edited <b>09 July 2019</b> | Philip Kiely |</code>
+		<hr/>
+		<div class="article-content">
+		<p>My mother wrote a blog, Overneath it All, for many years. <a href="https://www.goodreads.com/author/show/5430737.Robin_Bourjaily/blog">Goodreads has an archive</a> as far back as 2015, but she wrote from well before that, starting in 2011. I didn&#8217;t read much of it, but I was featured in it regularly. She never referenced me by name, instead using my age (at the time, &#8220;Fifteen did this&#8221; or &#8220;Eighteen did that&#8221;). In January 2019, she decided to shut the blog down after not writing for it for six months, but she wanted an editable archive in case she wanted to use anything from it in the future. At her request, I scraped the entire blog into a giant Microsoft Word&nbsp;file.</p>
 <p>Web scraping is the sort of low hanging fruit in automation that has an outsized usefulness compared to its difficulty. Getting the code to work just so isn&#8217;t always straightforward, but the impact of the end product usually ranges from &#8220;saves hours of repetitive, error-prone manual copying&#8221; to &#8220;makes a previously impossible thing happen overnight.&#8221; This project definitely falls under the former category, the few hundred articles would have been possible but frustrating to manually copy and format into a complete corpus. Fortunately, on the account of not being a medieval scribe, I was able to use Python and BeautifulSoup to archive the&nbsp;blog. </p>
 <p>You can <a href="https://github.com/philipkiely/blogscrape">see the code here</a>, but it is very messy and specific. In general, writing good, clean code for a web scraper is very difficult because of the specificity of the data source and the likelihood of edge cases. In this case, I didn&#8217;t need clean code because I was certainly only going to use it once (after all, the website no longer exists), so I boiled a pot of spaghetti and threw it at the site. There were a variety of edge cases: posts with and without various metadata, images of various sizes, formats, and placements, and even one post from 2016 that somehow was its own page, like an &#8220;About&#8221; page would be: totally separate from the post feed. Through trial and error, I gathered the contents of the blog into the sort of Microsoft Word document that heats up your computer to 90 degrees Celsius just by opening&nbsp;it.</p>
 <p>In general, web scraping takes three steps: generate the links, scrape the pages, save the data. In this project, I generated the links by making the entire range of month-year archive links for the history of the blog. Thus, I had some pages with no posts, some with one post, and others with multiple posts. To deal with that, the second step involved a complex function (by which I mean 60 lines of if-else and try-except) that grabbed all of the text and images, plus a similar function for the aforementioned extra page. For the final step, I stored each post in a custom object, then iterated over an array of those objects, writing formatted text to a Microsoft Word file using the <code>docx</code> library. </p>
 <p>Web scraping can be frustrating and specific, but it is a powerful tool in a programmer&#8217;s arsenal. It&#8217;s helpful, but not necessary, to have done a fair bit of web programming yourself, as it reduces the number of concepts that you need to learn. If you want to practice web scraping by following along though a project, check out <a href="https://blog.floydhub.com/web-scraping-with-python/">my article on FloydHub</a>, which covers scraping Hacker News &#8220;Who is Hiring&#8221;&nbsp;threads.</p>
-  </div>
-  <hr/>
-  <h3 class="text-center">&#9997;</h3>
-  <div class="text-center"><a href="https://twitter.com/philip_kiely?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-dnt="true" data-show-count="true">Follow @philip_kiely</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
-  <hr/>
-  <!--<script async data-uid="992c3e1540" src="https://awesome-artisan-5909.ck.page/992c3e1540/index.js"></script>-->
-  <br/>
- </div>
- <div class="col-md-2">
- <br>
- <br />
- <br />
-   <div class="card">
-   <img class="card-img-top" src="/assets/img/wfsd.jpg" alt="WFSD Background">
-   <div class="card-img-overlay align-items-center text-center">
-   <h1>&nbsp;</h1>
-   <h1>&nbsp;</h1>
-    <a href="/wfsd/" class="btn btn-danger stretched-link">Read More</a>
-  </div>
-</div>
- </div>
+		</div>
+		<hr/>
+		<h3 class="text-center">&#9997;</h3>
+		<div class="text-center"><a href="https://twitter.com/philip_kiely?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-dnt="true" data-show-count="true">Follow @philip_kiely</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+		<hr/>
+		<!--<script async data-uid="992c3e1540" src="https://awesome-artisan-5909.ck.page/992c3e1540/index.js"></script>-->
+		<br/>
+	</div>
+   <div class="col-md-2">
+      <br>
+      <br />
+      <div class="img-fluid">
+         <a class="book-container" href="/wfsd?source=sidebar">
+            <div class="book">
+               <img id="cover-image" alt="Writing for Software Developers" src="/assets/img/wfsd.jpg" />
+            </div>
+         </a>
+      </div>
+      <br>
+      <br />
+   </div>
 </div>
 <script>
-   $(document).ready(function () {
-      $("table").attr("class","table table-condensed table-bordered");
+	$(document).ready(function () {
+		$("table").attr("class","table table-condensed table-bordered");
       [].forEach.call(document.getElementsByTagName("img"), function (img) {img.classList.add("img-fluid");});
-   });
-   if (document.getElementById("audio-link").href == "/wordpress-scrape.html" || document.getElementById("audio-link").href == "http://127.0.0.1:8000/wordpress-scrape.html") {
-       document.getElementById("audio-player").hidden = true;
+      document.getElementById("cover-image").classList.remove("img-fluid")
+	});
+	if (document.getElementById("audio-link").href == "/wordpress-scrape.html" || document.getElementById("audio-link").href == "http://127.0.0.1:8000/wordpress-scrape.html") {
+		document.getElementById("audio-player").hidden = true;
    }
 </script>
  </div>
  <footer class="py-5 bg-dark main-footer">
    <div class="container">
-     <p class="text-center white-text">philipkiely.com V3.2.<!--PATCH-->7<!--PATCH--> | Proudly Handcrafted Since 2017 | <a href="/old/V2/index.html">V2</a> | <a href="/old/V1/index.html">V1</a> | <a href="/old/V0/index.html">V0</a> | <a href="/sitemap/">sitemap</a></p>
+     <p class="text-center white-text">philipkiely.com V3.2.<!--PATCH-->8<!--PATCH--> | Proudly Handcrafted Since 2017 | <a href="/old/V2/index.html">V2</a> | <a href="/old/V1/index.html">V1</a> | <a href="/old/V0/index.html">V0</a> | <a href="/sitemap/">sitemap</a></p>
      <p class="text-center white-text">Built with <a href="https://github.com/getpelican/pelican">Pelican</a>, <a href="https://jinja.palletsprojects.com/">Jinja</a>, <a href="https://getbootstrap.com">Bootstrap</a>, <a href="http://fontawesome.io">Font Awesome</a>, and <a href="https://fonts.google.com">Google Fonts</a>. Hosted with <a href="https://netlify.com">Netlify</a>.</p>
      <h5 class="text-center">
        <a target="_blank" href="http://youtube.kiely.xyz" class=""><i class="fab fa-youtube red-text"></i></a>

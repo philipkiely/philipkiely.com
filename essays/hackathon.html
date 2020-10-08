@@ -72,14 +72,14 @@
 </nav>
  <div class="container">
 <div class="row">
- <div class="col-md-8 offset-md-2">
-  <br />
-  <br />
-  <h1>How to Succeed and Thrive at a&nbsp;Hackathon</h1>
-  <code class="post-info">| First Posted <b>20 June 2019</b> | Last Edited <b>08 September 2019</b> | Philip Kiely |</code>
-  <hr/>
-  <div class="article-content">
-  <p>One of my first times coding outside of class was at a hackathon during my first year of college. It was late February, and we drove through a snowstorm to an industrial building near the Iowa State University campus. Inside, we checked in at a folding table, and fortunately the person handling registration didn&#8217;t examine my <span class="caps">ID</span> carefully, as I was 17 at the time. For the next 36 hours, two friends and I developed a client-side JavaScript isometric map maker, <a href="https://gmareske.github.io/trimap/">trimap</a>. As I started from essentially zero knowledge, I had no choice but to learn more in that weekend than I had in the preceding weeks of <em>Introduction to Computer Science</em> combined. What we made is, without a doubt, a terrible piece of software, and to this day I am inordinately proud of&nbsp;it.</p>
+	<div class="col-12 col-md-8 offset-md-2">
+		<br />
+		<br />
+		<h1>How to Succeed and Thrive at a&nbsp;Hackathon</h1>
+		<code class="post-info">| First Posted <b>20 June 2019</b> | Last Edited <b>08 September 2019</b> | Philip Kiely |</code>
+		<hr/>
+		<div class="article-content">
+		<p>One of my first times coding outside of class was at a hackathon during my first year of college. It was late February, and we drove through a snowstorm to an industrial building near the Iowa State University campus. Inside, we checked in at a folding table, and fortunately the person handling registration didn&#8217;t examine my <span class="caps">ID</span> carefully, as I was 17 at the time. For the next 36 hours, two friends and I developed a client-side JavaScript isometric map maker, <a href="https://gmareske.github.io/trimap/">trimap</a>. As I started from essentially zero knowledge, I had no choice but to learn more in that weekend than I had in the preceding weeks of <em>Introduction to Computer Science</em> combined. What we made is, without a doubt, a terrible piece of software, and to this day I am inordinately proud of&nbsp;it.</p>
 <p>Since then, I&#8217;ve been to a few more hackathons around and beyond Iowa. I got my first programming job from a hackathon and have won several prizes. Most importantly, I&#8217;ve now had several of these weekends to accelerate my learning on specifics topic. I think that every student studying programming should try a hackathon, and if you&#8217;re a college student in the United States, try a <span class="caps">MLH</span> (Major League Hacking) Hackathon. They are an organization that provides structure and support for hackathon organizers nationwide. Here are my tips for crushing it at a&nbsp;hackathon.</p>
 <h2>Before</h2>
 <p>Some hackathons you have to register for, others you have to apply to. For your first hackathon, find a smaller, no-application hackathon if possible, as the big names can be fairly selective. Figure out your travel at the same time as registration, hopefully the hackathon is within driving distance and you have access to a car or bus. If you go to a larger university, there may be a hackathon at your school! If it is a well-known hackathon or organized through <span class="caps">MLH</span>, you should see plenty of new faces at the event from other&nbsp;schools.</p>
@@ -134,41 +134,42 @@
 </ul>
 </li>
 </ul>
-  </div>
-  <hr/>
-  <h3 class="text-center">&#9997;</h3>
-  <div class="text-center"><a href="https://twitter.com/philip_kiely?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-dnt="true" data-show-count="true">Follow @philip_kiely</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
-  <hr/>
-  <!--<script async data-uid="992c3e1540" src="https://awesome-artisan-5909.ck.page/992c3e1540/index.js"></script>-->
-  <br/>
- </div>
- <div class="col-md-2">
- <br>
- <br />
- <br />
-   <div class="card">
-   <img class="card-img-top" src="/assets/img/wfsd.jpg" alt="WFSD Background">
-   <div class="card-img-overlay align-items-center text-center">
-   <h1>&nbsp;</h1>
-   <h1>&nbsp;</h1>
-    <a href="/wfsd/" class="btn btn-danger stretched-link">Read More</a>
-  </div>
-</div>
- </div>
+		</div>
+		<hr/>
+		<h3 class="text-center">&#9997;</h3>
+		<div class="text-center"><a href="https://twitter.com/philip_kiely?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-dnt="true" data-show-count="true">Follow @philip_kiely</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+		<hr/>
+		<!--<script async data-uid="992c3e1540" src="https://awesome-artisan-5909.ck.page/992c3e1540/index.js"></script>-->
+		<br/>
+	</div>
+   <div class="col-md-2">
+      <br>
+      <br />
+      <div class="img-fluid">
+         <a class="book-container" href="/wfsd?source=sidebar">
+            <div class="book">
+               <img id="cover-image" alt="Writing for Software Developers" src="/assets/img/wfsd.jpg" />
+            </div>
+         </a>
+      </div>
+      <br>
+      <br />
+   </div>
 </div>
 <script>
-   $(document).ready(function () {
-      $("table").attr("class","table table-condensed table-bordered");
+	$(document).ready(function () {
+		$("table").attr("class","table table-condensed table-bordered");
       [].forEach.call(document.getElementsByTagName("img"), function (img) {img.classList.add("img-fluid");});
-   });
-   if (document.getElementById("audio-link").href == "/hackathon.html" || document.getElementById("audio-link").href == "http://127.0.0.1:8000/hackathon.html") {
-       document.getElementById("audio-player").hidden = true;
+      document.getElementById("cover-image").classList.remove("img-fluid")
+	});
+	if (document.getElementById("audio-link").href == "/hackathon.html" || document.getElementById("audio-link").href == "http://127.0.0.1:8000/hackathon.html") {
+		document.getElementById("audio-player").hidden = true;
    }
 </script>
  </div>
  <footer class="py-5 bg-dark main-footer">
    <div class="container">
-     <p class="text-center white-text">philipkiely.com V3.2.<!--PATCH-->7<!--PATCH--> | Proudly Handcrafted Since 2017 | <a href="/old/V2/index.html">V2</a> | <a href="/old/V1/index.html">V1</a> | <a href="/old/V0/index.html">V0</a> | <a href="/sitemap/">sitemap</a></p>
+     <p class="text-center white-text">philipkiely.com V3.2.<!--PATCH-->8<!--PATCH--> | Proudly Handcrafted Since 2017 | <a href="/old/V2/index.html">V2</a> | <a href="/old/V1/index.html">V1</a> | <a href="/old/V0/index.html">V0</a> | <a href="/sitemap/">sitemap</a></p>
      <p class="text-center white-text">Built with <a href="https://github.com/getpelican/pelican">Pelican</a>, <a href="https://jinja.palletsprojects.com/">Jinja</a>, <a href="https://getbootstrap.com">Bootstrap</a>, <a href="http://fontawesome.io">Font Awesome</a>, and <a href="https://fonts.google.com">Google Fonts</a>. Hosted with <a href="https://netlify.com">Netlify</a>.</p>
      <h5 class="text-center">
        <a target="_blank" href="http://youtube.kiely.xyz" class=""><i class="fab fa-youtube red-text"></i></a>

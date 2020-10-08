@@ -72,14 +72,14 @@
 </nav>
  <div class="container">
 <div class="row">
- <div class="col-md-8 offset-md-2">
-  <br />
-  <br />
-  <h1>Making Useful Charts and Diagrams when you Suck at&nbsp;Drawing</h1>
-  <code class="post-info">| First Posted <b>03 April 2020</b> | Last Edited <b>03 April 2020</b> | Philip Kiely |</code>
-  <hr/>
-  <div class="article-content">
-  <p>I write <a href="/essays/posts.html">technical articles</a>. As part of that work, I make charts and diagrams to explain concepts to my readers. I also irredeemably suck at drawing and my handwriting defaults to illegible. Nevertheless, I manage to deliver useful diagrams with my articles that explain complex ideas with intuitive visual metaphors. <strong>I&#8217;m able to do this because most aesthetic properties are not relevant to a diagram&#8217;s usefulness, and the ones that are can be achieved relatively&nbsp;easily.</strong></p>
+	<div class="col-12 col-md-8 offset-md-2">
+		<br />
+		<br />
+		<h1>Making Useful Charts and Diagrams when you Suck at&nbsp;Drawing</h1>
+		<code class="post-info">| First Posted <b>03 April 2020</b> | Last Edited <b>03 April 2020</b> | Philip Kiely |</code>
+		<hr/>
+		<div class="article-content">
+		<p>I write <a href="/essays/posts.html">technical articles</a>. As part of that work, I make charts and diagrams to explain concepts to my readers. I also irredeemably suck at drawing and my handwriting defaults to illegible. Nevertheless, I manage to deliver useful diagrams with my articles that explain complex ideas with intuitive visual metaphors. <strong>I&#8217;m able to do this because most aesthetic properties are not relevant to a diagram&#8217;s usefulness, and the ones that are can be achieved relatively&nbsp;easily.</strong></p>
 <p>I&#8217;m not a designer, illustrator, or painter, and I have no formal training to speak of in any kind of visual art. This is not a guide for actually getting good at this stuff, it&#8217;s a hastily-scrawled note in the margins of a much better work on how to hack it at this one aspect of the job of technical content development that&#8217;s disproportionately difficult and time-consuming and requires skills and equipment outside of the normal scope of our work. I harbor no delusions about any ability to show you how to become a better artist. I do believe that you can use a few simple techniques to create more effective graphics at whatever your current skill level&nbsp;is.</p>
 <h3>What Makes a Diagram&nbsp;Useful?</h3>
 <p>A diagram is a succinct visual representation of an idea. Diagrams are great at showing relationships and providing visual&nbsp;metaphors.</p>
@@ -124,41 +124,42 @@
 <p>If you like creating graphics and want to make more artistic and beautiful charts and diagrams for your articles, you should by all means invest the time in learning to do so and then acquire good equipment that helps your work. Your well-drafted creations will stand out from a scrawled crowd and garner admiration. There are a number of ways to make your technical content stand out, and having legitimately excellent graphics is a great method of doing&nbsp;so.</p>
 <p>For the rest of us, remember to focus on the important aspects of a design that actually communicate useful information to the reader. It is possible to learn enough drawing to be dangerous, I&#8217;m missing a couple fingers and I&#8217;m able to draw at a level that is practical though not pretty. Find an illustrator in another genre whose work you admire, like I did with Munroe&#8217;s xkcd, and practice recreating specific craft elements of their work into your own drawing. Over time, you&#8217;ll develop confidence in your ability to create graphics and use them to help educate your&nbsp;readers.</p>
 <p>If you&#8217;re interested in creating technical content, check out my book <a href="/wfsd">Writing for Software Developers</a>.</p>
-  </div>
-  <hr/>
-  <h3 class="text-center">&#9997;</h3>
-  <div class="text-center"><a href="https://twitter.com/philip_kiely?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-dnt="true" data-show-count="true">Follow @philip_kiely</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
-  <hr/>
-  <!--<script async data-uid="992c3e1540" src="https://awesome-artisan-5909.ck.page/992c3e1540/index.js"></script>-->
-  <br/>
- </div>
- <div class="col-md-2">
- <br>
- <br />
- <br />
-   <div class="card">
-   <img class="card-img-top" src="/assets/img/wfsd.jpg" alt="WFSD Background">
-   <div class="card-img-overlay align-items-center text-center">
-   <h1>&nbsp;</h1>
-   <h1>&nbsp;</h1>
-    <a href="/wfsd/" class="btn btn-danger stretched-link">Read More</a>
-  </div>
-</div>
- </div>
+		</div>
+		<hr/>
+		<h3 class="text-center">&#9997;</h3>
+		<div class="text-center"><a href="https://twitter.com/philip_kiely?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-dnt="true" data-show-count="true">Follow @philip_kiely</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+		<hr/>
+		<!--<script async data-uid="992c3e1540" src="https://awesome-artisan-5909.ck.page/992c3e1540/index.js"></script>-->
+		<br/>
+	</div>
+   <div class="col-md-2">
+      <br>
+      <br />
+      <div class="img-fluid">
+         <a class="book-container" href="/wfsd?source=sidebar">
+            <div class="book">
+               <img id="cover-image" alt="Writing for Software Developers" src="/assets/img/wfsd.jpg" />
+            </div>
+         </a>
+      </div>
+      <br>
+      <br />
+   </div>
 </div>
 <script>
-   $(document).ready(function () {
-      $("table").attr("class","table table-condensed table-bordered");
+	$(document).ready(function () {
+		$("table").attr("class","table table-condensed table-bordered");
       [].forEach.call(document.getElementsByTagName("img"), function (img) {img.classList.add("img-fluid");});
-   });
-   if (document.getElementById("audio-link").href == "/useful_charts.html" || document.getElementById("audio-link").href == "http://127.0.0.1:8000/useful_charts.html") {
-       document.getElementById("audio-player").hidden = true;
+      document.getElementById("cover-image").classList.remove("img-fluid")
+	});
+	if (document.getElementById("audio-link").href == "/useful_charts.html" || document.getElementById("audio-link").href == "http://127.0.0.1:8000/useful_charts.html") {
+		document.getElementById("audio-player").hidden = true;
    }
 </script>
  </div>
  <footer class="py-5 bg-dark main-footer">
    <div class="container">
-     <p class="text-center white-text">philipkiely.com V3.2.<!--PATCH-->7<!--PATCH--> | Proudly Handcrafted Since 2017 | <a href="/old/V2/index.html">V2</a> | <a href="/old/V1/index.html">V1</a> | <a href="/old/V0/index.html">V0</a> | <a href="/sitemap/">sitemap</a></p>
+     <p class="text-center white-text">philipkiely.com V3.2.<!--PATCH-->8<!--PATCH--> | Proudly Handcrafted Since 2017 | <a href="/old/V2/index.html">V2</a> | <a href="/old/V1/index.html">V1</a> | <a href="/old/V0/index.html">V0</a> | <a href="/sitemap/">sitemap</a></p>
      <p class="text-center white-text">Built with <a href="https://github.com/getpelican/pelican">Pelican</a>, <a href="https://jinja.palletsprojects.com/">Jinja</a>, <a href="https://getbootstrap.com">Bootstrap</a>, <a href="http://fontawesome.io">Font Awesome</a>, and <a href="https://fonts.google.com">Google Fonts</a>. Hosted with <a href="https://netlify.com">Netlify</a>.</p>
      <h5 class="text-center">
        <a target="_blank" href="http://youtube.kiely.xyz" class=""><i class="fab fa-youtube red-text"></i></a>
