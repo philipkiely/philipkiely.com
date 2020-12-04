@@ -81,15 +81,15 @@
 		<div class="article-content">
 		<p>Recently, I&#8217;ve been learning about high-leverage work. Automation is a great example of high-leverage work because you can save people time. The easiest way to add automation to your platform is to let users add their own code. Help Scout has a little box on some far-flung page that you can use to add custom JavaScript to a site. I think it is designed for analytics trackers and such, but I used it to save my support team hours on the way to saving our users even more&nbsp;time.</p>
 <p>Gumroad maintains over 200 help documents for creators and their customers. Many of these documents are long, with many pictures, gifs, headers, and paragraphs. When I&#8217;m writing a customer support email, I want to link specific parts of the help&nbsp;page.</p>
-<p>An anchor link is an <span class="caps">HTML</span> attribute that lets you link to somewhere in the page. Helpscout supports anchor links, but you have to set them manually. With over 200 documents between the creator and customer docs, this would be hours of tedious manual work to add, and then they would need to be kept up to date as the docs are edited over&nbsp;time.</p>
+<p>An anchor link is an <span class="caps">HTML</span> attribute that lets you link to somewhere in the page. Help Scout supports anchor links, but you have to set them manually. With over 200 documents between the creator and customer docs, this would be hours of tedious manual work to add, and then they would need to be kept up to date as the docs are edited over&nbsp;time.</p>
 <p>Example: <a href="https://help.gumroad.com/article/82-membership-products#MultipleTiers">https://help.gumroad.com/article/82-membership-products#MultipleTiers</a></p>
-<p>Helpscout supports custom JavaScript, so I wrote a snippet that dynamically assigns anchor links to each h2 and h3 on the page. I also had it exclude the main pages because they are not articles, so those pages are unaffected by the change (otherwise, their <span class="caps">UI</span> breaks). Thus, every single header is now directly linkable and those links will stay up to date over&nbsp;time.</p>
+<p>Help Scout supports custom JavaScript, so I wrote a snippet that dynamically assigns anchor links to each h2 and h3 on the page. I also had it exclude the main pages because they are not articles, so those pages are unaffected by the change (otherwise, their <span class="caps">UI</span> breaks). Thus, every single header is now directly linkable and those links will stay up to date over&nbsp;time.</p>
 <p>2 small&nbsp;drawbacks:</p>
 <ol>
 <li>The links are the first 20 characters of the header, so they can end in the middle of a word, which is not ideal but shouldn’t be an issue, they are still&nbsp;descriptive.</li>
 <li>If you change the header text, old anchor links will no longer work, as the anchor is dynamically generated so it automatically updates. However, if an anchor link is broken, it just brings the user to the top of the page, which was the previous functionality, so it isn’t a worse user experience. Still, these links are designed for a message or other temporary place, not for permanent&nbsp;use.</li>
 </ol>
-<p>The code, in case you’re interested (note for the custom script in <code>help.gumroad.com</code> the <code>window.location.href</code> check changes value&nbsp;appropriately):</p>
+<p>The code, in case you’re interested (note for the custom script in <code>help.gumroad.com</code> the <code>window.location.href</code> check has an accordingly different&nbsp;value):</p>
 <pre><code>&lt;script&gt;
 //auto link all h2 and h3
 function linkText(s) {
@@ -113,6 +113,9 @@ document.addEventListener(&quot;DOMContentLoaded&quot;, function(){
 });
 &lt;/script&gt;
 </code></pre>
+
+<p>The thing I found most interesting about all of this is how anchor links interact with the page load sequence. The function doesn&#8217;t trigger until the <span class="caps">DOM</span> contents are fully loaded, but the browser still knows to jump to the appropriate place on the&nbsp;page.</p>
+<p>If you are a Help Scout user, feel free to adopt this code snippet under the <span class="caps">MIT</span>&nbsp;License.</p>
 		</div>
 		<hr/>
 		<h3 class="text-center">&#9997;</h3>
@@ -152,7 +155,7 @@ document.addEventListener(&quot;DOMContentLoaded&quot;, function(){
  </div>
  <footer class="py-5 bg-dark main-footer">
    <div class="container">
-     <p class="text-center white-text">philipkiely.com V3.2.<!--PATCH-->53<!--PATCH--> | Proudly Handcrafted Since 2017 | <a href="/old/V2/index.html">V2</a> | <a href="/old/V1/index.html">V1</a> | <a href="/old/V0/index.html">V0</a> | <a href="/sitemap/">sitemap</a></p>
+     <p class="text-center white-text">philipkiely.com V3.2.<!--PATCH-->54<!--PATCH--> | Proudly Handcrafted Since 2017 | <a href="/old/V2/index.html">V2</a> | <a href="/old/V1/index.html">V1</a> | <a href="/old/V0/index.html">V0</a> | <a href="/sitemap/">sitemap</a></p>
      <p class="text-center white-text">Built with <a href="https://github.com/getpelican/pelican">Pelican</a>, <a href="https://jinja.palletsprojects.com/">Jinja</a>, <a href="https://getbootstrap.com">Bootstrap</a>, <a href="http://fontawesome.io">Font Awesome</a>, and <a href="https://fonts.google.com">Google Fonts</a>. Hosted with <a href="https://netlify.com">Netlify</a>.</p>
      <h5 class="text-center">
        <a target="_blank" href="http://youtube.kiely.xyz" class=""><i class="fab fa-youtube red-text"></i></a>
