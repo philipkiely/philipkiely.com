@@ -12,7 +12,7 @@
     </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Philip Kiely & Company</title>
+    <title>A Tiny Case Study...</title>
     <!--boostrap 4 CSS-->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!--Custom CSS-->
@@ -24,7 +24,6 @@
     <!--font awesome-->
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/brands.js" integrity="sha384-rUOIFHM3HXni/WG5pzDhA1e2Js5nn4bWudTYujHbbI9ztBIxK54CL4ZNZWwcBQeD" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/fontawesome.js" integrity="sha384-EMmnH+Njn8umuoSMZ3Ae3bC9hDknHKOWL2e9WJD/cN6XLeAN7tr5ZQ0Hx5HDHtkS" crossorigin="anonymous"></script>
-    
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -72,53 +71,84 @@
   </div>
 </nav>
  <div class="container">
-  
 <div class="row">
-    <div class="col-12 col-md-6">
-        <br />
-        <h1 class="primary-accent-text">Philip Kiely & Company</h1>
-        <br />
-        <h3>I work with businesses of all sizes to turn content and code into business solutions.</h3>
-        <br>
-        <p>Newish! Listen to my <a href="https://www.se-radio.net/2020/09/episode-426-philip-kiely-on-writing-for-software-developers/">interview on IEEE's Software Engineering Radio</a>.</p>
-        <h3>Philip Kiely</h3>
-        <p>I started my career as a software engineer, but I currently work as the <a href="/essays/gumroad_hom.html">Head of Marketing at Gumroad</a>. I have written for <a href="/notes/posts.html">these publications</a> and appeared on <a href="/notes/appearances.html">these shows</a>. I wrote <a href="/wfsd">a book</a> which sold <a href="/essays/wfsd_financials.html">pretty well</a>.</p>
-        <h3>& Company</h3>
-        <p>I'm lucky enough to work with some fantastic subcontractors.</p>
-        <br />
-        <hr>
-        <br />
-        <h3>Services</h3>
-        <a href="mailto:philip@kiely.xyz?subject=Technical%20Content%20Contract%20Project"><button class="btn btn-primary btn-large">Contract Projects</button></a>
-        <a href="/notes/consulting_calls.html"><button class="btn btn-primary btn-large">50-Minute Consulting Calls</button></a>
-        <br />
-        <h3>Products</h3>
-        <a href="/wfsd/"><button class="btn btn-primary btn-large">Book: Writing for Software Developers</button></a>
-        <br />
-        <a href="/cefip/"><button class="btn btn-primary btn-large">Guide: Cold Email for Interesting People</button></a>
-        <br />
-        <br />
-        <hr>
-        <br />
-        <p>
-        "Philip is a real pro. His content is well-written, relevant to our market of test engineers and localization experts, and deep enough to be reference material. He's communicative, and he easily fit himself into our content process. Highly recommended."
-        </p>
-        <p>
-            <i>&mdash; <a href="https://www.linkedin.com/in/preinheimer/">Paul Reinheimer</a>, CEO at <a href="https://wonderproxy.com">WonderProxy</a>.</i>
-        </p>
-        <br />
-        <p>Further enthusiastic references provided upon request.</p>
-        <p>Please direct all inquiries to <a href="mailto:philip@kiely.xyz">philip@kiely.xyz</a>.
-        <br />
-    </div>
-    <div class="col-12 col-md-6">
-        <br />
-        <img class="img-fluid" src="/assets/img/BlurredCapitol.jpg" alt="Philip standing by Iowa State Capitol">
-        <br />
-    </div>
-    <br />
+	<div class="col-12 col-md-8 offset-md-2">
+		<br />
+		<br />
+		<h1>A Tiny Case Study in&nbsp;Automation</h1>
+		<code class="post-info">| First Posted <b>04 December 2020</b> | Last Edited <b>04 December 2020</b> | Philip Kiely |</code>
+		<hr/>
+		<div class="article-content">
+		<p>Recently, I&#8217;ve been learning about high leverage work. Automation is a great example of high-leverage work because you can save people time. The easiest way to add automation to your platform is to let users add their own code. Help Scout has a little box on some far-flung page that you can use to add custom JavaScript to a site. I think it is designed for analytics trackers and such, but I used it to save my support team hours on the way to saving our users even more&nbsp;time.</p>
+<p>Gumroad maintains over 200 help documents for creators and their customers. Many of these documents are long, with many pictures, gifs, headers, and paragraphs. When I&#8217;m writing a customer support email, I want to link specific parts of the help&nbsp;page.</p>
+<p>An anchor link is an <span class="caps">HTML</span> attribute that lets you link to somewhere in the page. Helpscout supports anchor links, but you have to set them manually. With over 200 documents between the creator and customer docs, this would be hours of tedious manual work to add, and then they would need to be kept up to date as the docs are edited over&nbsp;time.</p>
+<p>Example:&nbsp;https://help.gumroad.com/article/82-membership-products#MultipleTiers</p>
+<p>Helpscout supports custom JavaScript, so I wrote a snippet that dynamically assigns anchor links to each h2 and h3 on the page. I also had it exclude the main pages because they are not articles, so those pages are unaffected by the change (otherwise, their <span class="caps">UI</span> breaks). Thus, every single header is now directly linkable and those links will stay up to date over&nbsp;time.</p>
+<p>2 small&nbsp;drawbacks:</p>
+<ol>
+<li>The links are the first 20 characters of the header, so they can end in the middle of a word, which is not ideal but shouldn’t be an issue, they are still&nbsp;descriptive.</li>
+<li>If you change the header text, old anchor links will no longer work, as the anchor is dynamically generated so it automatically updates. However, if an anchor link is broken, it just brings the user to the top of the page, which was the previous functionality, so it isn’t a worse user experience. Still, these links are designed for a message or other temporary place, not for permanent&nbsp;use.</li>
+</ol>
+<p>The code, in case you’re interested (note for the custom script in <code>help.gumroad.com</code> the <code>window.location.href</code> check changes value&nbsp;appropriately):</p>
+<pre><code>&lt;script&gt;
+//auto link all h2 and h3
+function linkText(s) {
+    return s.replace(/\W/g, '').substring(0, 20)
+}
+function makeTitleLink(tag) {
+    Array.from(document.getElementsByTagName(tag)).forEach(
+        function(element, index, array) {
+            console.log(element, index, array)
+            element.id = linkText(element.innerText)
+            element.innerHTML = &quot;&lt;a href=\&quot;#&quot; + element.id + &quot;\&quot;&gt;&quot; + element.innerHTML + &quot;&lt;/a&gt;&quot;
+        }
+    );
+}
+document.addEventListener(&quot;DOMContentLoaded&quot;, function(){
+    loc = window.location.href.substring(6, window.location.href.length)
+    if (loc != &quot;//customers.gumroad.com&quot; &amp;&amp; loc != &quot;//customers.gumroad.com/&quot;) {
+        makeTitleLink(&quot;h2&quot;)
+        makeTitleLink(&quot;h3&quot;)
+    }
+});
+&lt;/script&gt;
+</code></pre>
+		</div>
+		<hr/>
+		<h3 class="text-center">&#9997;</h3>
+		<div class="text-center"><a href="https://twitter.com/philip_kiely?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-dnt="true" data-show-count="true">Follow @philip_kiely</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+		<form action="https://gumroad.com/follow_from_embed_form" class="form gumroad-follow-form-embed input-group"
+			method="post"> <input name="seller_id" type="hidden" value="8780358448474"> <input class="form-control" name="email"
+				placeholder="you@example.com" type="email"> <button class="btn btn-primary" data-custom-highlight-color=""
+				type="submit">Subscribe</button>
+		</form>
+		<hr/>
+		<br/>
+	</div>
+   <div class="col-md-2">
+      <br>
+      <br />
+      <div class="img-fluid">
+         <a class="book-container" href="/wfsd?source=sidebar">
+            <div class="book">
+               <img id="cover-image" alt="Writing for Software Developers" src="/assets/img/wfsd.jpg" />
+            </div>
+         </a>
+      </div>
+      <br>
+      <br />
+   </div>
 </div>
-
+<script>
+	$(document).ready(function () {
+		$("table").attr("class","table table-condensed table-bordered");
+      [].forEach.call(document.getElementsByTagName("img"), function (img) {img.classList.add("img-fluid");});
+      document.getElementById("cover-image").classList.remove("img-fluid")
+	});
+	if (document.getElementById("audio-link").href == "/helpscout_links.html" || document.getElementById("audio-link").href == "http://127.0.0.1:8000/helpscout_links.html") {
+		document.getElementById("audio-player").hidden = true;
+   }
+</script>
  </div>
  <footer class="py-5 bg-dark main-footer">
    <div class="container">
