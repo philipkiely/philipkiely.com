@@ -2,12 +2,29 @@ function setYear() {
     document.getElementById("year").innerHTML = (new Date()).getFullYear();
 }
 
-window.onload = setYear();
-
 const sleep = (milliseconds) => {
   return new Promise(resolve => setTimeout(resolve, milliseconds))
 }
 
+function setDiscount() {
+    const params = new URLSearchParams(window.location.search);
+    if (params.has("code")) {
+        var links = document.getElementsByTagName("a")
+        Array.prototype.slice.call(links).forEach((l) => {
+            if (l.href.includes("https://gum.co")) {
+                if (!l.href.endsWith("/")) {
+                    l.href += "/"
+                }
+                l.href += params.get("code")
+            }
+        });
+    }
+}
+
+window.onload = function () {
+    setYear();
+    setDiscount();
+}
 
 function emailListSignup() {
     var email = document.getElementById("get-email").value
