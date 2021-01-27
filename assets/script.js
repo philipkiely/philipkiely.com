@@ -18,6 +18,11 @@ function setDiscount() {
                 l.href += params.get("code")
             }
         });
+        var prices = document.getElementsByClassName("price-text")
+        Array.prototype.slice.call(prices).forEach((p) => {
+            full = parseInt(p.innerHTML.substring(1));
+            p.innerHTML = "<s>$" + full + "</s> $" + (full - (parseInt(params.get("discount")/100)));
+        });
     }
 }
 
