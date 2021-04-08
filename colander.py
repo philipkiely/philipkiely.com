@@ -151,8 +151,8 @@ def assets():
         os.system("rm -r dist/assets/*")
     else:
         os.makedirs("dist/assets")
-    os.system("cp -r assets/ dist/assets/")
-    os.system("cp -r theme/assets/ dist/assets/")
+    os.system("cp -r assets/* dist/assets/")
+    os.system("cp -r theme/assets/* dist/assets/")
     os.system("cp theme/assets/img/favicon.ico dist/")
     os.system("cp theme/assets/img/favicon.png dist/")
     print("Assets Copied\n")
