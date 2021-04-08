@@ -1,7 +1,3 @@
-function setYear() {
-    document.getElementById("year").innerHTML = (new Date()).getFullYear();
-}
-
 const sleep = (milliseconds) => {
   return new Promise(resolve => setTimeout(resolve, milliseconds))
 }
@@ -27,7 +23,6 @@ function setDiscount() {
 }
 
 window.onload = function () {
-    setYear();
     setDiscount();
 }
 

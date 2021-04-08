@@ -131,20 +131,6 @@ def clean_dist():
     else:
         os.makedirs("dist")
 
-# Increment Patch Version in Footer
-def version(): # TODO: Meta dict passed into all jinja
-    f = open(root+"dev/theme/templates/base.html", "r")
-    page = f.read()
-    f.close()
-    delim = "<!--PATCH-->"
-    page = page.split(delim)
-    page[1] = str(int(page[1]) + 1)
-    page = delim.join(page)
-    f = open(root+"dev/theme/templates/base.html", "w")
-    f.write(page)
-    f.close()
-    print("Patch Version Incremented")
-
 # Copy Over Assets
 def assets():
     if os.path.exists("dist/assets"):
@@ -182,11 +168,14 @@ def build_site():
     # Corvair
 
 
-def deploy_site():
-    os.system("git checkout prod")
-    os.system("git rebase main")
-    os.system("git push origin prod")
-    os.system("git checkout main")
+def deploy_site_from_main():
+    p = input("\nHave you incremented your version, blog post dates, and footer date yet?\n\nAdmit: ")
+    if p != "yes":
+        return None
+    msg = input("Commit Message: ")
+    os.system("git add .")
+    os.system("git commit -m \"{}\"".format(msg))
+    os.system("git push origin main")
 
 
 ###############
@@ -222,12 +211,14 @@ class PKHandler(FileSystemEventHandler):
         build_site()
 
 
-if __name__ == "__main__": # TODO: Git Helpers
+if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Usage: `python colander.py --dev` or `python colander.py --prod`")
+        print("Usage: `python colander.py [--dev, --deploy, --prod]`")
         exit
     elif sys.argv[1] == "--prod":
         build_site()
+    elif sys.argv[1] == "--deploy":
+        deploy_site_from_main()
     elif sys.argv[1] == "--dev":
         print("Initializing PK")
         src_watcher = Watcher(".", PKHandler())
@@ -239,5 +230,5 @@ if __name__ == "__main__": # TODO: Git Helpers
         if server_proc.pid:
             os.kill(server_proc.pid, signal.SIGTERM)
     else:
-        print("Usage: `python colander.py --dev` or `python colander.py --prod`")
+        print("Usage: `python colander.py [--dev, --deploy, --prod]`")
         exit
