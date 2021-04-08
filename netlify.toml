@@ -15,6 +15,9 @@
   # Default build command.
   command = "python colander.py --prod"
 
+  # Configure with Environment Variables
+  environment = { PYTHON_VERSION = "3.7.5" }
+
 # Redirects to prevent link rot with new build system
 [[redirects]]
   from = "/essays/posts.html"
