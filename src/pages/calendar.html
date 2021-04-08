@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Dear Developers{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <br>
+        <h1><code class="primary-accent-text">Calendar</code></h1>
+        <p>
+            This page is for booking time to talk with me. Please only use it if we have agreed to talk over email or DM, it is for scheduling purposes only.
+        </p>
+        <p>
+            If you want a consulting call, you can book one <a href="https://calendly.com/philipkiely/consulting-50m">here</a> (accepts credit cards through Stripe).
+        </p>
+            <!-- Calendly inline widget begin -->
+            <div class="calendly-inline-widget" data-url="https://calendly.com/philipkiely?primary_color=630000"
+                style="min-width:320px;height:930px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+            <!-- Calendly inline widget end -->
+        <br>
+    </div>
+</div>
+{% endblock %}

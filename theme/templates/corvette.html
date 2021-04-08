@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITENAME }} Autoindex{% endblock %}
+
+{% block head %}
+<!-- Bootstrap 5 Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+{% endblock %}
+
+{% block content %}
+<div class="container-md font-monospace">
+    <br>
+    <h2><a href="https://github.com/philipkiely/corvette">Corvette</a> &mdash; Autoindex Directory Listing</h2>
+        <br>
+        <br>
+        <ul class="list-inline fs-3 fw-bold">
+            <a href="{{ root_link }}">{{ root_name }}</a>
+            <li class="list-inline-item">/</li>
+            {% for b in breadcrumbs %}
+            <li class="list-inline-item"><a href="{{ root_link }}{{ b[1] }}">{{ b[0] }}</a></li>
+            <li class="list-inline-item">/</li>
+            {% endfor %}
+        </ul>
+        {% for l in lines %}
+        {% if not l.hide %}
+        <p class="fs-5 text-dark {% if not l.file %}fw-bold{% endif %}"><span class="fs-3">&nbsp;&nbsp;</span><i
+                class="bi-{{ l.icon }}"></i><span class="fs-3">&nbsp;</span><a class="text-reset" href="{{ l.link }}">{{
+                l.text }}</a></p>
+        {% endif %}
+        {% endfor %}
+</div>
+{% endblock %}

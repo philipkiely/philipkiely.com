@@ -1,0 +1,6 @@
+{
+    "root_name": "assets",
+    "root_link": "/assets/",
+    "build_dir": "dist/assets",
+    "template_dir": "theme/templates"
+}

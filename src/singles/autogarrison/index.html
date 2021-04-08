@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+  <title>AutoGarrison</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="col-md-12 col-xs-12">
+  <div class="col-md-4 col-md-offset-4 col-xs-12">
+    <h1 class="text-center">AutoGarrison</h1>
+    <button id="grade" class="btn btn-danger btn-block">Grade</button>
+  </div>
+  <div class="col-md-10 col-md-offset-1 col-xs-12">
+    <h1></h1>
+    <p>Copy and paste your assignment text, then press "grade" to flag the forbidden words (is, are, was, were) <span style="color: red;">[red]</span> and any repeated words <span style="color: blue;">[blue]</span> in a sentence. Please note that the program strips all formatting, and it might not work properly if you give it really weird input.</p>
+    <h1></h1>
+  </div>
+  <div class="col-md-10 col-md-offset-1 col-xs-12">
+    <textarea id="page" placeholder="Copy Text Here"></textarea>
+  </div>
+  <div id="output" class="col-md-10 col-md-offset-1 col-xs-12 hidden">
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
