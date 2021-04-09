@@ -21,13 +21,13 @@
   </form>
   <hr/>
   {% for article in articles %}
-    {% if article.note %}
-   <h5><a href="/notes/{{ article.slug }}.html">{{ article.title|safe }}</a> | <code class="post-info">{{ article.date.strftime('%B %Y') }}</code></h5>
+    {% if article.blog == "notes" %}
+   <h5><a href="/{{ article.blog }}/{{ article.slug }}.html">{{ article.title|safe }}</a> | <code class="post-info">{{ article.date.strftime('%B %Y') }}</code></h5>
     {% else %}
-    <h3><a href="/essays/{{ article.slug }}.html">{{ article.title|safe }}</a></h3>
+    <h3><a href="/{{ article.blog }}/{{ article.slug }}.html">{{ article.title|safe }}</a></h3>
    <code class="post-info">| First Posted <b>{{ article.date.strftime('%d %B %Y') }}</b> | Last Edited <b>{{ article.modified.strftime('%d %B %Y') }}</b> |{% for author in article.authors %} {{ author }} |{% endfor %}</code>
    <div class="article-summary">
-   {{ article.summary }}
+   {{ article.summary|safe }}
    </div>
    {% endif %}
    <hr/>

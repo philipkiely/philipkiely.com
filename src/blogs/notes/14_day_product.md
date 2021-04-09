@@ -4,7 +4,6 @@ Modified: 2020-11-12
 Slug: 14_day_product
 Authors: Philip Kiely
 Summary: The #14DayProduct Challenge, run by Randall Kanna (Head of Community at Gumroad), is a two-week structured challenge that guides participants through creating a product start-to-finish.
-Note: True
 
 The #14DayProduct Challenge, run by Randall Kanna (Head of Community at Gumroad), is a two-week structured challenge that guides participants through creating a product start-to-finish.
 

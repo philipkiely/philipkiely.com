@@ -4,7 +4,6 @@ Modified: 2020-09-23
 Slug: affiliates
 Authors: Philip Kiely
 Summary: Do you want to make a 50% commission selling high-quality products that people love? Apply to be an affiliate of Philip Kiely & Company.
-Note: True
 
 Do you want to make a 50% commission selling high-quality products that people love? Apply to be an affiliate of Philip Kiely & Company. This affiliate group is small and highly selective but offers the opportunity to grow along with my business.
 

@@ -1,7 +1,7 @@
 Title: Archiving a Wordpress Blog with Web Scraping
 Date: 2019-07-09
 Modified: 2019-07-09
-Slug: wordpress-scrape
+Slug: wordpress_scrape
 Authors: Philip Kiely
 Summary: My mother wrote a blog, Overneath it All, for many years. Goodreads has an archive as far back as 2015, but she wrote from well before that, starting in 2011. In January 2019, she decided to shut the blog down after not writing for it for six months, but she wanted an editable archive in case she wanted to use anything from it in the future. At her request, I scraped the entire blog into a giant Microsoft Word file...
 

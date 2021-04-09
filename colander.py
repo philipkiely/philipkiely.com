@@ -14,7 +14,7 @@ from watchdog.events import FileSystemEventHandler
 # BLOG GENERATOR #
 ##################
 
-def parse_article_metadata(filename): # TODO
+def parse_article_metadata(filename):
     f = open("src/blogs/" + filename, "r")
     contents = f.read()
     f.close()
@@ -27,11 +27,10 @@ def parse_article_metadata(filename): # TODO
         meta[2].split(": ")[1], "%Y-%m-%d")
     parsed["slug"] = meta[3].split(": ")[1]
     parsed["authors"] = [meta[4].split(": ")[1]]
-    parsed["summary"] = meta[5].split(": ")[1]
-    if len(meta) == 7:
-        parsed["note"] = meta[6].split(": ")[1]
+    parsed["summary"] = markdown.markdown(meta[5].split(": ")[1])
+    parsed["blog"] = filename.split("/")[0]
     parsed["content"] = markdown.markdown("\n\n".join(
-        contents.split("\n\n")[1:]), extensions=['extra'])
+        contents.split("\n\n")[1:]), extensions=['extra', 'codehilite'])
     return parsed
 
 

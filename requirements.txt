@@ -7,6 +7,7 @@ importlib-metadata==3.10.0
 Jinja2==2.11.3
 Markdown==3.3.4
 MarkupSafe==1.1.1
+Pygments==2.8.1
 requests==2.25.1
 soupsieve==2.2.1
 typing-extensions==3.7.4.3

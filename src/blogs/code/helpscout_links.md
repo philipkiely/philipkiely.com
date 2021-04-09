@@ -22,8 +22,7 @@ Help Scout supports custom JavaScript, so I wrote a snippet that dynamically ass
 
 The code, in case you’re interested (note for the custom script in `help.gumroad.com` the `window.location.href` check has an accordingly different value):
 
-```
-<script>
+```javascript
 //auto link all h2 and h3
 function linkText(s) {
     return s.replace(/\W/g, '').substring(0, 20)
@@ -44,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function(){
         makeTitleLink("h3")
     }
 });
-</script>
 ```
 
 The thing I found most interesting about all of this is how anchor links interact with the page load sequence. The function doesn't trigger until the DOM contents are fully loaded, but the browser still knows to jump to the appropriate place on the page.

@@ -22,3 +22,11 @@
 [[redirects]]
   from = "/essays/posts.html"
   to = "/notes/posts.html"
+
+[[redirects]]
+  from = "/essays/wordpress-scrape.html"
+  to = "/code/wordpress_scrape.html"
+
+[[redirects]]
+  from = "/essays/helpscout_links.html"
+  to = "/code/helpscout_links.html"

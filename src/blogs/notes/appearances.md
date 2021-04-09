@@ -4,7 +4,6 @@ Modified: 2021-02-15
 Slug: appearances
 Authors: Philip Kiely
 Summary: I have had the good fortune to appear on a variety of shows, and I look forward to doing more. Appearances are listed in reverse chronological order.
-Note: True
 
 I have had the good fortune to appear on a variety of shows, and I look forward to doing more. Appearances are listed in reverse chronological order.
 

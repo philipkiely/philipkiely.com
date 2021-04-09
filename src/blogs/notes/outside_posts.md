@@ -4,7 +4,6 @@ Modified: 2020-08-27
 Slug: posts
 Authors: Philip Kiely
 Summary: I have been fortunate enough to write for a variety of other publications. Posts are listed in reverse chronological order...
-Note: True
 
 I have been fortunate enough to write for a variety of other publications. Posts are listed in reverse chronological order. 
 

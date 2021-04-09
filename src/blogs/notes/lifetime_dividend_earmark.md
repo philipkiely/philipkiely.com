@@ -4,7 +4,6 @@ Modified: 2020-12-22
 Slug: lifetime_dividend_earmark
 Authors: Philip Kiely
 Summary: The Lifetime Dividend Earmark (LDK) is a tool for structuring equity-free long-term profit sharing as part of compensation packages for privately-held companies that do not intend to have liquidity events (though it does not preclude them).
-Note: True
 
 Disclaimer: I am not a lawyer or financial professional. This note is for informational purposes only and has not been evaluated for factual accuracy, especially in its legal claims. This is not legal or financial advice. 
 
