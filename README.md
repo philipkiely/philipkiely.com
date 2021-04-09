@@ -1,6 +1,6 @@
 # https://philipkiely.com
 
-This repository contains the static site generator that powers my personal website, https://philipkiely.com
+This repository contains the static site generator and source files that power my personal website, https://philipkiely.com
 
 ## Getting Started
 
@@ -23,7 +23,13 @@ workon philipkiely.com
 python colander.py --dev
 ```
 
-Go to [http://127.0.0.1:8000](http://127.0.0.1:8000) to see the site.
+If it wasn't automatically launched, go to [http://127.0.0.1:8000](http://127.0.0.1:8000) to see the site.
+
+Use `Control-C` in terminal to quit.
+
+When you edit site files, it will automatically rebuild. You must refresh the page to see changes. If you're working with static assets and don't see changes, clear caches and refresh.
+
+If you make changes to the build script, you must quit and re-run it.
 
 If you need a new branch (make new branches from main):
 
@@ -33,15 +39,31 @@ git checkout -b my_branch
 
 ### Create a PR & Site Preview
 
-Descriptive commits & PR
+Write descriptive commits and pull requests.
 
-rebase & Squash (Use GOMP)
+Use GOMP and make sure that all commits are squashed into one before rebasing. Do not merge directly, instead rebase to merge.
 
-### Deploy the Site
+Make sure you update the version and any relevant dates.
+
+The pull request will be live once rebased onto main.
+
+Pull Request Checklist:
+
+[] Update version and dates
+[] Run `python href_checker.py` to check for broken links
+[] Commits squashed into one
+[] Rebase, don't merge, into main
+[] Spot check live site after ~60 seconds
+
+### Deploy the Site from Main
 
 Note: you probably shouldn't need to do this unless your name is in the URL.
 
-From main, run `python colander.py --prod`.
+From main, run `python colander.py --deploy`.
+
+This reminds for version and date (type "yes") and then prompts for a commit message.
+
+Netlify deploys the site directly from the main branch.
 
 ## Colander
 
@@ -51,35 +73,35 @@ Colander, named for the kitchen utensil used to strain spaghetti, is the meta st
 * Performing ad-hoc tasks like asset copying and static checking (any of which may be factored out into future packages)
 * Unifying the development environment to make a smooth developer experience
 
-## Main (Jinja)
+### Pages (Jinja)
 
-Most stand-alone pages
+Generates most standard pages including the main page.
 
-## Blog
+### Blogs
 
-A modified Jinja with Markdown to HTML
+Accepts markdown posts with metadata and renders them.
 
-## Singleton
+### Singletons
 
-Old stuff gets copied straight in
+Directly copy old pages including assets, maintaining relative paths.
 
-## Corvette
+### Corvette
 
-/assets auto-generated
+Autoindex directory listing for `/assets/`. Modify with `corvetteconf.py` and `theme/templates/corvette.html`.
 
-corvetteconf.py
+### Corvair
 
-## Corvair
+Still under development.
 
-Sitemaps, to be developed
-
-## Assets
+### Assets
 
 Assets folder structure for images models rest of source to make images easier to find.
 
 Site-wide and template-specific CSS, JS, and images are stored in src/static.
 
-## Theme
+### Theme
+
+Jinja templates and shared assets serve as a base for blogs and pages.
 
 ## Netlify Deploy
 

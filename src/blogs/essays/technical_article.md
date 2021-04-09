@@ -13,7 +13,7 @@ Our writing has characters, these characters have motivations, desire outcomes. 
 
 Despite this legacy and these tools, technical writing is often held to a lower standard than even the humble blog post. A bit of `inline code` does not remove the need for clear, engaging communication. On the contrary, it increases the need. Nontrivial code without context is worse than useless; it tricks its way into systems as dark magic, an untouchable solution to an unknown problem. Furthermore, it does not diminish the need for proofreading and copyediting.
 
-Let me tell you a story, then, of how to write a technical article. This guide is based on [my writing for clients](/essays/posts.html), but writing for your own blog or project follows the same path. If you would like me to write you a story, please send me an email to [philip@kiely.xyz](mailto:philip@kiely.xyz).
+Let me tell you a story, then, of how to write a technical article. This guide is based on [my writing for clients](/notes/posts.html), but writing for your own blog or project follows the same path. If you would like me to write you a story, please send me an email to [philip@kiely.xyz](mailto:philip@kiely.xyz).
 
 ## Steps of the Journey
 
@@ -57,7 +57,7 @@ When writing for clients, in my experience the general practice is to issue an i
 
 ### Resolve
 
-After an article is accepted for publication, there is still work to be done. I leave it in the "Resolve" column from after the invoice is paid until the article is published. When an article is published, I add it to my [list of articles](/essays/posts.html) and post links in my various social media profiles. If I find a discussion on Reddit or Hacker News, I identify myself as the author so that I can answer questions.
+After an article is accepted for publication, there is still work to be done. I leave it in the "Resolve" column from after the invoice is paid until the article is published. When an article is published, I add it to my [list of articles](/notes/posts.html) and post links in my various social media profiles. If I find a discussion on Reddit or Hacker News, I identify myself as the author so that I can answer questions.
 
 ### Success
 
