@@ -97,7 +97,22 @@ Still under development.
 
 Assets folder structure for images models rest of source to make images easier to find.
 
+Within `assets/img` the following folder structure applies:
+
+* blogs
+  * posts
+    * post.slug for post in posts where post.images >= 2
+  * notes
+    * Same as above
+* pages
+  * page.url
+* individual images
+
+If an image is used in multiple pages, put it at the deepest folder accessible to all applicable pages.
+
 Site-wide and template-specific CSS, JS, and images are stored in src/static.
+
+
 
 ### Theme
 

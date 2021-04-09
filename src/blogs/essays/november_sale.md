@@ -27,7 +27,7 @@ If neither Alice nor Bob runs a discount, each will sell 10 units, the same as t
 
 Here is a payoff matrix of revenue for that situation:
 
-![PD Payoff Matrix](/assets/img/olns_pd.png)
+![PD Payoff Matrix](/assets/img/blogs/essays/november_sale/olns_pd.png)
 
 Alice and Bob both have a dominant strategy of running a discount, but both will end up with less revenue than if neither had discounted.
 
@@ -39,7 +39,7 @@ Thesis: Creators want to run discounts to generate marginal sales.
 
 Let's slightly adjust the above model: regardless of whether Alice or Bob runs the discount alone or at the same time, if one runs a discount, they get 6 additional customers, and these are all new customers and not from each others' customer bases. The model is a bit different now, but they have the same dominant strategy: run the sale regardless of the others' action.
 
-![A1 Payoff Matrix](/assets/img/olns_a1.png)
+![A1 Payoff Matrix](/assets/img/blogs/essays/november_sale/olns_a1.png)
 
 However, this model doesn't yet answer why it is strictly beneficial for creators to run discounts at the same time. Well, consumer psychology is a tricky thing. For information products, generally priced at a premium (charge more!) and targeted at professional audiences, frequent discounts can undermine the credibility of the price and product. Price uncertainty can delay purchases, after all, if the product is randomly discounted, why not wait? After running random sales, I've even had customers making a purchase a day before or after write to me asking to get refunded down to the sale price. People don't like to feel like they missed out.
 
@@ -47,7 +47,7 @@ So, if running a sale, especially a major discount that really attracts the marg
 
 Let *R* be the reputation hit from having a random sale. Then, for Alice and Bob, the assurance model of the OLNS is:
 
-![PD Payoff Matrix](/assets/img/olns_a2.png)
+![PD Payoff Matrix](/assets/img/blogs/essays/november_sale/olns_a2.png)
 
 Running a sale at the same time gives both creators extra revenue without the reputation hit.
 
@@ -57,6 +57,6 @@ Coordinating a sale between every creator would be very difficult. Assurance mod
 
 I ran my Obligatory Late November Sale from Monday the 23rd through the end of the month. After a tweet announcing the discounts, Monday I made enough to fill the fridge and pantry at Trader Joe's, Tuesday I made enough to buy some secondhand furniture for my new apartment. Fortunately, I'm not in the position of relying on this income to do those things, but even still paying for material expenses with information product money feels *really* good. All told, I made over 700 dollars running the sale, which is much more than I would have earned ordinarily. 
 
-![Gumroad Analytics Screenshot](/assets/img/olns_ss.jpg)
+![Gumroad Analytics Screenshot](/assets/img/blogs/essays/november_sale/olns_ss.jpg)
 
 The sale is over, but I'm already looking forward to next year's. By then, I should have more products and a much larger audience and be able to do more interesting and lucrative deals. 

@@ -7,7 +7,7 @@ Summary: I sold $15,000 of *Writing for Software Developers* in its first 24 hou
 
 I sold $15,000 of *Writing for Software Developers* in its first 24 hours with no pre-existing audience. I sold over $23,000 of the book in its first month. This post details everything that I did to make these sales. [This video](https://www.youtube.com/watch?v=uPINzgdfjpw) covers much of the same information.
 
-![Sales of *Writing for Software Developers* on Gumroad](gumroadsales.jpg)
+![Sales of *Writing for Software Developers* on Gumroad](/assets/img/gumroadsales.jpg)
 
 ---
 

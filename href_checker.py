@@ -91,7 +91,7 @@ def check_asset_srcs():
     print("---Done---")
     print("---Checking Asset Usage---")
     for asset in assets:
-        if asset not in all_links:
+        if asset not in all_links and asset[-5:] != ".html" and asset[-4:] != ".pdf":
             print("UNUSED: {}".format(asset))
     print("---Done---")
 
