@@ -145,7 +145,7 @@ def assets():
 
 # Copy Over Singles
 def singles():
-    os.system("cp -r src/singles/ dist/")
+    os.system("cp -r src/singles/* dist/")
     print("Singles Copied\n")
 
 # Run Corvette Autoindex
