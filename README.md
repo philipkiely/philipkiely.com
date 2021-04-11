@@ -2,6 +2,8 @@
 
 This repository contains the static site generator and source files that power my personal website, https://philipkiely.com
 
+The code for this site is open-source under the MIT license, but the content (blog posts, sales page copy, original images, etc) is copyright Philip Kiely & Company, please don't reproduce that part.
+
 ## Getting Started
 
 Requires Python 3.7+ and a virtual environment.

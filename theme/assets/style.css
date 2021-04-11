@@ -1,5 +1,9 @@
-.rounded-img {
+.img-rounded {
     border-radius: 50%;
+}
+
+.bg-dark {
+  background-color: #343a40 !important;
 }
 
 .blue-text {
