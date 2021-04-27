@@ -30,3 +30,7 @@
 [[redirects]]
   from = "/essays/helpscout_links.html"
   to = "/code/helpscout_links.html"
+
+[[redirects]]
+  from = "/cefip/2e"
+  to = "/cefip"
