@@ -1,9 +1,21 @@
+@use "bootstrap/scss/bootstrap";
+
+@use "scss/pkc";
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+}
+
 .img-rounded {
     border-radius: 50%;
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  background-color: pkc.$grey-4 !important;
 }
 
 .blue-text {
@@ -31,11 +43,12 @@
 }
 
 .primary-accent-text {
-    color: #630000;
+    color: pkc.$red-4;
+    font-family: 'Merriweather', serif;
 }
 
 .post-info {
-    color: #630000 !important;
+    color: pkc.$red-4 !important;
 }
 
 @media only screen and (min-width: 768px) {

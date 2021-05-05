@@ -2,41 +2,87 @@
 
 {% block title %}Philip Kiely: Products{% endblock %}
 
+{% block head %}
+<link rel="stylesheet" href="/assets/css/products.css" type="text/css">
+{% endblock %}
+
 {% block content %}
-<h1 class="primary-accent-text">Products</h1>
-<div class="row">
-<div class="col-12 col-md-6 jumbotron bg-info">
-  <h2>Writing for Software Developers</h2>
-  <hr class="my-4">
-  <p class="lead">For software developers working to hone their craft, grow their audience, and share their skills.</p>
-  <a class="btn btn-dark btn-lg stretched-link" href="/wfsd/" role="button">Learn more</a>
+<!--Adapted from https://github.com/twbs/bootstrap/tree/main/site/content/docs/5.0/examples/product under MIT license-->
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+  <div class="col-md-5 p-lg-5 mx-auto my-5">
+    <h1 class="display-4 fw-normal">Made for You</h1>
+    <p class="lead fw-normal">I create products & services for software developers and other curious, engaged professionals & students.</p>
+    <a class="btn btn-outline-secondary" href="https://pkandc.com/">More @ PK&C</a>
+  </div>
+  <div class="product-device shadow-sm d-none d-md-block">
+    <img class="img-fluid" src="/assets/img/pages/products/portrait_wptw.png">
+  </div>
+  <div class="product-device product-device-2 shadow-sm d-none d-md-block">
+    <img class="img-fluid" src="/assets/img/pages/products/portrait_wfsd.png">
+  </div>
 </div>
-<div class="col-12 col-md-6 jumbotron bg-light">
-  <h2>Cold Email for Interesting People</h2>
-  <hr class="my-4">
-  <p class="lead">How to ask for what you want.</p>
-  <a class="btn btn-primary btn-lg stretched-link" href="/cefip/" role="button">Learn
-    More</a>
+
+<div class="d-lg-flex flex-lg-equal w-100 my-lg-3 ps-lg-3">
+  <div class="bg-dark me-lg-3 pt-3 px-3 pt-lg-5 px-lg-5 text-center text-white overflow-hidden position-relative">
+    <div class="my-3 py-3">
+      <a class="stretched-link reg-link-light" href="/wfsd/"><h2 class="display-5">Writing for Software Developers</h2></a>
+      <p class="lead">A complete guide to creating technical content.</p>
+    </div>
+    <div class="mx-auto product-preview">
+      <img class="img-fluid img-kinda-roundish" src="/assets/img/wfsd_subtle_render.jpg">
+    </div>
+  </div>
+  <div class="bg-light me-lg-3 pt-3 px-3 pt-lg-5 px-lg-5 text-center overflow-hidden position-relative">
+    <div class="my-3 p-3">
+      <a class="stretched-link reg-link-dark" href="/cefip/"><h2 class="display-5">Cold Email for Interesting People</h2></a>
+      <p class="lead">A multimedia course on inciting opportunity.</p>
+    </div>
+    <div class="mx-auto product-preview">
+      <img class="img-fluid img-kinda-roundish" src="/assets/img/pages/cefip/cefip_vertical_graphic.png">
+    </div>
+  </div>
 </div>
-<!--<div class="col-12 col-md-6 jumbotron bg-light">
-  <h2>PK&C Designs</h2>
-  <hr class="my-4">
-  <p class="lead">Physical instantiations of visual identity.</p>
-  <a class="btn btn-primary btn-lg stretched-link" href="https://www.redbubble.com/shop/ap/48632198" role="button">Learn More</a>
-</div>-->
+
+<div class="d-lg-flex flex-lg-equal w-100 my-lg-3 ps-lg-3">
+  <div class="bg-light me-lg-3 pt-3 px-3 pt-lg-5 px-lg-5 text-center overflow-hidden position-relative">
+    <div class="my-3 p-3">
+      <a class="stretched-link reg-link-dark" href="https://whopaystechnicalwriters.com"><h2 class="display-5">Who Pays Technical Writers?</h2></a>
+      <p class="lead">A curated collection of places to write.</p>
+    </div>
+    <div class="mx-auto product-preview">
+      <img class="img-fluid img-kinda-roundish" src="/assets/img/pages/products/landscape_wptw.jpg">
+    </div>
+  </div>
+  <div class="bg-dark me-lg-3 pt-3 px-3 pt-lg-5 px-lg-5 text-center text-white overflow-hidden position-relative">
+    <div class="my-3 py-3">
+      <a class="stretched-link reg-link-light" href="/calendar/"><h2 class="display-5">Office Hours</h2></a>
+      <p class="lead">A time for me to help you.</p>
+    </div>
+    <div class="mx-auto product-preview">
+      <img class="img-fluid img-kinda-roundish" src="/assets/img/blogs/essays/who_will_write/content_post_panel2.png">
+    </div>
+  </div>
 </div>
-<div class="row">
-<div class="col-12 col-md-6 jumbotron bg-dark white-text">
-  <h2>Dear Developers</h2>
-  <hr class="my-4">
-  <p class="lead">Join developers worldwide in receiving original content every month.</p>
-  <a class="btn btn-info btn-lg stretched-link" href="/newsletter/" role="button">Learn more</a>
+
+<div class="d-lg-flex flex-lg-equal w-100 my-lg-3 ps-lg-3">
+  <div class="bg-dark me-lg-3 pt-3 px-3 pt-lg-5 px-lg-5 text-center text-white overflow-hidden position-relative">
+    <div class="my-3 p-3">
+      <a class="stretched-link reg-link-light" href="https://pkandc.redbubble.com"><h2 class="display-5">PK&C Merch</h2></a>
+      <p class="lead">Physical instantiations of visual identity.</p>
+    </div>
+    <div class="mx-auto product-preview">
+      <img class="img-fluid img-kinda-roundish" src="/assets/img/pages/products/examples_w_bg.png">
+    </div>
+  </div>
+  <div class="bg-light me-lg-3 pt-3 px-3 pt-lg-5 px-lg-5 text-center overflow-hidden position-relative">
+    <div class="my-3 p-3">
+      <a class="stretched-link reg-link-dark" href="/newsletter/"><h2 class="display-5">Roughed Drafts</h2></a>
+      <p class="lead">Your first look at my new writing.</p>
+    </div>
+    <div class="mx-auto product-preview">
+      <img class="img-fluid img-kinda-roundish" src="/assets/img/cefip_poll_notes.jpg">
+    </div>
+  </div>
 </div>
-<div class="col-12 col-md-6 jumbotron bg-primary">
-  <h2>PK&C Consulting</h2>
-  <hr class="my-4">
-  <p class="lead">I work with businesses of all sizes on a contract basis to turn content and code into business solutions.</p>
-  <a class="btn btn-light btn-lg stretched-link" href="/company/" role="button">Learn more</a>
-</div>
-</div>
+
 {% endblock %}

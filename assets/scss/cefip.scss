@@ -1,50 +1,46 @@
-body {
-    font-family: 'IBM Plex Sans', sans-serif;
-}
-
-h1 {
-    font-family: 'Merriweather', serif;
-}
+@use 'pkc';
+@use 'hero-patterns-scss/dist/entry' as hp;
 
 h4 {
     font-family: 'Merriweather', serif;
 }
 
 .cta-section {
-    background-color: #343a40;
+    background-color: pkc.$grey-4;
+    background-image: hp.hero-pattern('topography', pkc.$blue-4, 0.5);
 }
 
 .cta-section .card {
-    background-color: #f8f9fa;
-    color: #0f1215 !important;
-    border-color: #343a40;
+    background-color: pkc.$grey-1;
+    color: pkc.$grey-5 !important;
+    border-color: pkc.$grey-4;
     border-radius: 80px 0px 80px 0px;
     overflow: hidden;
 }
 
 .my-btn-primary {
-    background-color: #6de162;
-    color: #0f1215;
+    background-color: pkc.$green-2;
+    color: pkc.$grey-5;
     font-size: 24px;
     font-weight: 700;
     border-radius: 0px !important;
 }
 
 .my-btn-primary:hover {
-    background-color: #139f38;
-    color: #f8f9fa;
+    background-color: pkc.$green-3;
+    color: pkc.$grey-1;
 }
 
 .my-btn-secondary {
-    background-color: #97c4fd;
-    color: #0f1215;
+    background-color: pkc.$blue-1;
+    color: pkc.$grey-5;
     font-size: 20px;
     border-radius: 0px !important;
 }
 
 .my-btn-secondary:hover {
-    background-color: #02651d;
-    color: #f8f9fa;
+    background-color: pkc.$green-4;
+    color: pkc.$grey-1;
 }
 
 /*TIMELINE STYLES*/
@@ -217,6 +213,36 @@ h4 {
     text-align: right
 }
 
+@media only screen and (min-width: 1400px) { 
+    .main-timeline .drawing-content:before {
+        width: 39.2%;
+        top: -17px;
+    }
+
+    .main-timeline .drawing-outer:before,
+    .main-timeline .drawing-outer:after {
+        top: -10px;
+    }
+
+    #timeline-img-a {
+        margin-top: 7px;
+        margin-left: -5px;
+    }
+
+    #timeline-img-b {
+        margin-top: 20px;
+        margin-left: 8px
+    }
+
+    #timeline-img-c {
+        margin-top: 23px;
+    }
+
+    #timeline-img-d {
+        margin-top: 23px;
+    }
+}
+
 @media only screen and (max-width: 991px) {
     .main-timeline .drawing-content {
         margin-top: 35px
@@ -278,7 +304,7 @@ h4 {
 /* Pricing Styles */
 
 #free-trial {
-    background-color: #e0e0e1;
+    background-color: pkc.$grey-2;
     border-radius: 80px 0px 80px 0px;
     border: none;
     overflow: hidden;
@@ -291,11 +317,11 @@ h4 {
 }
 
 #full-course h1 {
-    color: #000063 !important;
+    color: pkc.$blue-4 !important;
 }
 
 .secondary-accent-text {
-    color: #97c4fd;
+    color: pkc.$blue-1;
 }
 
 /* Social Proof Styles */
@@ -307,5 +333,5 @@ h4 {
 /* FAQ styles*/
 
 #faq {
-    background-color: #f8f9fa;
+    background-color: pkc.$grey-1;
 }

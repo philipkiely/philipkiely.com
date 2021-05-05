@@ -1,0 +1,32 @@
+@use 'pkc';
+@use 'hero-patterns-scss/dist/entry' as hp;
+
+p, button {
+    font-size: 18px;
+}
+
+.btn-success {
+    background-color: pkc.$blue-3 !important;
+}
+
+.btn-success:hover {
+    background-color: pkc.$blue-2 !important;
+}
+
+.no-bullets {
+        list-style-type: none;
+        font-size: 20px;
+}
+
+.cta-section {
+    background-color: pkc.$grey-2;
+    background-image: hp.hero-pattern('floating cogs', pkc.$blue-1, 0.5);
+}
+
+.sample-section {
+    background-color: pkc.$grey-1;
+}
+
+.faq-section {
+    background-color: pkc.$grey-1;
+}

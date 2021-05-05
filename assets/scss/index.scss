@@ -1,0 +1,47 @@
+@use 'pkc';
+@use 'hero-patterns-scss/dist/entry' as hp;
+
+
+.img-wrapper {
+    position: relative;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -25px;
+  right: 0;
+}
+
+.btn-round {
+    font-family: monospace;
+    font-size: 24px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.btn-grey {
+  display: block;
+  background-color: pkc.$grey-3 !important;
+}
+
+.btn-grey:hover {
+  background-color: pkc.$grey-4 !important;
+}
+
+.btn-brass {
+  background-color: pkc.$brass-3 !important;
+  color: pkc.$grey-1;
+  border: none;
+}
+
+.btn-brass:hover {
+  background-color: pkc.$brass-4 !important;
+}
+
+.showcase {
+  background-color: pkc.$grey-2;
+  background-image: hp.hero-pattern('circuit board', pkc.$brass-4, 0.5);
+}

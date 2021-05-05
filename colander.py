@@ -10,6 +10,17 @@ import webbrowser
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
+#####################
+# UTILITY FUNCTIONS #
+#####################
+
+def ls(path, ignore=[]):
+    names = subprocess.run(
+        ["ls", path],
+        capture_output=True
+    ).stdout.decode('utf-8').split('\n')
+    return [n for n in names if n != "" and n not in ignore]
+
 ##################
 # BLOG GENERATOR #
 ##################
@@ -63,18 +74,10 @@ def build_index(blog, articles):
 
 
 def blogs():
-    blogs = subprocess.run(
-        ["ls", "src/blogs"],
-        capture_output=True
-    ).stdout.decode('utf-8').split('\n')
-    blogs = [b for b in blogs if b != ""]
+    blogs = ls("src/blogs")
     for blog in blogs:
         os.makedirs(os.path.dirname("dist/" + blog + "/"), exist_ok=True)
-        posts = subprocess.run(
-            ["ls", "src/blogs/" + blog],
-            capture_output=True
-        ).stdout.decode('utf-8').split('\n')
-        posts = [p for p in posts if p != ""]
+        posts = ls("src/blogs/" + blog)
         articles = []
         for post in posts:
             articles.append(parse_article_metadata(blog + "/" + post))
@@ -98,11 +101,7 @@ def pages():
         auto_reload=True
     )
     # list pages, dropping index (handled separately) and empty
-    pages = subprocess.run(
-        ["ls", "src/pages/"],
-        capture_output=True
-    ).stdout.decode('utf-8').split('\n')
-    pages = [p for p in pages if p != '' and p != 'index.html']
+    pages = ls("src/pages/", ["index.html"])
     # Each page should be put as index for pretty URLs
     for page in pages:
         html = env.get_template(page).render()
@@ -130,16 +129,45 @@ def clean_dist():
     else:
         os.makedirs("dist")
 
-# Copy Over Assets
-def assets():
+# Copy Files and Images
+def files_and_images():
+    os.system("cp -r assets/files dist/assets/files")
+    os.system("cp -r assets/img dist/assets/img")
+    os.system("cp assets/img/favicon.ico dist/")
+    os.system("cp assets/img/favicon.png dist/")
+
+# Prod Assets
+def assets_prod():
     if os.path.exists("dist/assets"):
         os.system("rm -r dist/assets/*")
     else:
         os.makedirs("dist/assets")
-    os.system("cp -r assets/* dist/assets/")
-    os.system("cp -r theme/assets/* dist/assets/")
-    os.system("cp theme/assets/img/favicon.ico dist/")
-    os.system("cp theme/assets/img/favicon.png dist/")
+    files_and_images()
+    os.system("npx sass --load-path=node_modules assets/style.scss dist/assets/style.css")
+    os.system("npx sass --load-path=node_modules assets/scss:dist/assets/css")
+    os.system("npx postcss -u autoprefixer -r dist/assets/**/*.css")
+    os.system("cp -r assets/js dist/assets/js")
+    os.system("cp assets/script.js dist/assets/script.js")
+    os.system("npx browserify -p tinyify assets/bundle.js -o dist/assets/bundle.js")
+    # If I need a single-page import, make bundle-page.js in assets/js to go with page.js
+    #scripts = ls("assets/js")
+    #for s in scripts:
+    #    os.system("npx browserify assets/js/{} -o dist/assets/js/{}".format(s, s))
+    print("Assets Copied\n")
+
+# Faster Dev Assets
+def assets_dev():
+    if os.path.exists("dist/assets"):
+        os.system("rm -r dist/assets/*")
+    else:
+        os.makedirs("dist/assets")
+    files_and_images()
+    os.system("sass --load-path=node_modules assets/style.scss dist/assets/style.css")
+    os.system("sass --load-path=node_modules assets/scss:dist/assets/css")
+    os.system("npx postcss -u autoprefixer -r dist/assets/**/*.css")
+    os.system("cp -r assets/js dist/assets/js")
+    os.system("cp assets/script.js dist/assets/script.js")
+    os.system("npx browserify assets/bundle.js -o dist/assets/bundle.js")
     print("Assets Copied\n")
 
 # Copy Over Singles
@@ -157,12 +185,15 @@ def corvette():
 # NETLIFY DEPLOY #
 ##################
 
-def build_site():
+def build_site(prod):
     clean_dist()
     blogs()
     pages()
     singles()
-    assets()
+    if prod:
+        assets_prod()
+    else:
+        assets_dev()
     corvette()
     # Corvair
 
@@ -207,7 +238,13 @@ class PKHandler(FileSystemEventHandler):
     def on_any_event(self, event):
         if event.is_directory or "/dist/" in event.src_path:
             return None
-        build_site()
+        elif "/assets/" in event.src_path:
+            assets_dev()
+        else:
+            blogs()
+            pages()
+            singles()
+            corvette()
 
 
 if __name__ == "__main__":
@@ -215,13 +252,13 @@ if __name__ == "__main__":
         print("Usage: `python colander.py [--dev, --deploy, --prod]`")
         exit
     elif sys.argv[1] == "--prod":
-        build_site()
+        build_site(prod=True)
     elif sys.argv[1] == "--deploy":
         deploy_site_from_main()
     elif sys.argv[1] == "--dev":
         print("Initializing PK")
         src_watcher = Watcher(".", PKHandler())
-        build_site()
+        build_site(prod=False)
         server_proc = subprocess.Popen(
             ["python", "-m", "http.server", "--directory", "dist"])
         webbrowser.open("http://127.0.0.1:8000")

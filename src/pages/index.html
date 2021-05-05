@@ -8,109 +8,173 @@
 <meta name="twitter:image" content="https://philipkiely.com/assets/img/philip_thumbnail_general.png" />
 {% endblock %}
 
+{% block head %}
+<link rel="stylesheet" href="/assets/css/index.css" type="text/css">
+<script src="/assets/js/index.js"></script>
+{% endblock %}
+
 {% block content %}
-<div class="row align-items-center"><!--Intro-->
+<div class="container">
+  <div class="row align-items-center">
+    <!--Intro-->
     <div class="col-md-6">
       <div class="p-5">
         <h2 class="primary-accent-text">Hello, I'm Philip Kiely</h2>
-        <p>This website presents my <a href="/essays">writing</a>, <a href="https://github.com/philipkiely">projects</a>, and <a href="http://youtube.kiely.xyz">life</a>.</p>
-        <p>Sign up for my email newsletter for fresh, original content on programming, technology, and business delivered to your inbox.</p>
-        <form action="https://gumroad.com/follow_from_embed_form" class="form gumroad-follow-form-embed input-group" method="post"> <input
-            name="seller_id" type="hidden" value="8780358448474"> <input class="form-control" name="email" placeholder="you@example.com"
-            type="email"> <button class="btn btn-primary" data-custom-highlight-color="" type="submit">Subscribe</button>
-        </form>
+        <br>
+        <h5>Thank you for stopping by my website. If this is your first time here, nice to meet you. Otherwise, welcome back!</h5>
+        <br>
+        <div class="row align-items-center">
+          <div class="col-12">
+            <h5>Are you looking for my...</h5>
+            <br>
+          </div>
+          <div class="col-6 col-sm-3 text-center">
+            <a href="https://pkandc.com" class="btn btn-secondary btn-round btn-brass text-center"><i class="bi bi-building"></i></a>
+            <p>Company?</p>
+          </div>
+          <div class="col-6 col-sm-3 text-center">
+            <a href="/notes/appearances.html" class="btn btn-secondary btn-round btn-brass text-center"><i class="bi bi-mic-fill"></i></a>
+            <p>Interviews?</p>
+          </div>
+          <div class="col-6 col-sm-3 text-center">
+            <a href="/calendar/" class="btn btn-secondary btn-round btn-brass text-center"><i class="bi bi-calendar-week"></i></a>
+            <p>Calendar?</p>
+          </div>
+          <div class="col-6 col-sm-3 text-center">
+            <a href="/sitemap/" class="btn btn-secondary btn-round btn-brass text-center"><i class="bi bi-cpu"></i></a>
+            <p>Links?</p>
+          </div>
+        </div>
+        <br>
+        <h5>
+          Or, keep scrolling some of my favorite projects. 
+        </h5>
+        <br>
       </div>
     </div>
     <div class="col-md-6">
-      <div class="p-5">
-        <img class="img-fluid" src="/assets/img/SeatedPortraitCropped.jpg" alt="Philip Kiely">
+      <div class="p-3">
+        <div class="img-wrapper">
+          <img class="img-fluid" id="headline-photo" src="/assets/img/SeatedPortraitCropped.jpg" alt="Philip Kiely">
+          <div class="img-overlay">
+            <button class="btn btn-secondary btn-round btn-grey text-center" id="photo-toggle-1"><i class="bi bi-camera2"></i></button>
+            <button class="btn btn-secondary btn-round btn-grey text-center" id="photo-toggle-2"><i class="bi bi-palette-fill"></i></button>
+            <button class="btn btn-secondary btn-round btn-grey text-center" id="photo-toggle-3"><i class="bi bi-pencil-fill"></i></button>
+          </div>
+        </div>
       </div>
     </div>
-</div><!--Intro-->
-<hr>
-<div class="row"><!--Showcase-->
-<div class="col-12">
-<h1 class="primary-accent-text">Showcase</h1>
+  </div>
+  <br>
+  <br>
 </div>
-<div class="card-deck">
-  <div class="card">
-    <img class="card-img-top" src="/assets/img/wfsd_gumroad_thumbnail.png" alt="Writing for Software Developers">
-    <div class="card-body">
-      <h4 class="card-title"><a class="stretched-link" href="/wfsd/">Writing for Software Developers</a></h4>
-      <p class="card-text">A complete guide to creating technical content.</p>
+<!--Showcase-->
+<div class="container-fluid showcase">
+  <br>
+  <br>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img class="card-img-top" src="/assets/img/wfsd_gumroad_thumbnail.png" alt="Writing for Software Developers">
+          <div class="card-body">
+            <h4 class="card-title"><a class="stretched-link" href="/wfsd/">Writing for Software Developers</a></h4>
+            <br>
+            <p class="card-text">A complete guide to creating technical content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img class="card-img-top" src="/assets/img/cefip_gumroad_thumbnail.png" alt="Cold Email for Interesting People">
+          <div class="card-body">
+            <h4 class="card-title"><a class="stretched-link" href="/cefip/">Cold Email for Interesting People</a></h4>
+            <br>
+            <p class="card-text">A multimedia course on how to incite opportunity.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img class="card-img-top" src="/assets/img/wptw_thumbnail.png" alt="Who Pays Technical Writers?">
+          <div class="card-body">
+            <h4 class="card-title"><a class="stretched-link" href="https://whopaystechnicalwriters.com">Who Pays Technical
+                Writers?</a></h4>
+            <p class="card-text">A curated collection of active publishers, publications, and agencies that pay fair rates
+              for
+              high-quality technical content.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="card">
-    <img class="card-img-top" src="/assets/img/cefip_gumroad_thumbnail.png" alt="Cold Email for Interesting People">
-    <div class="card-body">
-      <h4 class="card-title"><a class="stretched-link" href="/cefip/">Cold Email for Interesting People</a></h4>
-      <p class="card-text">A multimedia course on how to incite opportunity.</p>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="/assets/img/wptw_thumbnail.png" alt="Who Pays Technical Writers?">
-    <div class="card-body">
-      <h4 class="card-title"><a class="stretched-link" href="https://whopaystechnicalwriters.com">Who Pays Technical Writers?</a></h4>
-      <p class="card-text">A curated collection of active publishers, publications, and agencies that pay fair rates for high-quality technical content.</p>
-    </div>
-  </div>
+  <br>
+  <br>
 </div>
-</div><!--Showcase-->
-<br>
-<hr>
-<script>
-//For Bio Selector
-//Also yes, this is an inline script
-// I store all of my spaghetti in my personal website.
-var options = ["short", "long", "guest"]
-var colors = ["secondary", "info", "primary"]
-
-function activate(bio) {
-  var activeBio = document.getElementById(bio + "-bio")
-  var activeBioButton = document.getElementById(bio + "-bio-button")
-  activeBio.hidden = false
-  activeBioButton.classList= "btn btn-lg btn-block disabled btn-" + colors[options.indexOf(bio)]
-  options.forEach((opt) => {
-    if (opt != bio) {
-      deactivate(opt)
-    }
-  })
-}
-
-function deactivate(bio) {
-  var inactiveBio = document.getElementById(bio + "-bio")
-  var inactiveBioButton = document.getElementById(bio + "-bio-button")
-  inactiveBio.hidden = true
-  inactiveBioButton.classList= "btn btn-lg btn-block btn-outline-" + colors[options.indexOf(bio)]
-}
-</script>
-<div class="row"><!--Bio-->
-  <div class="col-12">
-    <h1 class="primary-accent-text">Bio</h1>
-  </div>
-  <div class="col-md-8 col-12">
-    <div id="short-bio">
-      <p>Hi, I’m Philip Kiely. I’m the author of <a href="/wfsd">Writing for Software Developers</a> and run <a href="https://pkandc.com">PK&C</a>, the world's smallest conglomerate. I graduated from Grinnell College in May 2020 with a degree in computer science. I was a full-time software engineer for 38 nonconsecutive weeks (if you count internships). I am a martial artist and an avid reader.</p>
+<div class="container">
+  <br>
+  <br>
+  <div class="row">
+    <!--Bio-->
+    <div class="col-12">
+      <h1 class="primary-accent-text">Bio</h1>
+      <br>
     </div>
-    <div id="long-bio">
-      <p>Hi, I’m Philip Kiely. I run <a href="https://pkandc.com">Philip Kiely & Company</a>, which means that I am many things to many people. Most often, I’m delighting clients with <a href="/notes/posts.html">technical content</a>, selling copies of <a href="/wfsd">Writing for Software Developers</a>, working on the next big thing, fixing bugs of my own creation, finding and delighting clients, or running payroll through Venmo like a Real Business Person.</p>
-      <p>I was a full-time software engineer for 38 nonconsecutive weeks (if you count internships). I have written words and code at <a href="https://gumroad.com/">Gumroad</a>, <a href="https://markforged.com">Markforged</a>, <a href="https://en.wikipedia.org/wiki/Principal_Financial_Group">Principal Financial</a>, and <a href="https://en.wikipedia.org/wiki/CUNA_Mutual_Group">CUNA Mutual Group</a>. I graduated from Grinnell College in May 2020 and hold a B.A. with honors in computer science. At Grinnell, I received the Robert N Noyce Senior Student Award and was a Roy Carver Scholar, and I spent a very productive semester at AIT Budapest. I was active in the midwestern Hackathon circuit and several student groups, most notably one involving campus-wide Nerf blaster battles.</p>
-      <p>You can find me around the internet, especially <a href="https://twitter.com/philip_kiely">Twitter</a>, <a href="https://news.ycombinator.com/user?id=philipkiely">Hacker News</a>, or <a href="https://www.indiehackers.com/philipkiely">Indie Hackers</a>. I write <a href="/essays">essays</a>, <a href="/essays">tutorials</a>, and <a href="/notes">notes</a> on my own site and <a href="/notes/posts.html">various other publications</a>. You may have heard me on <a href="https://www.se-radio.net/2020/09/episode-426-philip-kiely-on-writing-for-software-developers/">IEEE’s Software Engineering Radio</a> or <a href="/notes/appearances.html">another show</a>. My professional hobbies include appearing on podcasts and panels, sending cold emails, pretending that I can read a 10-K, and tweeting about business. I also enjoy playing D&D, practicing martial arts, and reading whatever is nearby.</p>
+    <div class="col-md-8 col-12">
+      <div id="short-bio">
+        <p>Hi, I’m Philip Kiely. I’m the author of <a href="/wfsd">Writing for Software Developers</a> and run <a
+            href="https://pkandc.com">PK&C</a>, the world's smallest conglomerate. I graduated from Grinnell College in
+          May 2020 with a degree in computer science. I was a full-time software engineer for 38 nonconsecutive weeks (if
+          you count internships). I am a martial artist and an avid reader.</p>
+      </div>
+      <div id="long-bio">
+        <p>Hi, I’m Philip Kiely. I run <a href="https://pkandc.com">Philip Kiely & Company</a>, which means that I am many
+          things to many people. Most often, I’m delighting clients with <a href="/notes/posts.html">technical
+            content</a>, selling copies of <a href="/wfsd">Writing for Software Developers</a>, working on the next big
+          thing, fixing bugs of my own creation, finding and delighting clients, or running payroll through Venmo like a
+          Real Business Person.</p>
+        <p>I was a full-time software engineer for 38 nonconsecutive weeks (if you count internships). I have written
+          words and code at <a href="https://gumroad.com/">Gumroad</a>, <a href="https://markforged.com">Markforged</a>,
+          <a href="https://en.wikipedia.org/wiki/Principal_Financial_Group">Principal Financial</a>, and <a
+            href="https://en.wikipedia.org/wiki/CUNA_Mutual_Group">CUNA Mutual Group</a>. I graduated from Grinnell
+          College in May 2020 and hold a B.A. with honors in computer science. At Grinnell, I received the Robert N Noyce
+          Senior Student Award and was a Roy Carver Scholar, and I spent a very productive semester at AIT Budapest. I was
+          active in the midwestern Hackathon circuit and several student groups, most notably one involving campus-wide
+          Nerf blaster battles.</p>
+        <p>You can find me around the internet, especially <a href="https://twitter.com/philip_kiely">Twitter</a>, <a
+            href="https://news.ycombinator.com/user?id=philipkiely">Hacker News</a>, or <a
+            href="https://www.indiehackers.com/philipkiely">Indie Hackers</a>. I write <a href="/essays">essays</a>, <a
+            href="/essays">tutorials</a>, and <a href="/notes">notes</a> on my own site and <a
+            href="/notes/posts.html">various other publications</a>. You may have heard me on <a
+            href="https://www.se-radio.net/2020/09/episode-426-philip-kiely-on-writing-for-software-developers/">IEEE’s
+            Software Engineering Radio</a> or <a href="/notes/appearances.html">another show</a>. My professional hobbies
+          include appearing on podcasts and panels, sending cold emails, pretending that I can read a 10-K, and tweeting
+          about business. I also enjoy playing D&D, practicing martial arts, and reading whatever is nearby.</p>
+      </div>
+      <div id="guest-bio">
+        <p>Philip Kiely is the author of <a href="/wfsd">Writing for Software Developers</a> and runs <a
+            href="https://pkandc.com">PK&C</a>, the world's smallest conglomerate. He graduated from Grinnell College in
+          May 2020 with a degree in computer science. Before a stint as <a href="/essays/gumroad_hom.html">Head of
+            Marketing</a> at <a href="https://gumroad.com">Gumroad</a>, he began his career writing code for <a
+            href="https://markforged.com">Markforged</a>, <a
+            href="https://en.wikipedia.org/wiki/Principal_Financial_Group">Principal Financial</a>, and <a
+            href="https://en.wikipedia.org/wiki/CUNA_Mutual_Group">CUNA Mutual Group</a>. Philip’s professional hobbies
+          include appearing on podcasts and panels, sending cold emails, and tweeting about business. He also plays D&D,
+          practices martial arts, and reads widely.</p>
+      </div>
     </div>
-    <div id="guest-bio">
-      <p>Philip Kiely is the author of <a href="/wfsd">Writing for Software Developers</a> and runs <a href="https://pkandc.com">PK&C</a>, the world's smallest conglomerate. He graduated from Grinnell College in May 2020 with a degree in computer science. Before a stint as <a href="/essays/gumroad_hom.html">Head of Marketing</a> at <a href="https://gumroad.com">Gumroad</a>, he began his career writing code for <a href="https://markforged.com">Markforged</a>, <a href="https://en.wikipedia.org/wiki/Principal_Financial_Group">Principal Financial</a>, and <a href="https://en.wikipedia.org/wiki/CUNA_Mutual_Group">CUNA Mutual Group</a>. Philip’s professional hobbies include appearing on podcasts and panels, sending cold emails, and tweeting about business. He also plays D&D, practices martial arts, and reads widely.</p>
+    <div class="col-md-4 col-12">
+      <div class="d-grid gap-2">
+        <button id="short-bio-button" onclick="activate('short')" type="button"
+          class="btn btn-lg btn-outline-secondary">Short</button>
+        <button id="long-bio-button" onclick="activate('long')" type="button" class="btn btn-lg btn-outline-info">Long</button>
+        <button id="guest-bio-button" onclick="activate('guest')" type="button"
+          class="btn btn-lg btn-outline-primary">Guest</button>
+      </div>
     </div>
   </div>
-  <div class="col-md-4 col-12">
-    <button id="short-bio-button" onclick="activate('short')" type="button" class="btn btn-lg btn-block btn-outline-secondary">Short</button>
-    <button id="long-bio-button" onclick="activate('long')" type="button" class="btn btn-lg btn-block btn-outline-info">Long</button>
-    <button id="guest-bio-button" onclick="activate('guest')" type="button" class="btn btn-lg btn-block btn-outline-primary">Guest</button>
-  </div>
-</div><!--Bio-->
-<script>
-activate("short")
-</script>
+  <!--Bio-->
 <br>
-<hr>
 <br>
+</div>
 {% endblock %}

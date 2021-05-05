@@ -15,7 +15,10 @@ git clone $THIS_REPO
 cd philipkiely.com
 mkvirtualenv philipkiely.com
 pip install -r requirements.txt
+npm i
 ```
+
+Note: you also need Dart Sass. If you're using MacOS, you should have already installed this as part of the general PK&C getting started flow, but if not it is `brew install sass/sass/sass`
 
 ### Work on Stuff
 
@@ -95,7 +98,7 @@ Autoindex directory listing for `/assets/`. Modify with `corvetteconf.py` and `t
 
 Still under development.
 
-### Assets
+### Images & Asset Files
 
 Assets folder structure for images models rest of source to make images easier to find.
 
@@ -112,13 +115,29 @@ Within `assets/img` the following folder structure applies:
 
 If an image is used in multiple pages, put it at the deepest folder accessible to all applicable pages.
 
-Site-wide and template-specific CSS, JS, and images are stored in src/static.
+### CSS
 
+The site uses SCSS for more customizable CSS. This gets turned into CSS during the build process. The build also includes an autoprefixer. At the moment, there is no purging or minifying.
 
+The CSS imports Bootstrap 5 and other libraries like heropatterns, installed with NPM. 
+
+The main CSS file is `style.scss` which becomes `style.css` and is available on all pages through `base.html`.
+
+Individual pages may have their own SCSS file, for example `assets/scss/cefip.scss` is loaded by `src/cefip.html`.
+
+### JavaScript
+
+JavaScript is front-end only. At the moment, the site doesn't use any frameworks like React or anything, but it does support using NPM packages.
+
+The build uses browserify to load packages like Bootstrap's JavaScript in the front end. Each JS file has an associated bundle file that specifies its dependencies. This makes it quick to change individual files.
+
+The main JavaScript file is `script.js` with an associated `bundle.js` and is available on all pages thanks to the `base.html` template.
+
+Individual pages may have their own JS file, for example `assets/js/cefip.js` to correspond with `src/cefip.html`.
 
 ### Theme
 
-Jinja templates and shared assets serve as a base for blogs and pages.
+Jinja templates are a base for blogs and pages.
 
 ## Netlify Deploy
 

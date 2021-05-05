@@ -1,0 +1,72 @@
+@use 'pkc';
+
+/*
+ * Some styles adapted from https://github.com/twbs/bootstrap/tree/main/site/content/docs/5.0/examples/product under MIT license
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  overflow: hidden;
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  opacity: .7;
+  background-color: #e5e5e5;
+}
+
+.product-preview {
+  width: 80%;
+  height: 50%;
+  max-height: 300px;
+}
+
+.img-kinda-roundish {
+  border-radius: 25px 25px 0 0;
+}
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 992px) {
+  .flex-lg-equal > * {
+    flex: 1;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .product-device {
+    display: none !important;
+  }
+}
+
+.reg-link-dark {
+    text-decoration: none !important;
+    color: pkc.$grey-5 !important;
+}
+
+.reg-link-light {
+    text-decoration: none !important;
+    color: pkc.$grey-1 !important;
+}

@@ -9,45 +9,49 @@
 {% endblock %}
 
 {% block content %}
-<div class="row">
- <div class="col-12 col-md-8 offset-md-2">
- <br />
-  <h1><code class="post-info">{{ SITENAME }}</code></h1>
-  <hr/>
-  <form action="https://gumroad.com/follow_from_embed_form" class="form gumroad-follow-form-embed input-group"
-    method="post"> <input name="seller_id" type="hidden" value="8780358448474"> <input class="form-control" name="email"
-      placeholder="you@example.com" type="email"> <button class="btn btn-primary" data-custom-highlight-color=""
-      type="submit">Subscribe</button>
-  </form>
-  <hr/>
-  {% for article in articles %}
-    {% if article.blog == "notes" %}
-   <h5><a href="/{{ article.blog }}/{{ article.slug }}.html">{{ article.title|safe }}</a> | <code class="post-info">{{ article.date.strftime('%B %Y') }}</code></h5>
-    {% else %}
-    <h3><a href="/{{ article.blog }}/{{ article.slug }}.html">{{ article.title|safe }}</a></h3>
-   <code class="post-info">| First Posted <b>{{ article.date.strftime('%d %B %Y') }}</b> | Last Edited <b>{{ article.modified.strftime('%d %B %Y') }}</b> |{% for author in article.authors %} {{ author }} |{% endfor %}</code>
-   <div class="article-summary">
-   {{ article.summary|safe }}
-   </div>
-   {% endif %}
-   <hr/>
-  {% else %}
-   No posts yet!
-  {% endfor %}
- </div>
-<div class="col-md-2">
-  <br>
-  <br />
-  <div class="img-fluid">
-    <a class="book-container" href="/wfsd?source=sidebar">
-      <div class="book">
-        <img alt="Writing for Software Developers" src="/assets/img/wfsd.jpg" />
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-8 offset-md-2">
+      <br />
+      <h1><code class="post-info">{{ SITENAME }}</code></h1>
+      <hr />
+      <form action="https://gumroad.com/follow_from_embed_form" class="form gumroad-follow-form-embed input-group"
+        method="post"> <input name="seller_id" type="hidden" value="8780358448474"> <input class="form-control"
+          name="email" placeholder="you@example.com" type="email"> <button class="btn btn-primary"
+          data-custom-highlight-color="" type="submit">Subscribe</button>
+      </form>
+      <hr />
+      {% for article in articles %}
+      {% if article.blog == "notes" %}
+      <h5><a href="/{{ article.blog }}/{{ article.slug }}.html">{{ article.title|safe }}</a> | <code
+          class="post-info">{{ article.date.strftime('%B %Y') }}</code></h5>
+      {% else %}
+      <h3><a href="/{{ article.blog }}/{{ article.slug }}.html">{{ article.title|safe }}</a></h3>
+      <code
+        class="post-info">| First Posted <b>{{ article.date.strftime('%d %B %Y') }}</b> | Last Edited <b>{{ article.modified.strftime('%d %B %Y') }}</b> |{% for author in article.authors %} {{ author }} |{% endfor %}</code>
+      <div class="article-summary">
+        {{ article.summary|safe }}
       </div>
-    </a>
+      {% endif %}
+      <hr />
+      {% else %}
+      No posts yet!
+      {% endfor %}
+    </div>
+    <div class="col-md-2">
+      <br>
+      <br />
+      <div class="img-fluid">
+        <a class="book-container" href="/wfsd?source=sidebar">
+          <div class="book">
+            <img alt="Writing for Software Developers" src="/assets/img/wfsd.jpg" />
+          </div>
+        </a>
+      </div>
+      <br>
+      <br />
+    </div>
   </div>
-  <br>
-  <br />
-</div>
- </div>
+  </div>
 </div>
 {% endblock %}
