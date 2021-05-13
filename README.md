@@ -11,7 +11,7 @@ Requires Python 3.7+ and a virtual environment.
 ### First Install
 
 ```
-git clone $THIS_REPO
+git clone git@github.com:philipkiely/philipkiely.com.git
 cd philipkiely.com
 mkvirtualenv philipkiely.com
 pip install -r requirements.txt
@@ -42,7 +42,25 @@ If you need a new branch (make new branches from main):
 git checkout -b my_branch
 ```
 
-### Create a PR & Site Preview
+From there, stay on your branch as you work.
+
+Make a commit:
+
+```
+git add .
+git commit -m "your commit message here (short but descriptive)"
+git push origin my_branch
+```
+
+### Create a Pull Request (PR)
+
+1. Go to [https://github.com/philipkiely/philipkiely.com](https://github.com/philipkiely/philipkiely.com).
+2. Click on the "pull request" tab and then the "new pull request" button
+3. Choose your branch to compare
+4. Make the PR
+5. Give it a title and description.
+
+### Merge the Site
 
 Write descriptive commits and pull requests.
 
