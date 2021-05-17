@@ -34,3 +34,7 @@
 [[redirects]]
   from = "/cefip/2e"
   to = "/cefip"
+
+[[redirects]]
+  from = "/company"
+  to = "https://pkandc.com/"

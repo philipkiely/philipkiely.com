@@ -6,7 +6,6 @@ import signal
 import subprocess
 import sys
 import time
-import webbrowser
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
@@ -260,8 +259,7 @@ if __name__ == "__main__":
         src_watcher = Watcher(".", PKHandler())
         build_site(prod=False)
         server_proc = subprocess.Popen(
-            ["python", "-m", "http.server", "--directory", "dist"])
-        webbrowser.open("http://127.0.0.1:8000")
+            ["netlify", "dev"])
         src_watcher.run()
         if server_proc.pid:
             os.kill(server_proc.pid, signal.SIGTERM)
