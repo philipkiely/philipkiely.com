@@ -1,0 +1,31 @@
+@use "pkc";
+
+.btn-opt {
+    background-color: pkc.$brass-4 !important;
+    border-color: pkc.$blue-1 !important;
+    color: white !important;
+    font-family: monospace;
+}
+
+.btn-opt:hover {
+    background-color: pkc.$blue-1 !important;
+    color: black !important
+}
+
+.card-header {
+    background-color: pkc.$brass-1 !important;
+}
+
+.card .nav-link {
+    color: pkc.$blue-3 !important;
+    cursor: pointer !important;
+}
+
+.btn-active {
+    background-color: pkc.$blue-1 !important;
+    color: pkc.$blue-4 !important
+}
+
+.small {
+    color: pkc.$grey-4;
+}

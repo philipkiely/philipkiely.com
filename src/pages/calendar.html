@@ -1,27 +1,326 @@
 {% extends "base.html" %}
 
-{% block title %}Dear Developers{% endblock %}
+{% block title %}Philip Kiely's Calendar{% endblock %}
+
+{% block twitter %}
+<meta name="twitter:title" content="Philip Kiely's Calendar">
+<meta name="twitter:description" content="Book some of my time.">
+<meta name="twitter:image" content="https://philipkiely.com/assets/img/philip_thumbnail_general.png" />
+{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="/assets/css/calendar.css" type="text/css">
+<script src="/assets/js/calendar.js"></script>
+{% endblock %}
 
 {% block content %}
-<div class="container">
+<div class="container-fluid bg-brass-1">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <h1 class="py-4">Let's Talk!</h1>
+                <h3>You want to talk to me. Awesome! I want to talk to you too.</h3>
+                <br>
+                <p>I'm incredibly lucky to be able to speak with many different people for many different reasons, so I made this page to make it easy for you to schedule exactly what you need without a long back-and-forth conversation.</p>
+                <p>If we talk often, one of the <b>Quick Links</b> is probably for you. Otherwise, use the <b>Meeting Selector</b> to reserve the best time for you.</p>
+                <p>For paid consulting slots, you will be able to enter payment via credit card during the booking process.</p>
+                <p>If I haven't made it possible to get what you want using this page, please email me at <a href="mailto:philip@kiely.xyz">philip@kiely.xyz</a> and I'll set you up with something custom (and fix this page).</p>
+            </div>
+            <div class="col-12 col-lg-4 d-none d-lg-block">
+                <img class="img-fluid" src="/assets/img/pk_computer_yellow.png">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-grey-1">
+    <div class="container py-4">
+            <div class="col-12 col-xl-4 offset-lg-2 col-lg-6">
+                <h3>Quick Links</h3>
+                <br>
+                <div class="d-grid gap-2">
+                    <a href="https://calendly.com/philipkiely/pk-c-work-session" target="_blank" role="button" class="btn btn-primary btn-lg btn-opt">PK&C Employees & Partners</a>
+                    <a href="https://calendly.com/philipkiely/friendship-card" target="_blank" role="button" class="btn btn-primary btn-lg btn-opt">Friends & Family / Social</a>
+                </div>
+            </div>
+        </div>
+</div>
+<div class="container my-4">
     <div class="row">
-        <div class="col-12">
-            <br>
-            <h1><code class="primary-accent-text">Calendar</code></h1>
-            <p>
-                This page is for booking time to talk with me. Please only use it if we have agreed to talk over email or
-                DM, it is for scheduling purposes only.
-            </p>
-            <p>
-                If you want a consulting call, you can book one <a
-                    href="https://calendly.com/philipkiely/consulting-50m">here</a> (accepts credit cards through Stripe).
-            </p>
-            <!-- Calendly inline widget begin -->
-            <div class="calendly-inline-widget" data-url="https://calendly.com/philipkiely?primary_color=630000"
-                style="min-width:320px;height:930px;"></div>
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
-            <!-- Calendly inline widget end -->
-            <br>
+        <div class="container py-4">
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <h1 class="my-2">Meeting Selector</h1>
+                <div class="card my-5">
+                    <div class="card-header">
+                        <ul class="nav nav-pills card-header-pills my-2">
+                            <li class="nav-item">
+                                <a id="n-client" class="nav-link active btn-active" onclick="navToggle('client')">PK&C Clients</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="n-student" class="nav-link" onclick="navToggle('student')">Students</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="n-indie" class="nav-link" onclick="navToggle('indie')">Indie Creators</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="n-pro" class="nav-link" onclick="navToggle('pro')">Professionals</a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <!--client-->
+                        <ul id="sn-client" class="nav nav-tabs card-header-tabs mt-2">
+                            <li class="nav-item">
+                                <a id="sn-client-intro" class="nav-link active" aria-current="true" onclick="subNavToggle('client-intro')">Intro</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="sn-client-check" class="nav-link" onclick="subNavToggle('client-check')">Check-In</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="sn-client-work" class="nav-link" onclick="subNavToggle('client-work')">Work Session</a>
+                            </li>
+                        </ul>
+                        <!--student-->
+                        <ul id="sn-student" class="nav nav-tabs card-header-tabs mt-2" hidden>
+                            <li class="nav-item">
+                                <a id="sn-student-resume" class="nav-link active" aria-current="true" onclick="subNavToggle('student-resume')">Resume Review</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="sn-student-project" class="nav-link" onclick="subNavToggle('student-project')">Project Review</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="sn-student-qa" class="nav-link" onclick="subNavToggle('student-qa')">Q&A Walk</a>
+                            </li>
+                        </ul>
+                        <!--indie-->
+                        <ul id="sn-indie" class="nav nav-tabs card-header-tabs mt-2" hidden>
+                            <li class="nav-item">
+                                <a id="sn-indie-intro" class="nav-link active" aria-current="true" onclick="subNavToggle('indie-intro')">Intro</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="sn-indie-consult" class="nav-link" onclick="subNavToggle('indie-consult')">Consultation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="sn-indie-work" class="nav-link" onclick="subNavToggle('indie-work')">Work Session</a>
+                            </li>
+                        </ul>
+                        <!--pro-->
+                        <ul id="sn-pro" class="nav nav-tabs card-header-tabs mt-2" hidden>
+                            <li class="nav-item">
+                                <a id="sn-pro-intro" class="nav-link active" aria-current="true" onclick="subNavToggle('client-intro')">Intro</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="sn-pro-consult" class="nav-link" onclick="subNavToggle('pro-consult')">Consultation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="sn-pro-group" class="nav-link" onclick="subNavToggle('pro-group')">Group Session</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--client-intro-->
+                    <div class="card-body my-3" id="client-intro">
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title mb-0">New Client Introduction</h5>
+                                <p class="mb-3"><small>25 Min | Free | Video Call</small></p>
+                                <p class="card-text">If you earn money by putting words on the internet, PK&C wants to help you publish your best work every time. In a free, zero-commitment consultation, we'll discuss your work and our services.</p>
+                                <p class="card-text">For more information, see <a href="https://pkandc.com" target="_blank">https://pkandc.com</a>.</p>
+                            </div>
+                            <div class="col-3">
+                                <div class="d-grid gap-2">
+                                    <a href="https://calendly.com/philipkiely/pk-c-introduction" target="_blank" class="btn btn-primary btn-lg btn-opt">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--client-check-->
+                    <div class="card-body my-3" id="client-check" hidden>
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title mb-0">Project Check-In</h5>
+                                <p class="mb-3"><small>25 Min | Contract | Video Call</small></p>
+                                <p class="card-text">If you are an existing PK&C client and you would like to call to discuss an ongoing project or new idea, use this link to book an efficient check-in.</p>
+                            </div>
+                            <div class="col-3">
+                                <div class="d-grid gap-2">
+                                    <a href="https://calendly.com/philipkiely/pk-c-client-check-in" target="_blank"
+                                        class="btn btn-primary btn-lg btn-opt">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--client-work-->
+                    <div class="card-body my-3" id="client-work" hidden>
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title mb-0">Synchronous Work Session</h5>
+                                <p class="mb-3"><small>50 / 110 Min | Contract | Video Call</small></p>
+                                <p class="card-text">If you are an existing PK&C client and you would like to work together on copy, code, content, or something else, book a one- or two-hour chunk of my best work time to get it done together.</p>
+                            </div>
+                            <div class="col-3">
+                                <div class="d-grid gap-2">
+                                    <a href="https://calendly.com/philipkiely/pk-c-client-work-session-50" target="_blank"
+                                        class="btn btn-primary btn-lg btn-opt">Book Now (50)</a>
+                                    <a href="https://calendly.com/philipkiely/pk-c-client-work-session-110" target="_blank"
+                                        class="btn btn-primary btn-lg btn-opt">Book Now (110)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--student-resume-->
+                    <div class="card-body my-3" id="student-resume" hidden>
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title mb-0">Resume Review</h5>
+                                <p class="mb-3"><small>25 Min | Free | Video Call</small></p>
+                                <p class="card-text">If you are a current/recently graduated high school or college student and would like someone to read your resume and talk about your job or internship, book one of these limited free slots.</p>
+                            </div>
+                            <div class="col-3">
+                                <div class="d-grid gap-2">
+                                    <a href="https://calendly.com/philipkiely/student-resume" target="_blank"
+                                        class="btn btn-primary btn-lg btn-opt">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--student-project-->
+                    <div class="card-body my-3" id="student-project" hidden>
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title mb-0">Project Review</h5>
+                                <p class="mb-3"><small>25 Min | Free | Video Call</small></p>
+                                <p class="card-text">If you are a current/recently graduated high school or college student and would like someone to take a look at a project you're working on and give feedback, book one of these limited free slots.</p>
+                            </div>
+                            <div class="col-3">
+                                <div class="d-grid gap-2">
+                                    <a href="https://calendly.com/philipkiely/student-project" target="_blank"
+                                        class="btn btn-primary btn-lg btn-opt">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--student-qa-->
+                    <div class="card-body my-3" id="student-qa" hidden>
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title mb-0">Q&A Session</h5>
+                                <p class="mb-3"><small>50 Min | Free | Phone Call</small></p>
+                                <p class="card-text">If you are a current/recently graduated high school or college student and would like someone to talk to about software development, the creator economy, or anything else I do, book a slot and I'll call you when I'm out walking for a relaxed chat.</p>
+                            </div>
+                            <div class="col-3">
+                                <div class="d-grid gap-2">
+                                    <a href="https://calendly.com/philipkiely/student-qa" target="_blank"
+                                        class="btn btn-primary btn-lg btn-opt">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--indie-intro-->
+                    <div class="card-body my-3" id="indie-intro" hidden>
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title mb-0">Meet a Fellow Creator</h5>
+                                <p class="mb-3"><small>25 Min | Free | Phone Call</small></p>
+                                <p class="card-text">I love meeting other people in the creator economy. Join me for a quick slice of our days and we'll get to know one another.</p>
+                            </div>
+                            <div class="col-3">
+                                <div class="d-grid gap-2">
+                                    <a href="https://calendly.com/philipkiely/meet-creator" target="_blank"
+                                        class="btn btn-primary btn-lg btn-opt">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--indie-consult-->
+                    <div class="card-body my-3" id="indie-consult" hidden>
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title mb-0">Creator Consultation</h5>
+                                <p class="mb-3"><small>50 Min | $100 | Video Call</small></p>
+                                <p class="card-text">I have helped creators with everything from pricing and packaging to refining new product ideas to unravelling sticky situations, all with a focus on maximizing their revenues while delighting their audiences. Give me your toughest problem and I'll give you direction and resources for resolving it.</p>
+                            </div>
+                            <div class="col-3">
+                                <div class="d-grid gap-2">
+                                    <a href="https://calendly.com/philipkiely/creator-consultation" target="_blank"
+                                        class="btn btn-primary btn-lg btn-opt">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--indie-work-->
+                    <div class="card-body my-3" id="indie-work" hidden>
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title mb-0">Creator Work Session</h5>
+                                <p class="mb-3"><small>110 Min | $150 | Video Call</small></p>
+                                <p class="card-text">If you want to pair on your work, anything from code to copy to content, book a slot of your desired length and let me know what we'll be working on so I can come prepared.</p>
+                            </div>
+                            <div class="col-3">
+                                <div class="d-grid gap-2">
+                                    <a href="https://calendly.com/philipkiely/creator-work-session" target="_blank"
+                                        class="btn btn-primary btn-lg btn-opt">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--pro-intro-->
+                    <div class="card-body my-3" id="pro-intro" hidden>
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title mb-0">"Grab Coffee" or Something</h5>
+                                <p class="mb-3"><small>25 Min | Free | Phone Call</small></p>
+                                <p class="card-text">Chance encounters with new people have led to some of the most interesting experiences in my life. Join me for a quick slice of our days and we'll get to know one another.</p>
+                            </div>
+                            <div class="col-3">
+                                <div class="d-grid gap-2">
+                                    <a href="https://calendly.com/philipkiely/grab-coffee-or-something" target="_blank"
+                                        class="btn btn-primary btn-lg btn-opt">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--pro-consult-->
+                    <div class="card-body my-3" id="pro-consult" hidden>
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title mb-0">Business Consultation</h5>
+                                <p class="mb-3"><small>50 Min | $200 | Video Call</small></p>
+                                <p class="card-text">Let me apply robust, efficient creator economy principles to your business's content marketing, technical audience development, or other intersections of people and product.</p>
+                            </div>
+                            <div class="col-3">
+                                <div class="d-grid gap-2">
+                                    <a href="https://calendly.com/philipkiely/business-consultation" target="_blank"
+                                        class="btn btn-primary btn-lg btn-opt">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--pro-group-->
+                    <div class="card-body my-3" id="pro-group" hidden>
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title mb-0">Business Group Session</h5>
+                                <p class="mb-3"><small>50 Min | $400 | Video Conference</small></p>
+                                <p class="card-text">I run engaging, interactive educational sessions for groups of 5-25 technical or non-technical members of your business or community. We can discuss topics by email before you book.</p>
+                            </div>
+                            <div class="col-3">
+                                <div class="d-grid gap-2">
+                                    <a href="https://calendly.com/philipkiely/business-group-session" target="_blank"
+                                        class="btn btn-primary btn-lg btn-opt">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-4">
+                    <h3>Notes:</h3>
+                    <ul>
+                        <li>Events have a 5- or 10-minute buffer period built in to the end so that I have transition time.</li>
+                        <li>A phone call means I might be out walking or similar and is available over cell, WhatsApp, and Signal.</li>
+                        <li>A video call means that I am at my computer and can screen share and look at things. I default to Google Meet but will be happy to join your Zoom or other service.</li>
+                        <li>If we are in the same city, any meeting can be conducted in person with advance notice.</li>
+                        <li>Prices for paid consultations include prep time. Prices listed as "contract" means the time is covered separately.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>
