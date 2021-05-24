@@ -259,7 +259,7 @@ if __name__ == "__main__":
         src_watcher = Watcher(".", PKHandler())
         build_site(prod=False)
         server_proc = subprocess.Popen(
-            ["netlify", "dev"])
+            ["npx", "netlify", "dev"])
         src_watcher.run()
         if server_proc.pid:
             os.kill(server_proc.pid, signal.SIGTERM)

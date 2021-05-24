@@ -32,7 +32,7 @@ window.onload = function () {
         togglePhoto("Cropped")
     });
     document.getElementById("photo-toggle-2").addEventListener("click", function () {
-        togglePhoto("Painted")
+        togglePhoto("BW")
     });
     document.getElementById("photo-toggle-3").addEventListener("click", function () {
         togglePhoto("Drawn")

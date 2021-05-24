@@ -12,6 +12,7 @@
     "bootstrap": "^5.0.0-beta3",
     "browserify": "^17.0.0",
     "hero-patterns-scss": "^1.1.0",
+    "netlify-cli": "^3.30.4",
     "sass": "^1.32.12",
     "tinyify": "^3.0.0"
   }
