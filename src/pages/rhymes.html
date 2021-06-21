@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block title %}Philip Kiely's Calendar{% endblock %}
+
+{% block twitter %}
+<meta name="twitter:title" content="Sonnet Remix">
+<meta name="twitter:description" content="A rules-based poetry generator.">
+<meta name="twitter:image" content="https://philipkiely.com/assets/img/philip_thumbnail_general.png" />
+{% endblock %}
+
+{% block head %}
+<script src="https://cdn.jsdelivr.net/npm/underscore@1.13.1/underscore-umd-min.js"></script>
+<link rel="stylesheet" href="/assets/css/rhymes.css" type="text/css">
+<script src="/assets/js/rhymes.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid bg-brass-1">
+    <div class="container pt-4">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <h1 class="py-4">Poetry Remix!</h1>
+                <h3>Mode</h3>
+                <br>
+                <div class="d-grid gap-2">
+                    <a id="btn-full-sonnet" href="#" role="button" class="btn btn-primary btn-opt">Full Sonnet</a>
+                    <a id="btn-single-word" href="#" role="button" class="btn btn-primary btn-opt">Single Word</a>
+                    <a id="btn-net-sample" href="#" role="button" class="btn btn-primary btn-opt">"Net" Sample</a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 d-none d-lg-block">
+                <img class="img-fluid" src="/assets/img/pages/rhymes/shakespeareseated.png">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-grey-1">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-12 col-lg-9">
+                <a id="btn-generate-sonnet" onclick="writeSonnet();" href="#" role="button" class="btn btn-primary btn-opt">Generate a Sonnet</a>
+                <div id="sonnet">
+
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 d-none d-lg-block">
+                WfSD ad goes here
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container py-4">
+    <div class="row">
+        <div class="col-12">
+            <h3>About Shakespearean Rhymes</h3>
+            <h4>Rhyme a word</h4>
+            <p>This program, when given one of over 1,000 unique words, returns a line of iambic pentameter that rhymes with the
+                given word. The program uses all 152 of Shakespeare's complete sonnets to generate these lines, as sonnets have
+                a strict meter and rhyme scheme. The sonnets, as part of the public domain, are available at <a
+                    href="https://www.opensourceshakespeare.org/views/sonnets/sonnets.php"
+                    class="black-text">opensourceshakespeare.org</a>.</p>
+            <p>The program has two arrays that hold the data: "sonnets" and "end_rhymes". The "sonnets" array holds each sonnet
+                as an array of fourteen strings, while the "end_rhymes" array holds the last word of each line of each sonnet.
+                First, the program takes the given word and runs it through the "end_rhymes" array to find the index of the
+                word. This is the same index as the corresponding sonnet in the "sonnets" array. From there, the program uses a
+                series of loops to determine the correct line to rhyme with, given the sonnet's strictly defined rhyme scheme.
+                It proudly displays this rhyming line.</p>
+            <h4>Create a sonnet</h4>
+            <p>Using the same data as the word-rhyming program, this program generates an entire sonnet by combining existing
+                lines of Shakespeare's poetry. Using the rhyming line program, it creates poems where the lines that rhyme are
+                not necessarily from the same poem.</p>
+            <p>The program takes seven random words from the "end_rhymes" array and matches rhyming lines. It then matches the
+                last word of each of these lines to generate a second list of seven lines. It combines these lists into the
+                structure of a sonnet to complete the poem.</p>
+            <h4>Create a "net"</h4>
+            <p>Enter a number (sonnets numbered in accordance with Folger Shakespeare's Sonnets and Poems) to create a
+                randomized "net" of a few words (usually between 3 to 7) from that sonnet.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
