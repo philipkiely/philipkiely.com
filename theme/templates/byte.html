@@ -4,8 +4,8 @@
 
 {% block twitter %}
 <meta name="og:image" content="https://philipkiely.com/assets/img/philip_thumbnail_general.png" />
-<meta name="twitter:title" content='{{ article.title }}'>
-<meta name="twitter:description" content='{{ article.summary }}'>
+<meta name="twitter:title" content='Bytes: {{ article.title }}'>
+<meta name="twitter:description" content='{{ article.content|truncate(280) }}'>
 {% endblock %}
 
 {% block head %}
