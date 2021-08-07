@@ -71,9 +71,38 @@ def build_index(blog, articles):
         articles=articles
     )
 
+def build_bytes():
+    os.makedirs(os.path.dirname("dist/bytes/"), exist_ok=True)
+    posts = ls("src/blogs/bytes")
+    articles = []
+    for post in posts:
+        f = open("src/blogs/bytes/" + post, "r")
+        contents = f.read()
+        f.close()
+        meta = contents.split("\n\n")[0].split("\n")
+        parsed = {}
+        parsed["title"] = meta[0].split(": ")[1]
+        parsed["date"] = datetime.datetime.strptime(
+            meta[1].split(": ")[1], "%Y-%m-%d")
+        parsed["slug"] = meta[2].split(": ")[1]
+        parsed["content"] = markdown.markdown("\n\n".join(
+            contents.split("\n\n")[1:]), extensions=['extra', 'codehilite'])
+        articles.append(parsed)
+    articles.sort(key=lambda x: x["date"], reverse=True)
+    generate_page(
+        "bytes_index.html",
+        "bytes/index",
+        articles=articles
+    )
+    for article in articles:
+        generate_page(
+            "byte.html",
+            "bytes/" + article["slug"],
+            article=article
+        )
 
 def blogs():
-    blogs = ls("src/blogs")
+    blogs = ["essays", "notes", "code"]
     for blog in blogs:
         os.makedirs(os.path.dirname("dist/" + blog + "/"), exist_ok=True)
         posts = ls("src/blogs/" + blog)
@@ -84,6 +113,7 @@ def blogs():
         build_index(blog, articles)
         for article in articles:
             build_article(blog, article)
+    build_bytes()
     print("Blogs built")
 
 ################

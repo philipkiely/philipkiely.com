@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Essays | philipkiely.com{% endblock %}
+
+{% block twitter %}
+<meta name="twitter:image" content="https://philipkiely.com/assets/img/philip_thumbnail_general.png" />
+<meta name="twitter:title" content="Bytes">
+<meta name="twitter:description" content="Observations in 256 words or fewer">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-8 offset-md-2">
+            <br />
+            <h1><code class="post-info">Bytes</code></h1>
+            <hr />
+            <form action="https://gumroad.com/follow_from_embed_form" class="form gumroad-follow-form-embed input-group"
+                method="post"> <input name="seller_id" type="hidden" value="8780358448474"> <input class="form-control"
+                    name="email" placeholder="you@example.com" type="email"> <button class="btn btn-primary"
+                    data-custom-highlight-color="" type="submit">Subscribe</button>
+            </form>
+            <hr />
+            {% for article in articles %}
+            <h3><a href="/bytes/{{ article.slug }}.html">{{ article.title|safe }}</a></h3>
+            <div class="article-summary">
+                {{ article.content|safe }}
+            </div>
+            <hr />
+            {% else %}
+            No posts yet!
+            {% endfor %}
+        </div>
+        <div class="col-md-2">
+            <br>
+            <br />
+            <div class="img-fluid">
+                <a class="book-container" href="/wfsd?source=sidebar">
+                    <div class="book">
+                        <img alt="Writing for Software Developers" src="/assets/img/wfsd.jpg" />
+                    </div>
+                </a>
+            </div>
+            <br>
+            <br />
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
