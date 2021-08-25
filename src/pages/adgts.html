@@ -1,0 +1,568 @@
+{% extends "base.html" %}
+
+{% block title %}A Dangerous Guide to Security{% endblock %}
+
+{% block twitter %}
+<meta name="twitter:title" content="A Dangerous Guide to Security">
+<meta name="twitter:description" content="A programmer's guide to crafting and publishing technical content">
+<meta name="twitter:image" content="https://philipkiely.com/assets/img/adgts_twitter_thumbnail.png" />
+{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="/assets/css/adgts.css" type="text/css">
+<script src="/assets/js/adgts.js"></script>
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+    <!--Intro-->
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <div class="p-5">
+                <img class="img-fluid shadow-lg" src="/assets/img/pages/adgts/cover_1.png" alt="A Dangerous Guide to Security">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h1 class="primary-accent-text">A Dangerous Guide to Security</h1>
+            <p>In my first year of writing technical content, I reached hundreds of thousands of readers around the
+                world,
+                met some of my role models, and made thousands of dollars. <i>A Dangerous Guide to Security</i> will
+                help
+                you on your way to doing the same.</p>
+            <br>
+            <h5>Earn money, make connections, and get noticed.</h5>
+            <p>I earn $250 to $500 per article when writing tutorials — and with a few projects, that money adds up. But
+                money isn't the only reason to write. A portfolio of published writing can give you a leg up toward
+                earning
+                a raise, landing a new job, or reaching new clients or customers.</p>
+            <br>
+            <h5>Practice a proven writing method.</h5>
+            <p><i>A Dangerous Guide to Security</i> outlines my own method for writing and developing technical
+                articles
+                that will earn you money and look great in a portfolio. By following the principles in this book, you
+                will
+                become a better writer — and practicing quality techniques like these will speed up your rate of
+                improvement.</p>
+            <br>
+            <h5>Level up your skills, wherever you use them.</h5>
+            <p><i>A Dangerous Guide to Security</i> focuses on teaching you how to envision, create, and publish
+                mid-length
+                technical tutorials and articles, but the principles and practices you’ll develop will help you write
+                anything from a short README to an entire technical book. And regardless of why you write, this guide
+                aims
+                to provide you with the techniques you will need to reach your goals.</p>
+            <br>
+        </div>
+    </div>
+</div>
+<div class="container-fluid cta-section">
+    <!--CTA 1-->
+    <br>
+    <br>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6 text-center">
+                <div class="card my-3">
+                    <div class="card-body">
+                        <h2 class="primary-accent-text">Get A Dangerous Guide to Security Today!</h2>
+                        <br>
+                        <p class="text-monospace">Full Volume: <b><span class="price-text">$24</span></b> | Single Issue: <span class="price-text">$8 each</span></p>
+                        <br>
+                        <p>You will be redirected to Gumroad to complete your purchase.</p>
+                        <p>Without Amazon, I retain ~96% of your purchase after fees (versus <a
+                                href="https://kdp.amazon.com/en_US/help/topic/G200644210">35% with Amazon</a>), which
+                            allows me to pay my rent and operate my business.</p>
+                        <p>Thank you for your support!</p>
+                        <br>
+                    </div>
+                    <a class="card-footer btn btn-lg btn-success" href="https://gum.co/uZPZU">Buy Now</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <a href="https://twitter.com/JoshWComeau/status/1264282647834046465"><img
+                        src="/assets/img/pages/adgts/twitter_josh_comeau.jpg" class="img-fluid my-3"
+                        alt="Tweet: Josh Comeau"></a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+<!--INTERVIEW SECTION TODO: Popups or own pages-->
+<div class="container">
+    <br>
+    <br>
+    <div class="row">
+        <h1 class="primary-accent-text">Issues</h1>
+    </div>
+    <br>
+    <div class="row py-2">
+        <div class="col-sm-3 col-md-2">
+            <img class="img-fluid" src="/assets/img/pages/adgts/cover_1.png" alt="Issue 1 Cover">
+        </div>
+        <div class="col-sm-7 col-md-8">
+            <h3>Issue 1: Thinking about Security</h3>
+            <h5>Sponsored by <a href="https://usefathom.com/ref/XBSEVY">Fathom Analytics</a></h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quibusdam rem hic minima, aspernatur autem similique delectus consequatur nulla dolorem libero tempore voluptatibus iste voluptatem eaque mollitia expedita modi doloribus!</p>
+            <p>In this issue:</p>
+            <div class="row">
+                <div class="col-6">
+                    <ul>
+                        <li>Your Security Mindset</li>
+                        <li>Threat Modeling and Attack Surface</li>
+                        <li>The Law of the Land</li>
+                        <li>Regulation: Lawsuits and Fines</li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li>Your Security Policy</li>
+                        <li>A Practice, Not an Achievement</li>
+                        <li>Kerckhoffs' Principle</li>
+                        <li>Points of Failure</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-2">
+            <div class="d-grid gap-2">
+                <a href="/adgts/1" class="btn btn-lg btn-outline-primary">Buy Issue</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row py-2">
+        <div class="col-sm-3 col-md-2">
+            <img class="img-fluid" src="/assets/img/pages/adgts/cover_2.png" alt="Issue 2 Cover">
+        </div>
+        <div class="col-sm-7 col-md-8">
+            <h3>Issue 2: Human-Focused Security</h3>
+            <h5>Sponsored by <a href="mailto:philip@kiely.xyz?subject=Sponsor%20A%20Dangerous%20Guide">your company here!</a></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quis animi accusamus distinctio velit modi,
+                tempora ut? Consequuntur perferendis enim et magni id. Quis libero quo dolores, ex voluptas illum.</p>
+        </div>
+        <div class="col-2">
+            <div class="d-grid gap-2">
+                <a href="/adgts/2" class="btn btn-lg btn-outline-primary disabled">Coming Soon</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row py-2">
+        <div class="col-sm-3 col-md-2">
+            <img class="img-fluid" src="/assets/img/pages/adgts/cover_soon.png" alt="Cover Coming Soon">
+        </div>
+        <div class="col-sm-7 col-md-8">
+            <h3>Issue 3: Access Control and Secret Management</h3>
+            <h5>Sponsored by <a href="mailto:philip@kiely.xyz?subject=Sponsor%20A%20Dangerous%20Guide">your company
+                    here!</a></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quis animi accusamus distinctio velit modi,
+                tempora ut? Consequuntur perferendis enim et magni id. Quis libero quo dolores, ex voluptas illum.</p>
+        </div>
+        <div class="col-2">
+            <div class="d-grid gap-2">
+                <a href="/adgts/3" class="btn btn-lg btn-outline-primary disabled">Coming Soonish</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row py-2">
+        <div class="col-sm-3 col-md-2">
+            <img class="img-fluid" src="/assets/img/pages/adgts/cover_soon.png" alt="Cover Coming Soon">
+        </div>
+        <div class="col-sm-7 col-md-8">
+            <h3>Issue 4: Authentication</h3>
+            <h5>Sponsored by <a href="mailto:philip@kiely.xyz?subject=Sponsor%20A%20Dangerous%20Guide">your company
+                    here!</a></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quis animi accusamus distinctio velit modi,
+                tempora ut? Consequuntur perferendis enim et magni id. Quis libero quo dolores, ex voluptas illum.</p>
+        </div>
+        <div class="col-2">
+            <div class="d-grid gap-2">
+                <a href="/adgts/4" class="btn btn-lg btn-outline-primary disabled">Coming Kinda Soon</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row py-2">
+        <div class="col-sm-3 col-md-2">
+            <img class="img-fluid" src="/assets/img/pages/adgts/cover_soon.png" alt="Cover Coming Soon">
+        </div>
+        <div class="col-sm-7 col-md-8">
+            <h3>Issue 5: Encryption in Theory</h3>
+            <h5>Sponsored by <a href="mailto:philip@kiely.xyz?subject=Sponsor%20A%20Dangerous%20Guide">your company
+                    here!</a></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quis animi accusamus distinctio velit modi,
+                tempora ut? Consequuntur perferendis enim et magni id. Quis libero quo dolores, ex voluptas illum.</p>
+        </div>
+        <div class="col-2">
+            <div class="d-grid gap-2">
+                <a href="/adgts/5" class="btn btn-lg btn-outline-primary disabled">Coming Less Soon</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row py-2">
+        <div class="col-sm-3 col-md-2">
+            <img class="img-fluid" src="/assets/img/pages/adgts/cover_soon.png" alt="Cover Coming Soon">
+        </div>
+        <div class="col-sm-7 col-md-8">
+            <h3>Issue 6: Applied Encryption</h3>
+            <h5>Sponsored by <a href="mailto:philip@kiely.xyz?subject=Sponsor%20A%20Dangerous%20Guide">your company
+                    here!</a></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quis animi accusamus distinctio velit modi,
+                tempora ut? Consequuntur perferendis enim et magni id. Quis libero quo dolores, ex voluptas illum.</p>
+        </div>
+        <div class="col-2">
+            <div class="d-grid gap-2">
+                <a href="/adgts/6" class="btn btn-lg btn-outline-primary disabled">Coming Sometime</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row py-2">
+        <div class="col-sm-3 col-md-2">
+            <img class="img-fluid" src="/assets/img/pages/adgts/cover_soon.png" alt="Cover Coming Soon">
+        </div>
+        <div class="col-sm-7 col-md-8">
+            <h3>Issue 7: The Exploits of Billy Bug</h3>
+            <h5>Sponsored by <a href="mailto:philip@kiely.xyz?subject=Sponsor%20A%20Dangerous%20Guide">your company
+                    here!</a></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quis animi accusamus distinctio velit modi,
+                tempora ut? Consequuntur perferendis enim et magni id. Quis libero quo dolores, ex voluptas illum.</p>
+        </div>
+        <div class="col-2">
+            <div class="d-grid gap-2">
+                <a href="/adgts/7" class="btn btn-lg btn-outline-primary disabled">Coming Eventually</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+<div class="container-fluid sample-section">
+    <br>
+    <br>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <h1 class="primary-accent-text">Cinematic Trailer</h1>
+                <h3>Read (Sample Size)</h3>
+                <br>
+                <div class="col-md-8 offset-md-2">
+                    <p>This chapter guides you through a process for generating article ideas and helps you
+                        determine which ideas are worth pursuing first.</p>
+                </div>
+                <br>
+                <a href="/assets/files/adgts_chapter1_sample.pdf" target="_blank" class="btn btn-primary btn-lg">READ
+                    CHAPTER 1</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+<div class="container">
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="col-12">
+    <h1 class="primary-accent-text">What's a Dangerous Guide?</h1>
+    <br>
+    <br>
+    <br>
+</div>
+<div class="main-timeline">
+    <div class="timeline">
+        <div class="icon"></div>
+        <div class="drawing-content">
+            <div class="drawing-outer">
+                <span class="drawing">
+                    <img class="img-fluid" id="timeline-img-a" src="/assets/img/pages/cefip/typewriter.png"
+                        alt="Typewriter">
+                </span>
+            </div>
+        </div>
+        <div class="timeline-content">
+            <h5 class="title">Handbook</h5>
+            <p class="description">
+                The handbook walks step-by-step through the process of deciding to write a cold email, figuring out who
+                to email, finding their contact information, writing a compelling first message, and closing the
+                conversation.
+            </p>
+        </div>
+    </div>
+    <div class="timeline">
+        <div class="icon"></div>
+        <div class="drawing-content">
+            <div class="drawing-outer">
+                <span class="drawing">
+                    <img class="img-fluid" id="timeline-img-b" src="/assets/img/pages/cefip/examples.png"
+                        alt="Examples">
+                </span>
+            </div>
+        </div>
+        <div class="timeline-content">
+            <h5 class="title">Annotated Examples</h5>
+            <p class="description">
+                Go behind the scenes of my cold email success. Each of the nine examples includes one or two emails,
+                context, and the payoff. I go through each email line-by-line to discuss why specific phrases and
+                tactics were effective.
+            </p>
+        </div>
+    </div>
+    <div class="timeline">
+        <div class="icon"></div>
+        <div class="drawing-content">
+            <div class="drawing-outer">
+                <span class="drawing">
+                    <img class="img-fluid" id="timeline-img-c" src="/assets/img/pages/cefip/cefip_vids_icons.png"
+                        alt="CEfIP Vids Icons">
+                </span>
+            </div>
+        </div>
+        <div class="timeline-content">
+            <h5 class="title">12-Part Video Course</h5>
+            <p class="description">
+                Forget hour-long slideshows with a talking head in the corner. A dozen tightly-paced videos cover a
+                single topic each in four minutes or less. Watch them all in order over lunch or reference them as
+                needed while working.
+            </p>
+        </div>
+    </div>
+    <div class="timeline">
+        <div class="icon"></div>
+        <div class="drawing-content">
+            <div class="drawing-outer">
+                <span class="drawing">
+                    <img class="img-fluid" id="timeline-img-d" src="/assets/img/pages/cefip/email_spotlight.png"
+                        alt="Email Spotlight">
+                </span>
+            </div>
+        </div>
+        <div class="timeline-content">
+            <h5 class="title">30-Day Email Workbook</h5>
+            <p class="description">
+                Develop your cold email skills with thirty days of guided exercises. Build your systems, complete
+                writing prompts, and, of course, send plenty of cold emails. Complete the workbook at your own pace or
+                over a structured month.
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="container-fluid cta-section">
+    <br>
+    <br>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6 text-center">
+                <div class="card bg-light my-3">
+                    <div class="card-body">
+                        <h2 class="primary-accent-text">Get A Dangerous Guide to Security Today!</h2>
+                        <br>
+                        <p class="text-monospace">Full Volume: <b><span class="price-text">$24</span></b> | Single Issue: <span class="price-text">$8 each</span></p>
+                        <br>
+                        <p>You will be redirected to Gumroad to complete your purchase.</p>
+                        <p>Your purchase will immediately unlock the book in PDF, EPUB, MOBI, and MP3 formats. You can
+                            read it online through your Gumroad library, download for offline reading on your preferred
+                            device, or send it to your Kindle.</p>
+                        <p>If you have any issues, you can contact me directly by replying to your Gumroad receipt
+                            email.</p>
+                        <br>
+                    </div>
+                    <a class="card-footer btn btn-lg btn-success" href="https://gum.co/uZPZU">Buy Now</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <a href="https://twitter.com/FiloSottile/status/1260345885260685312"><img
+                        src="/assets/img/pages/adgts/twitter_filippo.jpg" class="img-fluid my-3"
+                        alt="Tweet: Filippo Valsorda"></a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+<!--ATA SECTION-->
+<div class="container">
+    <div class="row pt-5 pb-1">
+        <div class="col-12">
+            <h1 class="primary-accent-text">Behind the Guides</h1>
+        </div>
+        <div class="col-md-4">
+            <div class="p-5">
+                <img class="img-fluid" src="/assets/img/pages/adgts/abt_author_DG.png" alt="Philip Kiely">
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="p-5">
+                <h5>Hi, I'm Philip Kiely</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque error quo similique accusamus consequuntur saepe obcaecati, optio sint repellendus minus iure numquam eaque tempore vero libero mollitia dicta alias temporibus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni nesciunt excepturi assumenda voluptatibus numquam aliquam! Necessitatibus repellat ex nemo iure eligendi vitae, consectetur iste, tempore natus magnam rerum nulla.</p>
+                <p>For more about me, check out <a href="/">the rest of my website</a>.
+            </div>
+        </div>
+    </div>
+    <div class="row pt-1 pb-5">
+        <div class="col-md-8">
+            <div class="p-5">
+                <h5>Hi, I'm Joel Choi</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque error quo similique accusamus consequuntur
+                    saepe obcaecati, optio sint repellendus minus iure numquam eaque tempore vero libero mollitia dicta
+                    alias temporibus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni nesciunt excepturi assumenda
+                    voluptatibus numquam aliquam! Necessitatibus repellat ex nemo iure eligendi vitae, consectetur iste,
+                    tempore natus magnam rerum nulla.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="p-5">
+                <img class="img-fluid" src="/assets/img/pages/adgts/abt_illustrator_DG.png" alt="Joel Choi">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid faq-section">
+    <!--FAQ SECTION-->
+    <br>
+    <br>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12">
+                <h1 class="primary-accent-text">Questions?</h1>
+                <br>
+            </div>
+            <div class="col-12 col-md-3">
+                <h5>Is this book useful for beginning writers?</h5>
+            </div>
+            <div class="col-12 col-md-9">
+                <p>Yes. <i>A Dangerous Guide to Security</i> takes you through my process, one step at a time, and
+                    helps you
+                    create and publish your first article.</p>
+            </div>
+            <div class="col-12">
+                <hr>
+                <br>
+            </div>
+            <div class="col-12 col-md-3">
+                <h5>Is this book useful for experienced writers?</h5>
+            </div>
+            <div class="col-12 col-md-9">
+                <p>Yes. If you have already written and published technical content, you will enjoy the nuances of the
+                    eleven
+                    expert interviews and extract key insights from the main text.</p>
+            </div>
+            <div class="col-12">
+                <hr>
+                <br>
+            </div>
+            <div class="col-12 col-md-3">
+                <h5>How much programming experience do you need to read this book?</h5>
+            </div>
+            <div class="col-12 col-md-9">
+                <p>Not as much as you might think. I started writing technical content as a junior in college, less than
+                    two
+                    years after I started programming. Many of the code examples I used in articles were based on
+                    projects that
+                    I had worked on much earlier in my journey toward becoming a software engineer.</p>
+            </div>
+            <div class="col-12">
+                <hr>
+                <br>
+            </div>
+            <div class="col-12 col-md-3">
+                <h5>Is there a paper copy for sale anywhere?</h5>
+            </div>
+            <div class="col-12 col-md-9">
+                <p>If enough people express interest, I will figure out how to make one available.</p>
+            </div>
+            <div class="col-12">
+                <hr>
+                <br>
+            </div>
+            <div class="col-12 col-md-3">
+                <h5>Is there an audiobook version?</h5>
+            </div>
+            <div class="col-12 col-md-9">
+                <p>Yes! Your purchase of <i>A Dangerous Guide to Security</i> includes an audiobook version narrated
+                    by
+                    Griffin Mareske. The audiobook is 6 hours and 35 minutes long and does not include the appendices,
+                    images,
+                    or code snippets.</p>
+            </div>
+            <div class="col-12">
+                <hr>
+                <br>
+            </div>
+            <div class="col-12 col-md-3">
+                <h5>Can I share this book with my team?</h5>
+            </div>
+            <div class="col-12 col-md-9">
+                <p>If you purchase an individual license, please respect the license terms and do not distribute any
+                    copies. If
+                    you want to share the book with your team, company, or class, please purchase a team license.
+                    Academic and
+                    nonprofit organizations can contact me for fifty percent off a team license.</p>
+            </div>
+            <div class="col-12">
+                <hr>
+                <br>
+            </div>
+            <div class="col-12 col-md-3">
+                <h5>Is there a return policy?</h5>
+            </div>
+            <div class="col-12 col-md-9">
+                <p>I have a 30-day no-questions-asked refund policy. If you don't like it, let me know and I will refund
+                    your
+                    money.</p>
+            </div>
+            <div class="col-12">
+                <hr>
+                <br>
+            </div>
+            <div class="col-12 col-md-3">
+                <h5>What if I can't afford this book?</h5>
+            </div>
+            <div class="col-12 col-md-9">
+                <p>I priced this book as I did because it teaches valuable skills in a well-compensated industry. If you
+                    are
+                    unable to afford a copy of the book, send me an email and I can give you a free copy. I only ask
+                    that once
+                    you make money using the book, you use a portion of the proceeds to purchase a copy of this book.
+                </p>
+            </div>
+            <div class="col-12">
+                <hr>
+                <br>
+            </div>
+            <div class="col-12 col-md-3">
+                <h5>What are some keywords you wish you could fit on this webpage for SEO purposes?</h5>
+            </div>
+            <div class="col-12 col-md-9">
+                <p>Wow, thanks for asking! Writing for software engineers. Writing for programmers. Writing for coders.
+                    Technical writing. How to write documentation.</p>
+            </div>
+            <div class="col-12">
+                <hr>
+                <br>
+            </div>
+            <div class="col-12 col-md-3">
+                <h5>What if I have another question?</h5>
+            </div>
+            <div class="col-12 col-md-9">
+                <p>Send me an email at <a href="mailto:philip@kiely.xyz">philip@kiely.xyz</a>.</p>
+            </div>
+            <div class="col-12">
+                <hr>
+                <br>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+{% endblock %}
