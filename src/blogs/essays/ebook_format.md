@@ -88,11 +88,37 @@ If you have footnotes in Markdown, Microsoft Word will automatically re-generate
 
 ### Images
 
-Images require the most manual formatting in Dangerous Guides because there are so many of them and they are not uniform. Do images at the end because placing them carefully helps avoid unsightly gaps where half a page is blank because of an overflowing image.
+Images require the most manual formatting in Dangerous Guides because there are so many of them and they are not uniform. Do images from the top of the document to the bottom because placing them carefully helps avoid unsightly gaps where half a page is blank because of an overflowing image.
+
+Every image is already in the document but they are probably the wrong size after all of the document-level formatting. For full-width images, just adjust the width by right-clicking on it and selecting "Size and Position." Set its width to 4.83 inches. If the resultant length is about as long as a page or longer, it will be replaced with a full-width version in stage 3, so just put it in an otherwise empty page using page breaks.
+
+![](/assets/img/blogs/essays/ebook_format/full_image_size.png)
+
+Inline images are a little trickier. First you want to set the size as appropriate (using the same panel) and configure text wrap:
+
+![](/assets/img/blogs/essays/ebook_format/inline_image_wrap.png)
+
+Then, position it with the position tab so it is in the desired place on the page and is right up against a margin without overflowing into it.
+
+![](/assets/img/blogs/essays/ebook_format/inline_image_position.png)
+
+Images are where the most personal preference and approximation comes into play. Full-width images might have to shrink by a quarter-inch to fit in a page, or inline images might need an off-line position to mesh appropriately with a bulleted list. Use your design eye and best judgement.
 
 ### Table of Contents
 
+The final step is creating a table of contents. In a new page, copy in all section-level titles in body font and remove spacing in between paragraphs of the same style to compress them. 
 
+![](/assets/img/blogs/essays/ebook_format/toc.png)
+
+Making the dots to the right-aligned page numbers is a bit finnicky and you have to do it individually for each line by making a special tab. Double-click the ruler at the top of the page to create a tab, then click the tab once to raise the menu and set the options as seen in this screenshot:
+
+![](/assets/img/blogs/essays/ebook_format/tab_set_right.png)
+
+Then, highlight your entire new line and use command-K to make a hyperlink. Microsoft Word will give you a tab of every header in the document to choose from to link to.
+
+![](/assets/img/blogs/essays/ebook_format/toc_add_link.png)
+
+Don't worry if you inadvertently click a link and turn it purple, it will be blue in the final export.
 
 ## Intermediary: Microsoft Word to PDF Export
 
