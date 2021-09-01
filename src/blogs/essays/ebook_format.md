@@ -9,6 +9,8 @@ After publishing several ebooks, I have a process that makes the relatively tedi
 
 Delivering readers a document with professional-level formatting is essential for earning their trust and making them feel like they have spent their money well. If your ebook is well-formatted, it is easier to believe that it is also well-researched, comprehensively edited, and written with care. These first impressions inform how receptive your brand-new reader will be to your ideas.
 
+This guide is written for the MacOS operating system and requires Microsoft Word. If you don't have and don't want to develop basic familiarity with Markdown and the Terminal, you can write your book in Microsoft Word directly and then start at Stage 2.
+
 ## Stage 1: Writing in Markdown
 
 I write books in Markdown because it works well with my brain. I personally use VSCode but any markdown editor works. I like Markdown because it gives just the right amount of structure to organize ideas early but doesn't weigh me down with unnecessary formatting decisions while I am drafting. Also, a few key pieces of syntax translate well to file formats used later in the process.
@@ -80,28 +82,47 @@ Add page numbers to make it easier for readers to tell their friends about the s
 
 ### Footnotes and Endnotes
 
+If you have footnotes in Markdown, Microsoft Word will automatically re-generate them with sequential numbering in the document. For Dangerous Guides, I use endnotes instead of footnotes. Fortunately, it is easy to convert them automatically. Use `Insert > Footnote`, then click "convert." You'll see an option to convert all footnotes to endnotes. Accept it, then cancel the footnote you were going to create. Now your footnotes are all endnotes!
+
+![](/assets/img/blogs/essays/ebook_format/endnotes.png)
+
 ### Images
+
+Images require the most manual formatting in Dangerous Guides because there are so many of them and they are not uniform. Do images at the end because placing them carefully helps avoid unsightly gaps where half a page is blank because of an overflowing image.
 
 ### Table of Contents
 
-* Use styles pane not WYSIWYG
-  * Body Styles - Why font
-  * Header Styles - Why font & color
-* A5 paper, margins
-* Page numbering
-* Footnotes vs Endnotes
-* Images
-* Making a TOC
+
 
 ## Intermediary: Microsoft Word to PDF Export
 
-* Exporting to PDF (embed fonts)
+When exporting to PDF, you first have to go to `Preferences > Save` and select the "embed fonts" option or your carefully chosen fonts will not be included in the final document, reverting to system fonts.
+
+![](/assets/img/blogs/essays/ebook_format/embed.png)
+
+With fonts embedded, chose `Save As > PDF` to create the PDF document. After setting the desired folder and file name, make sure the "Best for Electronic Distribution" option is selected so your table of contents, links, and endnotes all still work.
+
+![](/assets/img/blogs/essays/ebook_format/save.png)
 
 ## Stage 3: Final Assembly in Preview
 
-* Making the cover
-* Attaching cover and other full-width images
-* Testing Links
+We have the PDF! But we're not quite done. We need to attach the cover and any other full-page images.
+
+First, take the high-resolution cover PNG from the designer and open it in Preview. Use `Tools > Adjust Size` to re-size it to be 5.83 inches wide, same as the PDF pages. Length doesn't matter, it can be longer or shorter without issue. When re-sizing the PNG, make sure to not resample the image, keep the original resolution so it does not get fuzzy.
+
+![](/assets/img/blogs/essays/ebook_format/cover_size.png)
+
+Then, use shift-command-S to make a copy. Click the red "close file" circle in the top left to prompt a save menu, and change the format to PDF.
+
+![](/assets/img/blogs/essays/ebook_format/cover_pdf.png)
+
+Repeat this process for any full-width comics or other images to be inserted into the final document.
+
+Open the PDF exported from Microsoft Word and drag the new PDF cover from finder into the left-hand panel with the page previews. This will insert it into the document. Save the newly concatenated PDF and repeat for any full-width comics.
+
+![](/assets/img/blogs/essays/ebook_format/cover_insert.png)
+
+Finally, look over the PDF and test all of the links in the table of contents and footnotes. Then, send it to the editor for a final proofread! At this point, the Microsoft Word file with formatting is the single source of truth and and changes should be applied there so that the formatting process doesn't need to be repeated. Don't forget to commit the word doc and PDF to version control, even though you can't inspect changes you may want to revert to this version in the future.
 
 ## Bonus: Making an EPUB in Apple Pages
 
