@@ -7,10 +7,12 @@ p, button {
 
 .btn-success {
     background-color: pkc.$blue-3 !important;
+    border: 1px solid pkc.$blue-3 !important;
 }
 
 .btn-success:hover {
     background-color: pkc.$blue-2 !important;
+    border: 1px solid pkc.$blue-2 !important;
 }
 
 .no-bullets {
@@ -20,7 +22,7 @@ p, button {
 
 .cta-section {
     background-color: pkc.$grey-2;
-    background-image: hp.hero-pattern('floating cogs', pkc.$blue-1, 0.5);
+    background-image: hp.hero-pattern('circuit board', pkc.$blue-1, 0.5);
 }
 
 .sample-section {
