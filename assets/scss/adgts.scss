@@ -111,7 +111,7 @@ p, button {
     background: #c6c6c6;
     margin: auto 0;
     position: absolute;
-    top: 5px;
+    top: -10px;
     right: 5px;
     bottom: 0
 }
@@ -155,7 +155,7 @@ p, button {
 }
 
 #timeline-img-a {
-    margin-top: 12px;
+    margin-top: 20px;
     margin-left: -5px;
 }
 
@@ -205,7 +205,7 @@ p, button {
 @media only screen and (min-width: 1400px) { 
     .main-timeline .drawing-content:before {
         width: 39.2%;
-        top: -17px;
+        top: -10px;
     }
 
     .main-timeline .drawing-outer:before,
@@ -232,12 +232,12 @@ p, button {
     }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1199px) {
     .main-timeline .drawing-content {
         margin-top: 35px
     }
     .main-timeline .drawing-content:before {
-        width: 22.5%
+        width: 22.5%;
     }
     .main-timeline .timeline-content {
         padding: 10px 0 10px 30px
