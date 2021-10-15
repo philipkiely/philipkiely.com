@@ -1,0 +1,605 @@
+{% extends "base.html" %}
+
+{% block title %}A Dangerous Guide to Security{% endblock %}
+
+{% block twitter %}
+<meta name="twitter:title" content="A Dangerous Guide to Security">
+<meta name="twitter:description" content="A programmer's guide to crafting and publishing technical content">
+<meta name="twitter:image" content="https://philipkiely.com/assets/img/adgts_twitter_thumbnail.png" />
+{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="/assets/css/adgts.css" type="text/css">
+<script src="/assets/js/adgts.js"></script>
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+    <!--Intro-->
+    <div class="row align-items-center">
+        <div class="col-12 col-lg-4">
+            <div class="p-5 p-lg-2">
+                <img class="img-fluid shadow-lg" src="/assets/img/pages/adgts/cover_1.png" alt="A Dangerous Guide to Security">
+            </div>
+        </div>
+        <div class="col-12 col-lg-8">
+            <h1 class="primary-accent-text pt-2">A Dangerous Guide to Security</h1>
+            <p>You don't need a Ph.D. in cryptography to develop secure applications. Developing secure software isn't easy, but learning fundamental concepts allows you to apply common sense to technical problems and use industry standard tools to create software that withstands the trials of being online.</p>
+            <br>
+            <h5>No code required.</h5>
+            <p>With zero lines of code, Dangerous Guides are perfect for product managers, entrepreneurs, CEOs, project managers, and anyone else who tells developers what to build but is not a developer themselves. That said, if you can code, you'll still find plenty of value in every issue.</p>
+            <br>
+            <h5>Only learn what you need.</h5>
+            <p>While you can (and should!) buy every issue as a complete volume, issues are available individually so that you can zoom in on what matters most to your work. Plus, section-level summaries get you information fast for last-minute meeting prep.</p>
+            <br>
+            <h5>Pairs well with lunch.</h5>
+            <p>Skip the thousand-page textbooks. At about fifty pages per issue, counting illustrations, a Dangerous Guide is a great companion for your lunch break or morning coffee.</p>
+        </div>
+    </div>
+</div>
+<div class="container-fluid cta-section">
+    <br>
+    <br>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6 text-center">
+                <div class="card bg-light my-3 shadow-lg" style="border: none;">
+                    <img src="/assets/img/pages/adgts/text_spiky.png" width="100%" height="auto">
+                    <div class="card-body">
+                        <h3 class="text-monospace py-5">Full Volume: <b><span class="price-text">$24</span></b> | Single
+                            Issue: <span class="price-text">$6 each</span></h3>
+                        <div class="col-12 col-md-8 offset-md-2 d-grid p-2 py-lg-5 py-xl-2">
+                            <a class="btn btn-lg btn-success" href="https://gum.co/uZPZU">Buy Now &mdash; Full
+                                Volume</a>
+                            <div class="d-flex justify-content-between py-2">
+                                <a class="btn btn-success" href="https://gum.co/uZPZU"><span
+                                        class="d-none d-sm-inline d-lg-none d-xl-inline">Issue </span>1</a>
+                                <a class="btn btn-success disabled" href="https://gum.co/uZPZU">2</a>
+                                <a class="btn btn-success disabled" href="https://gum.co/uZPZU">3</a>
+                                <a class="btn btn-success disabled" href="https://gum.co/uZPZU">4</a>
+                                <a class="btn btn-success disabled" href="https://gum.co/uZPZU">5</a>
+                                <a class="btn btn-success disabled" href="https://gum.co/uZPZU">6</a>
+                                <a class="btn btn-success disabled" href="https://gum.co/uZPZU">7</a>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <img src="/assets/img/pages/adgts/none_flat.png" width="100%" height="auto">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="card bg-light my-3">
+                    <div class="card-body">
+                        <h2 class="primary-accent-text text-center">Free Issues!</h2>
+                        <p>Thanks to generous sponsors, copies of each issue of <i>A Dangerous Guide to Security</i> are
+                            available for free to people for whom price would otherwise be a barrier.</p>
+                        <p><b>Honor System:</b> Please only download a free copy if you are a student, from a low-income
+                            nation, or are otherwise unable to afford the full price.</p>
+                        <p>Download:</p>
+                        <ol>
+                            <li><a href=""><i>Thinking About Security</i> thanks to Fathom Analytics</a> | 250 left</li>
+                            <li><i>Human-Focused Security</i> thanks to <a
+                                    href="mailto:philip@kiely.xyz?subject=Sponsor%20A%20Dangerous%20Guide">your company
+                                    here!</a></li>
+                            <li>Issue 3 thanks to <a
+                                    href="mailto:philip@kiely.xyz?subject=Sponsor%20A%20Dangerous%20Guide">your company
+                                    here!</a></li>
+                            <li>Issue 4 thanks to <a
+                                    href="mailto:philip@kiely.xyz?subject=Sponsor%20A%20Dangerous%20Guide">your company
+                                    here!</a></li>
+                            <li>Issue 5 thanks to <a
+                                    href="mailto:philip@kiely.xyz?subject=Sponsor%20A%20Dangerous%20Guide">your company
+                                    here!</a></li>
+                            <li>Issue 6 thanks to <a
+                                    href="mailto:philip@kiely.xyz?subject=Sponsor%20A%20Dangerous%20Guide">your company
+                                    here!</a></li>
+                            <li>Issue 7 thanks to <a
+                                    href="mailto:philip@kiely.xyz?subject=Sponsor%20A%20Dangerous%20Guide">your company
+                                    here!</a></li>
+                        </ol>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+<!--INTERVIEW SECTION TODO: Popups or own pages-->
+<div class="container">
+    <br>
+    <br>
+    <div class="row">
+        <h1 class="primary-accent-text">Issues</h1>
+    </div>
+    <br>
+    <div class="row py-2">
+        <div class="col-sm-3 col-md-2">
+            <img class="img-fluid shadow-lg" src="/assets/img/pages/adgts/cover_1.png" alt="Issue 1 Cover">
+        </div>
+        <div class="col-sm-7 col-md-8">
+            <h3>Issue 1: Thinking about Security</h3>
+            <h5>Sponsored by <a href="https://usefathom.com/ref/XBSEVY">Fathom Analytics</a></h5>
+            <br>
+            <p>Goal: to develop an effective mindset for considering questions of security.</p>
+            <p>In this issue:</p>
+            <div class="row">
+                <div class="col-6">
+                    <ul>
+                        <li>Your Security Mindset</li>
+                        <li>Threat Modeling and Attack Surface</li>
+                        <li>The Law of the Land</li>
+                        <li>Regulation: Lawsuits and Fines</li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li>Your Security Policy</li>
+                        <li>A Practice, Not an Achievement</li>
+                        <li>Kerckhoffs' Principle</li>
+                        <li>Points of Failure</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-2">
+            <div class="d-grid gap-2">
+                <a href="/adgts/1" class="btn btn-lg btn-outline-primary">Buy Issue</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row py-2">
+        <div class="col-sm-3 col-md-2">
+            <img class="img-fluid shadow-lg" src="/assets/img/pages/adgts/cover_2.png" alt="Issue 2 Cover">
+        </div>
+        <div class="col-sm-7 col-md-8">
+            <h3>Issue 2: Human-Focused Security</h3>
+            <h5>Sponsored by <a href="mailto:philip@kiely.xyz?subject=Sponsor%20A%20Dangerous%20Guide">your company here!</a></h5>
+            <br>
+            <p>Goal: to understand the unique role of humans in otherwise digital systems.</p>
+            <p>In this issue:</p>
+            <div class="row">
+                <div class="col-6">
+                    <ul>
+                        <li>Security Theater</li>
+                        <li>Robot Red Rover</li>
+                        <li>Many Hats</li>
+                        <li>Pointing Fingers</li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li>Human Error</li>
+                        <li>Active Defense</li>
+                        <li>Social Engineering</li>
+                        <li>Trust</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="d-grid gap-2">
+                <a href="/adgts/2" class="btn btn-lg btn-outline-primary disabled">Coming Soon</a>
+                <p>Status: Illustrating</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row py-2">
+        <div class="col-sm-3 col-md-2">
+            <img class="img-fluid shadow-lg" src="/assets/img/pages/adgts/cover_soon.png" alt="Cover Coming Soon">
+        </div>
+        <div class="col-sm-7 col-md-8">
+            <h3>Issue 3: Access Control and Secret Management</h3>
+            <h5>Sponsored by <a href="mailto:philip@kiely.xyz?subject=Sponsor%20A%20Dangerous%20Guide">your company
+                    here!</a></h5>
+            <br>
+            <p>Goal: to present your options for showing information to only the correct people.</p>
+            <p>In this issue:</p>
+        </div>
+        <div class="col-2">
+            <div class="d-grid gap-2">
+                <a href="/adgts/3" class="btn btn-lg btn-outline-primary disabled">Coming Soonish</a>
+                <p>Status: Drafting</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row py-2">
+        <div class="col-sm-3 col-md-2">
+            <img class="img-fluid shadow-lg" src="/assets/img/pages/adgts/cover_soon.png" alt="Cover Coming Soon">
+        </div>
+        <div class="col-sm-7 col-md-8">
+            <h3>Issue 4: Authentication</h3>
+            <h5>Sponsored by <a href="mailto:philip@kiely.xyz?subject=Sponsor%20A%20Dangerous%20Guide">your company
+                    here!</a></h5>
+            <br>
+            <p>Goal: to survey effective methods of verifying someone's identity.</p>
+            <p>In this issue:</p>
+        </div>
+        <div class="col-2">
+            <div class="d-grid gap-2">
+                <a href="/adgts/4" class="btn btn-lg btn-outline-primary disabled">Coming Kinda Soon</a>
+                <p>Status: Outlining</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row py-2">
+        <div class="col-sm-3 col-md-2">
+            <img class="img-fluid shadow-lg" src="/assets/img/pages/adgts/cover_soon.png" alt="Cover Coming Soon">
+        </div>
+        <div class="col-sm-7 col-md-8">
+            <h3>Issue 5: Encryption in Theory</h3>
+            <h5>Sponsored by <a href="mailto:philip@kiely.xyz?subject=Sponsor%20A%20Dangerous%20Guide">your company
+                    here!</a></h5>
+            <br>
+            <p>Goal: to discover that the math behind encryption is not scary.</p>
+            <p>In this issue:</p>
+        </div>
+        <div class="col-2">
+            <div class="d-grid gap-2">
+                <a href="/adgts/5" class="btn btn-lg btn-outline-primary disabled">Coming Less Soon</a>
+                <p>Status: Queued</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row py-2">
+        <div class="col-sm-3 col-md-2">
+            <img class="img-fluid shadow-lg" src="/assets/img/pages/adgts/cover_soon.png" alt="Cover Coming Soon">
+        </div>
+        <div class="col-sm-7 col-md-8">
+            <h3>Issue 6: Applied Encryption</h3>
+            <h5>Sponsored by <a href="mailto:philip@kiely.xyz?subject=Sponsor%20A%20Dangerous%20Guide">your company
+                    here!</a></h5>
+            <br>
+            <p>Goal: to map the various kinds of encryption to their use cases.</p>
+            <p>In this issue:</p>
+        </div>
+        <div class="col-2">
+            <div class="d-grid gap-2">
+                <a href="/adgts/6" class="btn btn-lg btn-outline-primary disabled">Coming Sometime</a>
+                <p>Status: Queued</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row py-2">
+        <div class="col-sm-3 col-md-2">
+            <img class="img-fluid shadow-lg" src="/assets/img/pages/adgts/cover_soon.png" alt="Cover Coming Soon">
+        </div>
+        <div class="col-sm-7 col-md-8">
+            <h3>Issue 7: The Exploits of Billy Bug</h3>
+            <h5>Sponsored by <a href="mailto:philip@kiely.xyz?subject=Sponsor%20A%20Dangerous%20Guide">your company
+                    here!</a></h5>
+            <br>
+            <p>Goal: to investigate types of common vulnerabilities in modern applications.</p>
+            <p>In this issue:</p>
+        </div>
+        <div class="col-2">
+            <div class="d-grid gap-2">
+                <a href="/adgts/7" class="btn btn-lg btn-outline-primary disabled">Coming Eventually</a>
+                <p>Status: Queued</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+<div class="container-fluid sample-section">
+    <br>
+    <br>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <h1 class="primary-accent-text">Have a Look</h1>
+                <br>
+                <div class="col-12 col-lg-10 offset-lg-1">
+                    <iframe src="/assets/files/adgts_sample.pdf" width="100%" height="500px"></iframe>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+<div class="container">
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="col-12">
+    <h1 class="primary-accent-text">What's in a Dangerous Guide?</h1>
+    <br>
+    <br>
+    <br>
+</div>
+<div class="main-timeline">
+    <div class="timeline">
+        <div class="icon"></div>
+        <div class="drawing-content">
+            <div class="drawing-outer">
+                <span class="drawing">
+                    <img class="img-fluid" id="timeline-img-a" src="/assets/img/pages/adgts/lightbulb.png"
+                        alt="Intuitive Explanations">
+                </span>
+            </div>
+        </div>
+        <div class="timeline-content">
+            <h5 class="title">Intuitive Explanations</h5>
+            <p class="description">
+                Don't get wrapped up in technical details; Dangerous Guides don't require any coding knowledge. Instead, engage your imagination and learn key concepts to direct technical work.
+            </p>
+        </div>
+    </div>
+    <div class="timeline">
+        <div class="icon"></div>
+        <div class="drawing-content">
+            <div class="drawing-outer">
+                <span class="drawing">
+                    <img class="img-fluid" id="timeline-img-b" src="/assets/img/pages/adgts/brain.png"
+                        alt="Illustrations">
+                </span>
+            </div>
+        </div>
+        <div class="timeline-content">
+            <h5 class="title">Illustrations</h5>
+            <p class="description">
+                Do your eyes glaze over when presented with page after page of dense writing? Fear not! Friendly illustrations punctuate each guide with visual metaphors and helpful diagrams.
+            </p>
+        </div>
+    </div>
+    <div class="timeline">
+        <div class="icon"></div>
+        <div class="drawing-content">
+            <div class="drawing-outer">
+                <span class="drawing">
+                    <img class="img-fluid" id="timeline-img-c" src="/assets/img/pages/adgts/lightswitch.png"
+                        alt="Clear Summaries">
+                </span>
+            </div>
+        </div>
+        <div class="timeline-content">
+            <h5 class="title">Clear Summaries</h5>
+            <p class="description">
+                Each section ends with "Enough To Be Dangerous," a bullet-point summary. Revisit an issue before a meeting or presentation in just minutes!
+            </p>
+        </div>
+    </div>
+    <div class="timeline">
+        <div class="icon"></div>
+        <div class="drawing-content">
+            <div class="drawing-outer">
+                <span class="drawing">
+                    <img class="img-fluid" id="timeline-img-d" src="/assets/img/pages/adgts/computer.png"
+                        alt="Artifacts">
+                </span>
+            </div>
+        </div>
+        <div class="timeline-content">
+            <h5 class="title">Artifacts</h5>
+            <p class="description">
+                Enhance your exploration with full-page diagrams devoted to famous tools, hacks, and systems from the wide world of digital security and beyond.
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="container-fluid cta-section">
+    <br>
+    <br>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6 text-center">
+                <div class="card bg-light my-3 shadow-lg" style="border: none;">
+                    <img src="/assets/img/pages/adgts/text_spiky.png" width="100%" height="auto">
+                    <div class="card-body">
+                        <h3 class="text-monospace py-5">Full Volume: <b><span class="price-text">$24</span></b> | Single Issue: <span class="price-text">$6 each</span></h3>
+                        <div class="col-12 col-md-8 offset-md-2 d-grid p-2 py-lg-5 py-xl-2">
+                            <a class="btn btn-lg btn-success" href="https://gum.co/uZPZU">Buy Now &mdash; Full Volume</a>
+                            <div class="d-flex justify-content-between py-2">
+                                <a class="btn btn-success" href="https://gum.co/uZPZU"><span class="d-none d-sm-inline d-lg-none d-xl-inline">Issue </span>1</a>
+                                <a class="btn btn-success disabled" href="https://gum.co/uZPZU">2</a>
+                                <a class="btn btn-success disabled" href="https://gum.co/uZPZU">3</a>
+                                <a class="btn btn-success disabled" href="https://gum.co/uZPZU">4</a>
+                                <a class="btn btn-success disabled" href="https://gum.co/uZPZU">5</a>
+                                <a class="btn btn-success disabled" href="https://gum.co/uZPZU">6</a>
+                                <a class="btn btn-success disabled" href="https://gum.co/uZPZU">7</a>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <img src="/assets/img/pages/adgts/none_flat.png" width="100%" height="auto">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="card bg-light my-3">
+                    <div class="card-body">
+                        <h2 class="primary-accent-text text-center">Free Issues!</h2>
+                        <p>Thanks to generous sponsors, copies of each issue of <i>A Dangerous Guide to Security</i> are available for free to people for whom price would otherwise be a barrier.</p>
+                        <p><b>Honor System:</b> Please only download a free copy if you are a student, from a low-income nation, or are otherwise unable to afford the full price.</p>
+                        <p>Download:</p>
+                        <ol>
+                            <li><a href=""><i>Thinking About Security</i> thanks to Fathom Analytics</a> | 250 left</li>
+                            <li><i>Human-Focused Security</i> thanks to <a href="mailto:philip@kiely.xyz?subject=Sponsor%20A%20Dangerous%20Guide">your company here!</a></li>
+                            <li>Issue 3 thanks to <a href="mailto:philip@kiely.xyz?subject=Sponsor%20A%20Dangerous%20Guide">your company here!</a></li>
+                            <li>Issue 4 thanks to <a href="mailto:philip@kiely.xyz?subject=Sponsor%20A%20Dangerous%20Guide">your company here!</a></li>
+                            <li>Issue 5 thanks to <a href="mailto:philip@kiely.xyz?subject=Sponsor%20A%20Dangerous%20Guide">your company here!</a></li>
+                            <li>Issue 6 thanks to <a href="mailto:philip@kiely.xyz?subject=Sponsor%20A%20Dangerous%20Guide">your company here!</a></li>
+                            <li>Issue 7 thanks to <a href="mailto:philip@kiely.xyz?subject=Sponsor%20A%20Dangerous%20Guide">your company here!</a></li>
+                        </ol>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+<!--REVIEWS-->
+<!--ATA SECTION-->
+<div class="container">
+    <div class="row pt-5 pb-1">
+        <div class="col-12">
+            <h1 class="primary-accent-text">Behind the Guides</h1>
+        </div>
+        <div class="col-lg-4">
+            <div class="p-5">
+                <img class="img-fluid" src="/assets/img/pages/adgts/abt_author_DG.png" alt="Philip Kiely">
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="p-5">
+                <h5>Philip Kiely &middot; Author</h5>
+                <p>Hi, I'm Philip. I run <a href="https://pkandc.com">PK&C</a>, which means that I am many
+                things to many people. Most often, I'm writing books like this one and <a href="/wfsd">Writing for Software
+                    Developers</a>,
+                working on the next big thing, fixing bugs of my own creation, finding and delighting clients, or running
+                payroll
+                through Venmo like a Real Business Person. If you're the type of person who likes authors with academic credentials, I have a B.A. with Honors in Computer Science and Robert N. Noyce Award from Grinnell College.</p>
+                <p>You can find me around the internet, especially on <a href="https://twitter.com/philip_kiely">Twitter</a>, <a
+                        href="https://news.ycombinator.com/user?id=philipkiely">Hacker News</a>, or <a
+                        href="https://www.indiehackers.com/philipkiely">Indie Hackers</a>. I write <a href="/essays">essays</a>,
+                    <a href="/code">tutorials</a>, and <a href="/bytes">more</a> on my own site and for <a
+                        href="/notes/posts.html">various other publications</a>. You may have heard me on <a
+                        href="https://www.se-radio.net/2020/09/episode-426-philip-kiely-on-writing-for-software-developers/">IEEE’s
+                        Software Engineering Radio</a> or <a href="/notes/appearances.html">another show</a>. My professional
+                    hobbies
+                    include appearing on podcasts and panels, sending cold emails, pretending that I can read a 10-K, and
+                    tweeting
+                    about business. I also enjoy playing D&D, practicing martial arts, and reading whatever is nearby.
+                </p>
+                <p>For more about me, check out <a href="/">the rest of my website</a>.
+            </div>
+        </div>
+    </div>
+    <div class="row pt-1 pb-5">
+        <div class="col-lg-8">
+            <div class="p-5">
+                <h5>Joel Choi &middot; Illustrator</h5>
+                <p>Joel leveled up from notebook doodling in August 2020, adopting digital illustration as a quarantine hobby. A Physics and Mathematics double major at Grinnell College, he finds drawing an engaging change of pace from his quantitative studies. Joel and I have been friends for years and he started working with me on this project in June 2021.</p>
+                <p>Outside of class, Joel is a student leader at the college's dining hall, practices Hip-Hop dance, and is a force to be reckoned with in Nerf at Noyce, a weekly nerf blaster battle in the college's science building. The Orange County, California native is infamously featured on the college's advertisement in the Des Moines International Airport; every time he travels to campus he walks past a large picture of himself playing a Violin.</p>
+                <p>Connect with Joel <a href="https://www.linkedin.com/in/ju-yeol-choi-2161b01a9/">on LinkedIn</a>.</p>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="p-5">
+                <img class="img-fluid" src="/assets/img/pages/adgts/abt_illustrator_DG.png" alt="Joel Choi">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid faq-section">
+    <!--FAQ SECTION-->
+    <br>
+    <br>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12">
+                <h1 class="primary-accent-text">Questions?</h1>
+                <br>
+            </div>
+            <div class="col-12 col-md-3">
+                <h5>Who is <i>A Dangerous Guide to Security</i> written for?</h5>
+            </div>
+            <div class="col-12 col-md-9">
+                <p>You, I hope! I originally imagined <i>A Dangerous Guide to Security</i> reaching an audience of project managers, team leads, small business owners, and anyone else who isn't a developer but works with them regularly. Basically, I want to help people who tell developers what to build understand what they are asking for. But, software developers without a background in security have also found the book useful.</p>
+            </div>
+            <div class="col-12">
+                <hr>
+                <br>
+            </div>
+            <div class="col-12 col-md-3">
+                <h5>How much programming experience do I need to understand this book?</h5>
+            </div>
+            <div class="col-12 col-md-9">
+                <p>No programming experience is required to read the book. While developers may benefit from the intuitive explainations in <i>A Dangerous Guide to Security</i>, the issues do not have any code in them nor do they assume any programming knowledge. The guide is written for smart professionals and assumes some level of digital literacy, but does not require or teach coding.</p>
+            </div>
+            <div class="col-12">
+                <hr>
+                <br>
+            </div>
+            <div class="col-12 col-md-3">
+                <h5>Is there a paper copy for sale anywhere?</h5>
+            </div>
+            <div class="col-12 col-md-9">
+                <p>If enough people express interest, I will figure out how to make one available.</p>
+            </div>
+            <div class="col-12">
+                <hr>
+                <br>
+            </div>
+            <div class="col-12 col-md-3">
+                <h5>What formats does each issue come in?</h5>
+            </div>
+            <div class="col-12 col-md-9">
+                <p>Because of the number of images, each issue of <i>A Dangerous Guide to Security</i> is only available in the PDF format.</p>
+            </div>
+            <div class="col-12">
+                <hr>
+                <br>
+            </div>
+            <div class="col-12 col-md-3">
+                <h5>Can I share this book with my team?</h5>
+            </div>
+            <div class="col-12 col-md-9">
+                <p>If you purchase an individual license, please respect the license terms and do not distribute any
+                    copies. If you want to share the book with your team, company, or class, please purchase a team license. Team licenses are only available for the full volume, not individual issues.</p>
+            </div>
+            <div class="col-12">
+                <hr>
+                <br>
+            </div>
+            <div class="col-12 col-md-3">
+                <h5>Is there a return policy?</h5>
+            </div>
+            <div class="col-12 col-md-9">
+                <p>I have a 30-day no-questions-asked refund policy. If you don't like it, let me know and I will refund your money.</p>
+            </div>
+            <div class="col-12">
+                <hr>
+                <br>
+            </div>
+            <div class="col-12 col-md-3">
+                <h5>What if I can't afford the guide?</h5>
+            </div>
+            <div class="col-12 col-md-9">
+                <p>I priced the guide as I did because it teaches valuable skills in a well-compensated industry. Thanks to the generosity of my sponsors, I am able to offer free copies of individual issues to students and developers from low-income nations.</p>
+            </div>
+            <div class="col-12">
+                <hr>
+                <br>
+            </div>
+            <div class="col-12 col-md-3">
+                <h5>How do I sponsor an issue of <i>A Dangerous Guide to Security</i>?</h5>
+            </div>
+            <div class="col-12 col-md-9">
+                <p>Wow, thanks for asking! You can read <a href="#">this document</a> and then send me an email at <a href="mailto:philip@kiely.xyz">philip@kiely.xyz</a>.</p>
+            </div>
+            <div class="col-12">
+                <hr>
+                <br>
+            </div>
+            <div class="col-12 col-md-3">
+                <h5>What if I have another question?</h5>
+            </div>
+            <div class="col-12 col-md-9">
+                <p>Send me an email at <a href="mailto:philip@kiely.xyz">philip@kiely.xyz</a>.</p>
+            </div>
+            <div class="col-12">
+                <hr>
+                <br>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+{% endblock %}
