@@ -1,16 +1,19 @@
 Title: Posts in Other Publications
 Date: 2019-04-30
-Modified: 2020-08-27
+Modified: 2021-12-13
 Slug: posts
 Authors: Philip Kiely
 Summary: I have been fortunate enough to write for a variety of other publications. Posts are listed in reverse chronological order...
 
-I have been fortunate enough to write for a variety of other publications. Posts are listed in reverse chronological order. 
+I have been fortunate enough to write for a variety of other publications. Posts are listed in reverse chronological order. Some posts in my portfolio are via agencies or otherwise may not have a byline.
 
 If you would like me to write something for your website or publication, please [send me an email](mailto:philip@kiely.xyz).
 
 Date | Publication | Title
 --- | --- | ---
+December 2021 | Zeet | [How Banana Performs Machine Learning Model Optimization with AWS &amp; GCP](https://blog.zeet.co/banana/)
+May 2021 | YotaScale | [A Guide to Cloud Cost Visibility](https://yotascale.com/cloud-cost-visibility-guide/)
+March 2021 | YotaScale | [Top Tips for AWS Cloud Cost Optimization](https://yotascale.com/tips-for-cost-optimization/)
 August 2020 | Markforged | [Always Rebase: Git at Markforged](https://engineering.markforged.com/#/blog/post/git_at_markforged)
 July 2020 | Markforged | [Preparing GOMP (Git cOMPare) for Public Release](https://engineering.markforged.com/#/blog/post/preparing_gomp)
 June 2020 | Smashing Magazine | [Django Highlights: Wrangling Static Assets And Media Files (Part 4)](https://www.smashingmagazine.com/2020/06/django-highlights-wrangling-static-assets-media-files-part-4/)
