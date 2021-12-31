@@ -38,3 +38,7 @@
 [[redirects]]
   from = "/company"
   to = "https://pkandc.com/"
+
+[[redirects]]
+  from = "/calendar"
+  to = "https://calendly.com/philipkiely/meeting"
