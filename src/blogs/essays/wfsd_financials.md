@@ -1,6 +1,6 @@
 Title: <i>Writing for Software Developers</i> Financial Performance
 Date: 2020-06-03
-Modified: 2020-11-25
+Modified: 2022-01-12
 Slug: wfsd_financials
 Authors: Philip Kiely
 Summary: This post reports income and expenses from creating *Writing for Software Developers*. I update the post every so often, unless I forget.
@@ -20,27 +20,28 @@ Here is a breakdown of approximate expenses:
 | Domains | $40 |
 | Gumroad Pro Membership (1 month) | $10 |
 | **PRE-LAUNCH TOTAL** | **$1,030** |
-| Gumroad Pro Membership (6 months) | $60 |
+| Gumroad Pro Membership (1 year) | $120 |
 | Audiobook Narrator | $500 |
-| **POST-LAUNCH TOTAL** | **$1,590** |
+| Newsletter Sponsorship | $175 |
+| **POST-LAUNCH TOTAL** | **$1,825** |
 
 One thing to note for other authors is that I got thousands of dollars worth of professional copyediting and proofreading for free thanks to my mother's generous efforts.
 
-My earnings so far are entirely through Gumroad. To date:
+My earnings so far are entirely through Gumroad. To date (January 12, 2022):
 
 | Line | Amount |
 | --- | --- |
-| **Gross Income** | **30,172** |
-| Minus Fees | ($1,362.62) |
-| **Net Income** | **$28,809.38** |
-| Minus Expenses | ($1,590)
-| **Net Profit** | **$27,219.38** |
+| **Gross Income** | **38,218.80** |
+| Minus Fees | ($1,819.93) |
+| Minus Refunds | ($453) |
+| Minus Chargebacks | ($72) |
+| **Net Income** | **$36,398.87** |
+| Minus Expenses | ($1,875)
+| **Net Profit** | **$34,523.87** |
 
-Not counted in these figures are 7 refunds and 1 chargeback, which apply before gross income.
+I sell the book for $36, $136 for the corporate license, of which I've sold 13. In total, I've sold 1,024 copies.
 
-I sell the book for $36, $136 for the corporate license, of which I've sold 13. In total, I've sold 796 copies.
-
-I've run a few sales. I mark it at 30% off, about a dozen copies sold have been discounted.
+Complicating this data is sales and affiliate payouts.
 
 This post is one of four about [*Writing for Software Developers*](/wfsd).
 
