@@ -109,7 +109,7 @@ def blogs():
         articles = []
         for post in posts:
             articles.append(parse_article_metadata(blog + "/" + post))
-        articles.sort(key=lambda x: x["modified"], reverse=True)
+        articles.sort(key=lambda x: x["date"], reverse=True)
         build_index(blog, articles)
         for article in articles:
             build_article(blog, article)
