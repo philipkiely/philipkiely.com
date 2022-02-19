@@ -130,7 +130,7 @@ def pages():
         auto_reload=True
     )
     # list pages, dropping index (handled separately) and empty
-    pages = ls("src/pages/", ["index.html"])
+    pages = ls("src/pages/", ["index.html", "404.html"])
     # Each page should be put as index for pretty URLs
     for page in pages:
         html = env.get_template(page).render()
@@ -142,6 +142,11 @@ def pages():
     # Handle index as special case
     html = env.get_template("index.html").render()
     f = open("dist/" + "index.html", "w")
+    f.write(html)
+    f.close()
+    # Handle 404 as special case
+    html = env.get_template("404.html").render()
+    f = open("dist/" + "404.html", "w")
     f.write(html)
     f.close()
     print("Jinja Built")
