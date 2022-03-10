@@ -1,6 +1,6 @@
 Title: Posts in Other Publications
 Date: 2019-04-30
-Modified: 2022-02-05
+Modified: 2022-03-09
 Slug: posts
 Authors: Philip Kiely
 Summary: I have been fortunate enough to write for a variety of other publications. Posts are listed in reverse chronological order...
@@ -11,6 +11,9 @@ If you would like me to write something for your website or publication, please 
 
 Date | Publication | Title
 --- | --- | ---
+March 2022 | Zeet | [Mythia Launches Lifetime Access NFT on Zeet Infrastructure](https://blog.zeet.co/mythia/)
+March 2022 | Baseten | [How BaseTen is using "docs as code" to build best-in-class documentation](https://blog.baseten.co/docs-as-code/)
+February 2022 | Zeet | [Why Covalent's Second-Time Founder Chose Zeet to Build Infrastructure for Connections](https://blog.zeet.co/covalent/)
 January 2022 | Zeet | [How Fairgrounds is Building a Metaverse on Zeet](https://blog.zeet.co/fairgrounds/)
 December 2021 | Zeet | [How Banana Performs Machine Learning Model Optimization with AWS &amp; GCP](https://blog.zeet.co/banana/)
 May 2021 | YotaScale | [A Guide to Cloud Cost Visibility](https://yotascale.com/cloud-cost-visibility-guide/)
