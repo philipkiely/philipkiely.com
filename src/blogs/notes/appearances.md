@@ -10,6 +10,7 @@ I have had the good fortune to appear on a variety of shows, and I look forward 
 
 Show | Topic | Format | Date
 --- | --- | --- | ---
+[Episode 17: The Business of Life](https://www.goingforthgrinnell.com/podcast/episode/3f3c23ca/episode-17-the-business-of-life) | College | Podcast | May 2022
 [Side Hustle School](https://sidehustleschool.com/episode/1534/) | WfSD | Podcast | March 2021
 [10 Minute Tech Comms](https://www.stitcher.com/show/10minute-tech-comm/episode/philip-kiely-on-writing-for-software-developers-82222415) | WfSD | Podcast | March 2021
 [The Not-Boring Tech Writer](https://www.thenotboringtechwriter.com/blog/2021/02/16/how-to-infiltrate-a-hackathon-in-iowa-with-philip-kiely) | WfSD | Podcast | February 2021

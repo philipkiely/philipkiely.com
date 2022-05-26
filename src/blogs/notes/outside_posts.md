@@ -11,6 +11,7 @@ If you would like me to write something for your website or publication, please 
 
 Date | Publication | Title
 --- | --- | ---
+May 2022 | ContentLab | [How to market yourself as a technical writer](https://contentlab.io/how-to-market-yourself-as-a-technical-writer/)
 March 2022 | Zeet | [How Paper Delivers a Seamless NFT Checkout Solution on Zeet](https://blog.zeet.co/paper/)
 March 2022 | Zeet | [Mythia Launches Lifetime Access NFT on Zeet Infrastructure](https://blog.zeet.co/mythia/)
 March 2022 | Baseten | [How BaseTen is using "docs as code" to build best-in-class documentation](https://blog.baseten.co/docs-as-code/)
