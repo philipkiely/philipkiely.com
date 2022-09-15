@@ -3,7 +3,7 @@ Date: 2021-11-29
 Modified: 2021-11-29
 Slug: namesis
 Authors: Philip Kiely
-Summary: In Vermont dwells my great namesis: a physician named Philip Kiely. He held the top search result for our name. I wanted it. Welcome to the thunderdome.
+Summary: In Vermont dwells my great namesis, a physician named Philip Kiely. He held the top search result for our name. I wanted it. Welcome to the thunderdome.
 
 In Vermont dwells my great namesis: a physician named Philip Kiely.
 
