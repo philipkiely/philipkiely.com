@@ -17,7 +17,7 @@ One quick note before we get started is that this is not a blog post written to 
 
 Most classroom assignments are analogous to something called "green-field projects:" when you build something starting from scratch. The professor says, "Here is this wonderful blank file, go ahead and implement mergesort in Java." Or, the boss says, "Hey, we need a mobile app, go write one."
 
-In most workplaces green-field projects are rare, especially for interns and new developers. It is incredibly rare that you would work on one by yourself. Instead, you spend most of your time building on other people
+In most workplaces green-field projects are rare, especially for interns and new developers. It is incredibly rare that you would work on one by yourself. Instead, you spend most of your time building on other people's code.
 
 In school, they go a step further and say you have to write your own code. You can't just use your language's standard library sorting function because that wouldn't teach you anything, you have to write it yourself. In the so-called real world, writing your own code is hard and takes a long time and results in way more code to maintain so you generally don't do it. You use other people's code whenever you can.
 
