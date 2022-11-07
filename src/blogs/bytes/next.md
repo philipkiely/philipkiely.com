@@ -1,6 +1,6 @@
 Title: The Next Book
 Date: 2021-08-06
-Slug: meta
+Slug: next
 
 When my mother asked me about my sales the other day, I said that it is a slow summer but things will pick up "with the next book." I realized as I spoke that the answer came to me genetically.
 
