@@ -2,7 +2,7 @@ Title: Hacker News Stays Undefeated
 Date: 2022-11-07
 Slug: hn
 
-There is a lot of uncertainty these days around the future of my favorite bird-themed professional space. Twitter has done a lot for me: given me access, opportunity, community. But before I got to Twitter, I got the same from Hacker News.
+There is a lot of uncertainty these days around the future of my favorite bird-themed professional space. Twitter has done a lot for me: given me access, opportunity, community. But in these categories, Twitter is second to Hacker News for my career.
 
 Hacker News showed me my first full-time job, and my current one. Hacker News users gave me my first thousand readers, my first dumb fail, my first successful commercial product. In short, I owe the platform, and its users, a lot.
 
