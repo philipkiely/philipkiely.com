@@ -1,6 +1,6 @@
 Title: <i>Writing for Software Developers</i> Financial Performance
 Date: 2020-06-03
-Modified: 2022-01-12
+Modified: 2022-11-13
 Slug: wfsd_financials
 Authors: Philip Kiely
 Summary: This post reports income and expenses from creating *Writing for Software Developers*. I update the post every so often, unless I forget.
@@ -31,15 +31,13 @@ My earnings so far are entirely through Gumroad. To date (January 12, 2022):
 
 | Line | Amount |
 | --- | --- |
-| **Gross Income** | **38,218.80** |
-| Minus Fees | ($1,819.93) |
-| Minus Refunds | ($453) |
+| **Gross Income** | **41,148.80** |
+| Minus Fees | ($2,007.83) |
+| Minus Refunds | ($489) |
 | Minus Chargebacks | ($72) |
-| **Net Income** | **$36,398.87** |
-| Minus Expenses | ($1,875)
-| **Net Profit** | **$34,523.87** |
+| **Net Income** | **$39,140.97** |
 
-I sell the book for $36, $136 for the corporate license, of which I've sold 13. In total, I've sold 1,024 copies.
+I sell the book for $36, $136 for the corporate license, of which I've sold 13. In total, I've sold 1,102 copies.
 
 Complicating this data is sales and affiliate payouts.
 
