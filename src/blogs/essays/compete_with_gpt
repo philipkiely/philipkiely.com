@@ -5,8 +5,6 @@ Slug: compete_with_gpt
 Authors: Philip Kiely
 Summary: ChatGPT can generate multiple paragraphs of coherent text on most topics. It writes like a high school student with fifteen Wikipedia tabs open trying to boost his word count on an essay due in a few hours. *This is a ridiculously impressive capability that did not exist a year ago*. It is because of the quality of ChatGPT that we can now better see the general limitations of these models, as we're not distracted by the more obvious issues present in GPT-3.
 
-*Disclaimer: I work at [Baseten](https://baseten.co), an MLOps platform for startups. This is my personal opinion and is not endorsed by Baseten.*
-
 GPT is an AI. It creates text. I am a writer. I create text. As you can imagine, GPT and I don't always get along so well.
 
 I'm using GPT as a general term here for a family of Large Language Models (LLMs). The most recent member of this family, [ChatGPT](https://openai.com/blog/chatgpt/), consistently avoids the many shortcomings that made its immediate predecessor, GPT-3, easy for me to dismiss.
