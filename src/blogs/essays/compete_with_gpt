@@ -5,7 +5,7 @@ Slug: compete_with_gpt
 Authors: Philip Kiely
 Summary: ChatGPT can generate multiple paragraphs of coherent text on most topics. It writes like a high school student with fifteen Wikipedia tabs open trying to boost his word count on an essay due in a few hours. *This is a ridiculously impressive capability that did not exist a year ago*. It is because of the quality of ChatGPT that we can now better see the general limitations of these models, as we're not distracted by the more obvious issues present in GPT-3.
 
-*Disclaimer: I work at [Baseten], an MLOps platform for startups. This is my personal opinion and is not endorsed by Baseten.*
+*Disclaimer: I work at [Baseten](https://baseten.co), an MLOps platform for startups. This is my personal opinion and is not endorsed by Baseten.*
 
 GPT is an AI. It creates text. I am a writer. I create text. As you can imagine, GPT and I don't always get along so well.
 
@@ -27,7 +27,7 @@ As GPT magnifies the flood of low-to-moderate quality content in your feeds and 
 
 ## Long-run strategy
 
-There's a concept in finance called Alpha, or returns beyond what is expected for a given level of risk. Skillful trading generates alpha.
+There's a concept in finance called *alpha*, or returns beyond what is expected for a given level of risk. Skillful trading generates alpha.
 
 Great writers deliver insight. It's our equivalent to great traders delivering alpha. And insightful writing is structurally difficult for GPT to accomplish.
 
@@ -67,7 +67,7 @@ This tutorial is less comprehensive than many Stack Overflow answers and require
 
 ![ChatGPT teaches you how to download folders and files from Google Colab](/assets/img/blogs/essays/gpt/ChatGPT_Code_Tutorial.png)
 
-*ChatGPT teaches you how to download folders and files from Google Colab.*
+*ChatGPT teaches you how to download files, but not folders, from Google Colab.*
 
 Half points. ChatGPT doesn't realize that the `files.download()` command won't work with folders (you have to zip those), so it only correctly answered half of the prompt. And it missed out on the chance for extra credit around information like downloads only working on Google Chrome. But I've seen a number of examples where ChatGPT does get the job done, and again factual accuracy should meaningfully increase when it can browse the web while composing a response.
 
@@ -76,6 +76,8 @@ Half points. ChatGPT doesn't realize that the `files.download()` command won't w
 Just because a model can write something doesn't mean you can publish it. Sidestepping the debate on who owns models' outputs in general, many model outputs materially reproduce existing work or rely on trademarked characters.
 
 ![When asked to produce a Shakespearian Sonnet, ChatGPT returns a famous one verbatim](/assets/img/blogs/essays/gpt/ChatGPT_Sonnet_Copy.png)
+
+*When asked to produce a Shakespearian Sonnet, ChatGPT returns a famous one verbatim*
 
 Sure, the specific Shakespeare example is public domain, but I imagine the model reproduces in-copyright material at times as well. Either way, I'm not going to get far claiming it as original work. And despite extensive safety controls built into other areas of the model, ChatGPT seems entirely unrestricted in creating content using other people's trademarks.
 
@@ -115,16 +117,14 @@ A great deal of AI trust and safety work with GPT revolves around what topics it
 
 Many things that GPT refuses to write about, I don't want to write about either, especially in a blog post that my mother is going to read. So let's talk about a relatively innocent topic: sports betting.
 
-![GPT refuses to choose a side on sports.](/assets/img/blogs/essays/gpt/ChatGPT_Sports.png)
+![GPT refuses to acknowledge that the AFC championship was not a fluke and the Bengals will win again this Sunday.](/assets/img/blogs/essays/gpt/ChatGPT_Sports.png)
 
-*GPT refuses to choose a side on sports.*
+*GPT refuses to acknowledge that the AFC championship was not a fluke and the Bengals will win again this Sunday.*
 
 It makes sense that OpenAI would not want their model used for sports betting. You can imagine someone, impressed with the quality and accuracy of GPT on a wide array of topics, asking it the predicted outcome of tonight's NFL game, then confidently betting an irresponsible amount of money on the chosen team, despite the fact that GPT is just as bad at predicting winners as you, me, or the guys in suits on ESPN. 
 
 So GPT will not, without adversarial instructions, make any commentary whatsoever about the past or future outcome of sporting events, and will only provide basic biographical information about franchises and players, wikipedia-style. Sports broadcasters and prognosticators are among those specialized writers who can rest easy knowing that, for now, their topic of choice is considered sufficiently...sacred...that GPT won't touch it.
 
-## Humans need not apply
+## Iron sharpens iron
 
-One of my favorite YouTubers, CGP Grey, released a prescient video eight years ago called "[Humans Need Not Apply](https://www.youtube.com/watch?v=7Pq-S557XQU)." It detailed advancements to automation in transportation, manufacturing, and warehousing, but also knowledge work like business administration, law, medicine, software development, and art. The state of AI at the end of 2022 has meaningfully advanced since 2014, but the video's examples and predictions still ring true.
-
-ChatGPT is not AGI. It is not the end of history. But it is a worthy adversary for any writer and should encourage us all to practice our craft and focus on quality. 
+ChatGPT is not AGI. It is not the end of history. But its sheer speed and breadth makes it a worthy adversary for any writer and should encourage us all to practice our craft and focus on quality.
