@@ -21,6 +21,10 @@ GPT does not make great writing less valuable. It makes it more valuable. We don
 
 As GPT magnifies the flood of low-to-moderate quality content in your feeds and search results, writers can survive in the age of AI the same way we have survived until now: staying on the right side of the power law in our chosen niche with an unrelenting focus on quality.
 
+![GPT plots its own downfall.](/assets/img/blogs/essays/gpt/ChatGPT_Compete.png)
+
+*GPT plots its own downfall.*
+
 ## Long-run strategy
 
 There's a concept in finance called Alpha, or returns beyond what is expected for a given level of risk. Skillful trading generates alpha.
@@ -35,6 +39,10 @@ GPT is trained on a bunch of stuff. The more common certain stuff is in the bunc
 
 As for conviction, GPT doesn't even rise to the level of opinion. It vacillates, strenuously avoiding endorsing any one idea when there is genuine competition. And it refuses to make any predictions, a lack of conviction which also further limits its chances at novelty. Its writing seems explicitly designed to avoid evoking emotion in its readers.
 
+![GPT refuses to take a side.](/assets/img/blogs/essays/gpt/ChatGPT_Opinion.png)
+
+*GPT refuses to take a side.*
+
 A new idea, discovery, or report — that you believe in — is insight. And insight stands out against GPT's output just as it does against the millions of blog posts and tweets that flow daily from human fingers.
 
 I would love to be able to write incredibly insightful stuff every time I sit in front of my keyboard. I'm working on that. Until then, I still need stuff to write on my less intelligent days. Fortunately, GPT has some limitations that, while they won't last forever, give me some breathing room to develop that every-post-an-insight skill. Here are some edges human writers have over GPT in its current form (ChatGPT December 2022) that should last long enough to put some food on the table.
@@ -47,7 +55,9 @@ ChatGPT, while quite capable, has substantial shortcomings. These will be overco
 
 GPT sometimes hallucinates false information. Here's ChatGPT believing that Tom Brady is retired from the NFL (the model's information cutoff range is near his 40-day attempted retirement). So until the model gets real-time access to search results (which it will soon), and even once it has more information to work with, its output cannot be used directly where accuracy matters.
 
-![](Tom Brady is actively playing, but ChatGPT believes he is retired. What a hater.)
+![Tom Brady is actively playing, but ChatGPT believes he is retired. What a hater.](/assets/img/blogs/essays/gpt/ChatGPT_Brady.png)
+
+*Tom Brady is actively playing, but ChatGPT believes he is retired. What a hater.*
 
 One place accuracy matters is software engineering. A good part of my job is writing technical tutorials explaining how to program something and giving sample code. I was particularly impressed by ChatGPT's ability to generate reasonable technical content. But head to head, I have an edge in detail and accuracy (good thing, too, I like my job!).
 
@@ -55,7 +65,9 @@ Last week, I wrote a hundred-word article about how to download folders and file
 
 This tutorial is less comprehensive than many Stack Overflow answers and requires very little context to create, so it is an easy pitch for GPT to knock out of the park. Let's see how it does:
 
-![](ChatGPT teaches you how to download folders and files from Google Colab)
+![ChatGPT teaches you how to download folders and files from Google Colab](/assets/img/blogs/essays/gpt/ChatGPT_Code_Tutorial.png)
+
+*ChatGPT teaches you how to download folders and files from Google Colab.*
 
 Half points. ChatGPT doesn't realize that the `files.download()` command won't work with folders (you have to zip those), so it only correctly answered half of the prompt. And it missed out on the chance for extra credit around information like downloads only working on Google Chrome. But I've seen a number of examples where ChatGPT does get the job done, and again factual accuracy should meaningfully increase when it can browse the web while composing a response.
 
@@ -63,11 +75,13 @@ Half points. ChatGPT doesn't realize that the `files.download()` command won't w
 
 Just because a model can write something doesn't mean you can publish it. Sidestepping the debate on who owns models' outputs in general, many model outputs materially reproduce existing work or rely on trademarked characters.
 
-![](When asked to produce a Shakespearian Sonnet, ChatGPT returns a famous one verbatim)
+![When asked to produce a Shakespearian Sonnet, ChatGPT returns a famous one verbatim](/assets/img/blogs/essays/gpt/ChatGPT_Sonnet_Copy.png)
 
 Sure, the specific Shakespeare example is public domain, but I imagine the model reproduces in-copyright material at times as well. Either way, I'm not going to get far claiming it as original work. And despite extensive safety controls built into other areas of the model, ChatGPT seems entirely unrestricted in creating content using other people's trademarks.
 
-![](A stylistically dull paragraph of fanfiction that uses trademarked characters)
+![GPT cheerfully writes a stylistically dull paragraph of fanfiction that uses trademarked characters](/assets/img/blogs/essays/gpt/ChatGPT_Harry_Potter.png)
+
+*GPT cheerfully writes a stylistically dull paragraph of fanfiction that uses trademarked characters*
 
 I am a big fan of fair use, and I am glad that the model does not make intellectual property decisions on the behalf of the user. Large, litigious employers will continue to require human-generated work until legal precedent catches up to technological progress, which could take the longest of anything on this list.
 
@@ -77,7 +91,9 @@ Per OpenAI, "the model is often excessively verbose and overuses certain phrases
 
 Capable text summarization models have been around for longer than text generation models of the same ability, so this flaw can be partially addressed for applied uses of ChatGPT by composing models: passing the output of one as the input to the next. And ChatGPT even has its own summarization capabilities.
 
-![]()
+![ChatGPT summarizes its own work.](/assets/img/blogs/essays/gpt/ChatGPT_Summary.png)
+
+*ChatGPT summarizes its own work.*
 
 But summaries and concise writing are meaningfully different. There are sweet spots on the spectrum of information density, and great writing often presents the same idea in multiple ways. Meaningful examples, multiple detailed perspectives, and metaphorical language all expand writing to the length that ChatGPT is optimized for — "trainers prefer longer answers that look more comprehensive" — without the information-sparse style that characterizes present-generation GPT output.
 
@@ -87,7 +103,9 @@ Some of the most common advice around standing out as a writer centers finding y
 
 Sketch comedians like the cast of *SNL* have mastered imitating famous peoples' styles to create parodies. And GPT can be made an expert mimic through a process called tuning, which weights the model more heavily toward certain outputs. With enough representation in a sample, it can replicate a style.
 
-![](Some of the syllable counts and rhymes are slightly off, but this is an extremely believable sonnet that is Shakespearean in more than just vocabulary)
+![Some of the syllable counts and rhymes are slightly off, but this is an extremely believable sonnet that is Shakespearean in more than just vocabulary.](/assets/img/blogs/essays/gpt/ChatGPT_Sonnet_Original.png)
+
+*Some of the syllable counts and rhymes are slightly off, but this is an extremely believable sonnet that is Shakespearean in more than just vocabulary.*
 
 Imitation is flattery, and anyone big enough to be copied doesn't really need to worry about GPT anymore. Just as Rolex watches and Picasso paintings are forged, so too can your style be copied. Copying just makes genuine originals worth more, but it is a risk worth discussing if only because GPT is so good at it.
 
@@ -97,7 +115,9 @@ A great deal of AI trust and safety work with GPT revolves around what topics it
 
 Many things that GPT refuses to write about, I don't want to write about either, especially in a blog post that my mother is going to read. So let's talk about a relatively innocent topic: sports betting.
 
-![]()
+![GPT refuses to choose a side on sports.](/assets/img/blogs/essays/gpt/ChatGPT_Sports.png)
+
+*GPT refuses to choose a side on sports.*
 
 It makes sense that OpenAI would not want their model used for sports betting. You can imagine someone, impressed with the quality and accuracy of GPT on a wide array of topics, asking it the predicted outcome of tonight's NFL game, then confidently betting an irresponsible amount of money on the chosen team, despite the fact that GPT is just as bad at predicting winners as you, me, or the guys in suits on ESPN. 
 
