@@ -9,7 +9,7 @@ GPT is an AI. It creates text. I am a writer. I create text. As you can imagine,
 
 I'm using GPT as a general term here for a family of Large Language Models (LLMs). The most recent member of this family, [ChatGPT](https://openai.com/blog/chatgpt/), consistently avoids the many shortcomings that made its immediate predecessor, GPT-3, easy for me to dismiss.
 
-ChatGPT can generate multiple paragraphs of coherent text on most topics. It writes like a high school student with fifteen Wikipedia tabs open trying to boost his word count on an essay due in a few hours. *This is a ridiculously impressive capability that did not exist a year ago*. It is because of the quality of ChatGPT that we can now better see the general limitations of these models, as we're not distracted by the more obvious issues present in GPT-3.
+ChatGPT can generate multiple paragraphs of coherent text on most topics. It writes like a high school student with fifteen Wikipedia tabs open trying to boost his word count on an essay due in a few hours. *This is a ridiculously impressive capability that did not exist a year ago*. GPT now brings sufficient performance that we can explore the general limitations of these models.
 
 The generalized "GPT" is intentional: soon enough a newer, more powerful GPT model will be released, and I will have to compete against that one too. To do so, I have to be both respectful of its capabilities and realistic about its limitations. I'm drawing on both my technical knowledge as a software developer and my craft as a professional writer to understand what lasting ability I'll have to make a living generating text in the face of increased competition.
 
