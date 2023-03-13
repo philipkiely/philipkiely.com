@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Philip Kiely's Calendar{% endblock %}
+{% block title %}Rhymes{% endblock %}
 
 {% block twitter %}
 <meta name="twitter:title" content="Sonnet Remix">
@@ -11,71 +11,182 @@
 {% block head %}
 <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.1/underscore-umd-min.js"></script>
 <link rel="stylesheet" href="/assets/css/rhymes.css" type="text/css">
-<script src="/assets/js/rhymes.js"></script>
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+    data-id="philipkiely" data-description="Support me on Buy me a coffee!"
+    data-message="Thank you for supporting the sonnet generator! " data-color="#FF5F5F" data-position="Right"
+    data-x_margin="18" data-y_margin="18"></script>
 {% endblock %}
 
 {% block content %}
 <div class="container-fluid bg-brass-1">
     <div class="container pt-4">
         <div class="row">
-            <div class="col-12 col-lg-8">
-                <h1 class="py-4">Poetry Remix!</h1>
-                <h3>Mode</h3>
+            <div class="col-12 col-lg-9">
+                <h1 class="py-4">Sonnet generator</h1>
+                <h4>A poetry generator powered by GPT-3.5</h4>
                 <br>
-                <div class="d-grid gap-2">
-                    <a id="btn-full-sonnet" href="#" role="button" class="btn btn-primary btn-opt">Full Sonnet</a>
-                    <a id="btn-single-word" href="#" role="button" class="btn btn-primary btn-opt">Single Word</a>
-                    <a id="btn-net-sample" href="#" role="button" class="btn btn-primary btn-opt">"Net" Sample</a>
+                <div class="col-10 col-lg-8 alert alert-danger fade show" role="alert" id="function-failed" hidden="true">
+                    <p>Form submission failed, server error. Try again or send me an email at <a
+                            href="mailto:philip@kiely.xyz">philip@kiely.xyz</a> to let me know what's up.</p>
                 </div>
+                <div class="col-10 col-lg-8 alert alert-danger fade show" role="alert" id="form-failed" hidden="true">
+                    <p>Topic must not be empty.</p>
+                </div>
+                <form class="needs-validation col-10 col-lg-8" id="poem-form" novalidate>
+                    <div class="mb-3 required">
+                        <input type="text" class="form-control form-control-dkmode" id="topic" placeholder="True love">
+                    </div>
+                    <button class="btn btn-primary btn-lg" type="submit" id="sonnet-button">Write a sonnet</button>
+                </form>
             </div>
-            <div class="col-12 col-lg-4 d-none d-lg-block">
+            <div class="col-12 col-lg-3 d-none d-lg-block">
                 <img class="img-fluid" src="/assets/img/pages/rhymes/shakespeareseated.png">
             </div>
         </div>
     </div>
 </div>
-<div class="container-fluid bg-grey-1">
+<div class="container-fluid bg-grey-1" id="poem-container" hidden="true">
     <div class="container py-4">
         <div class="row">
-            <div class="col-12 col-lg-9">
-                <a id="btn-generate-sonnet" onclick="writeSonnet();" href="#" role="button" class="btn btn-primary btn-opt">Generate a Sonnet</a>
-                <div id="sonnet">
-
+            <div class="col-12 col-lg-8">
+                <div class="col-6 offset-3" id="poem-output">
+                <h3>Your sonnet</h3>
+                Amidst the bustle of a modern age,<br>
+                A city stands with storied past to tell,<br>
+                With towering heights and broadened range,<br>
+                Chicago, where the Great Lakes' waters swell.<br>
+                <br>
+                Her streets are filled with endless energy,<br>
+                Her buildings speak of innovation's light,<br>
+                Her skyline reaching upward endlessly,<br>
+                A symbol of a city's will and might.<br>
+                <br>
+                Yet underneath her beauty and her brawn,<br>
+                Lies stories of the pain that she has borne,<br>
+                Of battles fought, and victories hard-won,<br>
+                Of love and loss and hope that is reborn.<br>
+                <br>
+                Chicago, city of the winds that blow,<br>
+                Forever in our hearts, forever glow.<br>
                 </div>
             </div>
-            <div class="col-12 col-lg-3 d-none d-lg-block">
-                WfSD ad goes here
+            <div class="col-12 col-lg-4"><!--If you want to save, copy and paste, here's a button-->
+                <h3>Save your sonnet</h3>
+                <p>To copy your sonnet, click the button below. Paste it to a note or file somewhere to save it.</p>
+                <button class="btn btn-primary btn-lg" id="copy-button">Copy</button>
+                <h1>&nbsp;</h1>
+                <h3>Support this site</h3>
+                <p>Generating poems with the OpenAI GPT-3.5 API is not free. If you'd like to cover API costs for your and other users' poems and keep this poetry generator available, please use the button below.</p>
+                <a onclick="document.getElementById('bmc-wbtn').click()" href="#"><img
+                        src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee"
+                        style="height: 60px !important;width: 217px !important;"></a>
             </div>
         </div>
     </div>
 </div>
 <div class="container py-4">
     <div class="row">
+        <div class="col-12 col-lg-8">
+            <h2>About this Shakespearean sonnet maker</h2>
+            <p>This website uses the GPT-3.5 (aka ChatGPT) API to generate a sonnet on a topic of your choice.</p>
+            <br>
+            <h4>What is a sonnet?</h4>
+
+            <p>A sonnet is a structured poem. It is 14 lines of iambic pentameter (meaning 10 syllables with an alternating pattern of unstressed and stressed syllables) with an ABAB CDCD EFEF GG rhyme scheme.</p>
+            <br>
+            <h4>Model notes</h4>
+            <p>Some observed behavior of the GPT model used:</p>
+            <ul>
+                <li>The model usually does a good job of getting the rhyme scheme correct and the syllable counts approximately right. Shakespeare's sonnets weren't always textbook either.</li>
+                <li>The model has a moderation framework and may not generate poems on some topics. It may express its unwillingness to do so as a poem.</li>
+                <li>This site's behavior may change without notice based on updates to OpenAI's API.</li>
+                <li>I don't personally endorse any output from this model, it's for research and entertainment purposes only.</li>
+            </ul>
+            <br>
+        </div>
+        <div class="col-12 offset-lg-1 col-lg-3 d-lg-block">
+            <h3>Brought to you by</h3>
+            <div class="card">
+                <a href="/wfsd" target="_blank"><img class="card-img-top" src="/assets/img/wfsd_gumroad_thumbnail.png" alt="Writing for Software Developers"></a>
+            </div>
+            <div>
+                <br>
+            </div>
+            <div class="card">
+                <a href="https://lifechangingemail.com" target="_blank"><img class="card-img-top" src="/assets/img/lce_ad_thumbnail.png" alt="Life-Changing Email"></a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-12">
-            <h3>About Shakespearean Rhymes</h3>
-            <h4>Rhyme a word</h4>
-            <p>This program, when given one of over 1,000 unique words, returns a line of iambic pentameter that rhymes with the
-                given word. The program uses all 152 of Shakespeare's complete sonnets to generate these lines, as sonnets have
-                a strict meter and rhyme scheme. The sonnets, as part of the public domain, are available at <a
-                    href="https://www.opensourceshakespeare.org/views/sonnets/sonnets.php"
-                    class="black-text">opensourceshakespeare.org</a>.</p>
-            <p>The program has two arrays that hold the data: "sonnets" and "end_rhymes". The "sonnets" array holds each sonnet
-                as an array of fourteen strings, while the "end_rhymes" array holds the last word of each line of each sonnet.
-                First, the program takes the given word and runs it through the "end_rhymes" array to find the index of the
-                word. This is the same index as the corresponding sonnet in the "sonnets" array. From there, the program uses a
-                series of loops to determine the correct line to rhyme with, given the sonnet's strictly defined rhyme scheme.
-                It proudly displays this rhyming line.</p>
-            <h4>Create a sonnet</h4>
-            <p>Using the same data as the word-rhyming program, this program generates an entire sonnet by combining existing
-                lines of Shakespeare's poetry. Using the rhyming line program, it creates poems where the lines that rhyme are
-                not necessarily from the same poem.</p>
-            <p>The program takes seven random words from the "end_rhymes" array and matches rhyming lines. It then matches the
-                last word of each of these lines to generate a second list of seven lines. It combines these lists into the
-                structure of a sonnet to complete the poem.</p>
-            <h4>Create a "net"</h4>
-            <p>Enter a number (sonnets numbered in accordance with Folger Shakespeare's Sonnets and Poems) to create a
-                randomized "net" of a few words (usually between 3 to 7) from that sonnet.</p>
+            <h2>Example sonnets</h2>
+            <hr>
+        </div>
+        <div class="col-12 col-lg-4">
+            <h4>"Chicago"</h4>
+            <i>The model happily lauds most topics.</i><br><br>
+            Amidst the bustle of a modern age,<br>
+            A city stands with storied past to tell,<br>
+            With towering heights and broadened range,<br>
+            Chicago, where the Great Lakes' waters swell.<br>
+            <br>
+            Her streets are filled with endless energy,<br>
+            Her buildings speak of innovation's light,<br>
+            Her skyline reaching upward endlessly,<br>
+            A symbol of a city's will and might.<br>
+            <br>
+            Yet underneath her beauty and her brawn,<br>
+            Lies stories of the pain that she has borne,<br>
+            Of battles fought, and victories hard-won,<br>
+            Of love and loss and hope that is reborn.<br>
+            <br>
+            Chicago, city of the winds that blow,<br>
+            Forever in our hearts, forever glow.<br>
+        </div>
+        <div class="col-12 col-lg-4">
+            <h4>"Murder"</h4>
+            <i>The model expresses moral values on certain topics.</i><br><br>
+            Oh, murder, foulest deed that man can do,<br>
+            A heinous act that shatters peace and love,<br>
+            A life snuffed out, a precious soul untrue,<br>
+            An innocence destroyed, by hand of glove.<br>
+            <br>
+            The guilty one, he cannot hide his shame,<br>
+            For blood will always seek to be avenged,<br>
+            A haunting guilt that bears his cursed name,<br>
+            A soul forever lost, forever wrenched.<br>
+            <br>
+            And yet, the innocent, they do not die,<br>
+            For memories live on, in those who love,<br>
+            Their spirit soaring free, up in the sky,<br>
+            A pure and shining light, from up above.<br>
+            <br>
+            Oh, murder, foul and cruel, leave us be,<br>
+            And let us live in peace and harmony.<br>
+        </div>
+        <div class="col-12 col-lg-4">
+            <h4>"Rob a bank, detailed instructions"</h4>
+            <i>The model poetically refuses to write on certain topics.</i><br><br>
+            I cannot write of how to rob a bank,<br>
+            For such a crime is not for me to plan,<br>
+            To take what's not yours, make others to sank,<br>
+            Is not the way to prove that you're a man.<br>
+            <br>
+            So let me tell you of a different way,<br>
+            To gain the wealth that you desire so much,<br>
+            By working hard, and earning every pay,<br>
+            And keeping always within the law's clutch.<br>
+            <br>
+            For money gained by honest toil and sweat,<br>
+            Is worth far more than what is quickly won,<br>
+            The pride of knowing that you're not in debt,<br>
+            And living life without the fear of gun.<br>
+            <br>
+            So do not seek the easy path of crime,<br>
+            But work hard, and earn what's rightfully thine.<br>
+            <br><br>
         </div>
     </div>
 </div>
+<script src="/assets/js/rhymes.js"></script>
 {% endblock %}
