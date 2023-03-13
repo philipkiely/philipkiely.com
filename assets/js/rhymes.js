@@ -28,7 +28,7 @@ async function processForm(event) {
     try {
         var poem = body["output"]["poem"];
         navigator.clipboard.writeText(poem);
-        document.getElementById("poem-output").innerHTML = "<h3>Your Sonnet about " + topic + "</h3>" + poem.replaceAll("\n", "<br>")
+        document.getElementById("poem-output").innerHTML = "<h3>" + topic + "</h3>" + poem.replaceAll("\n", "<br>")
         document.getElementById("poem-form").reset()
         document.getElementById("sonnet-button").disabled = false;
     } catch {
