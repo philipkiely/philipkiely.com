@@ -27,9 +27,6 @@ async function processForm(event) {
     var body = await response.json()
     try {
         var poem = body["output"]["poem"]
-        while(poem.substring(0, 1) == "\n") {
-            poem.replace("\n", "");
-        }
         document.getElementById("poem-output").innerHTML = "<h3>Your Sonnet about " + topic + "</h3>" + poem.replaceAll("\n", "<br>")
         document.getElementById("poem-form").reset()
         document.getElementById("sonnet-button").disabled = false;
