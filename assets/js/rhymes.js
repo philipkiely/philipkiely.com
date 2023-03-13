@@ -27,6 +27,9 @@ async function processForm(event) {
     var body = await response.json()
     try {
         var poem = body["output"]["poem"]
+        while(poem.substring(0, 2) == "\n") {
+            poem.replace("\n", "");
+        }
         document.getElementById("poem-output").innerHTML = "<h3>Your Sonnet about " + topic + "</h3>" + poem.replaceAll("\n", "<br>")
         document.getElementById("poem-form").reset()
         document.getElementById("sonnet-button").disabled = false;
@@ -38,7 +41,7 @@ async function processForm(event) {
 }
 
 function copyPoem() {
-    navigator.clipboard.writeText(document.getElementById("poem-output").innerHTML = poem.replaceAll("<br>", "\n").replaceAll("<h3>", ""));
+    navigator.clipboard.writeText(document.getElementById("poem-output").innerHTML.replaceAll("<br>", "\n").replaceAll("<h3>", "").replaceAll("</h3>", ""));
 }
 
 // GLOBALS
