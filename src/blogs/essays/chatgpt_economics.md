@@ -46,6 +46,14 @@ If your user is generating more than a few thousand words, you probably won't ma
 
 With this strategy, GPT-4 becomes more viable if the value-add over GPT-3.5 is there. A Netflix-level ten dollars per month covers on the somewhere between fifty to a hundred thousand words per month, so your users can do NaNoWriMo every month and you should be good, but might need to increase the price a bit to make a reasonable margin.
 
+#### BYO API key
+
+Bring your own API key is another version of subscription pricing. With this, users generate their own API keys on OpenAI and pay for usage themselves, while you charge a flat fee for some kind of value-add platform, like a better UI or integrations.
+
+The upside to this approach is you don't have to think about API usage at all in your pricing. But it does limit your customer base to the people with the technical knowledge and inclination to manage their own API keys.
+
+Thanks to [Bruno Cruz](https://twitter.com/ImBrunoCruz) for suggesting this additional strategy.
+
 ### Monetization strategy: usage-based pricing
 
 The low price of ChatGPT per token gives you a lot of headroom for healthy margins if you're doing usage-based pricing for some kind of value-add. On the other hand, it means you'll need a lot of volume to make a real business out of it.
