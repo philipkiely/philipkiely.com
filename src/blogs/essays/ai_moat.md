@@ -1,4 +1,4 @@
-Title&colon; AI Moat or Bridge
+Title: AI&colon; Moat or Bridge
 Date: 2023-03-21
 Modified: 2023-03-21
 Slug: ai_moat
