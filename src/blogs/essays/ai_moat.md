@@ -7,7 +7,9 @@ Summary: Rapid development in AI (today&colon; GPT-4, Midjourney 5, Whisper) are
 
 *Silicon Valley*, season 1 finale *(spoiler alert!)*. Richard Hendrix has created, in theory, the best compression algorithm possible and founded a startup to bring the technology to market.
 
-Richard & co sit in the audience and watch as megacorp Hooli CEO Gavin Belson delivers a keynote announcing an equivalently powerful compression algorithm integrated into Hooli's entire suite of services. Their technical moat evaporates in a single scene.
+Richard & co sit in the audience and watch as megacorp Hooli CEO Gavin Belson delivers a keynote announcing an equally powerful compression algorithm integrated into Hooli's entire suite of services.
+
+Their technical moat evaporates in a single scene.
 
 When I read Microsoft's [copilot announcement](https://blogs.microsoft.com/blog/2023/03/06/introducing-microsoft-dynamics-365-copilot/) and [future of work post](https://www.microsoft.com/en-us/worklab/ai-a-whole-new-way-of-working), I was reminded of this scene. And I was reminded of it again when GPT-4 wiped away an entire generation on GPT-3.5 optimization startups with improvements to the core model's capabilities.
 
@@ -16,8 +18,6 @@ Even AI-specific technical differentiators like prompt engineering are unsteady 
 Advancements in tech eventually reach ubiquity. But today's LLMs and other generative models are so good and so intuitive that they're being integrated faster than any other platform shift. Cutting edge capabilities are just an API call away.
 
 Will these rapid advancements and the resulting lack of technical moats bridge non-technical moats or wrap all the way back around to deepening them?
-
-Another spoiler alert: I don't know! Let's investigate together.
 
 ## Non-Technical Moat: Distribution
 
@@ -29,7 +29,7 @@ I'm doing a small experiment around this question right now with SEO.
 
 Early on in college, I created a poetry generator to write a sonnet for me for English class. Somehow, this simple bit of JavaScript that chopped up and regurgitated Shakespeare's sonnets became the third-ranking "sonnet generator" on Google search with over 2,000 user per month.
 
-A couple of weeks ago, I replaced it with a new UI powered by GPT-3.5. It has stepped up the second search result and doubled its monthly user base. There is zero technical moat on this project. The poetry generation prompt is just "Write a $POEM_TYPE about $SUBJECT". 
+A couple of weeks ago, I replaced it with a [new UI powered by GPT-3.5](https://philipkiely.com/rhymes). It has since stepped up the second search result and doubled its monthly user base. There is zero technical moat on this project. The poetry generation prompt is just "Write a $POEM_TYPE about $SUBJECT".
 
 As I improve the page with more types of poetry, will it climb up to the first spot on search results and perhaps even rank for more general terms like "poetry generator?" Or will it be overtaken by larger publishers integrating the same technology into their own sites?
 
