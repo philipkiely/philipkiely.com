@@ -1,9 +1,9 @@
-Title: AI: Moat or Bridge
+Title&colon; AI Moat or Bridge
 Date: 2023-03-21
 Modified: 2023-03-21
 Slug: ai_moat
 Authors: Philip Kiely
-Summary: Rapid development in AI (today: GPT-4, Midjourney 5, Whisper) are redefining what's possible across the industry. Will this dethrone or entrench incumbents?
+Summary: Rapid development in AI (today&colon; GPT-4, Midjourney 5, Whisper) are redefining what's possible across the industry. Will this dethrone or entrench incumbents?
 
 *Silicon Valley*, season 1 finale *(spoiler alert!)*. Richard Hendrix has created, in theory, the best compression algorithm possible and founded a startup to bring the technology to market.
 
