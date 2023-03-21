@@ -17,7 +17,8 @@ async function processForm(event) {
     document.getElementById("sonnet-button").disabled = true;
     // JSON Data
     var formData = {
-        "topic": topic.substring(0, 100)
+        "topic": topic.substring(0, 100),
+        "type": document.getElementById("poem-type").value
     }
     //Send to the blueprint function
     var response = await fetch("https://app.baseten.co/routes/VqKK3Yq/poem", {

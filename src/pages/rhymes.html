@@ -22,8 +22,8 @@
     <div class="container pt-4">
         <div class="row">
             <div class="col-12 col-lg-9">
-                <h1 class="py-4">Sonnet generator</h1>
-                <h4>A poetry generator powered by GPT-3.5</h4>
+                <h1 class="py-4">Poetry generator</h1>
+                <h4>Write a sonnet, haiku, limerick, or villanelle powered by GPT-3.5</h4>
                 <br>
                 <div class="col-10 col-lg-8 alert alert-danger fade show" role="alert" id="function-failed" hidden="true">
                     <p>Form submission failed, server error. Try again or send me an email at <a
@@ -34,9 +34,17 @@
                 </div>
                 <form class="needs-validation col-10 col-lg-8" id="poem-form" novalidate>
                     <div class="mb-3 required">
-                        <input type="text" class="form-control form-control-dkmode" id="topic" placeholder="True love">
+                        <input type="text" class="form-control form-control-lg form-control-dkmode" id="topic" placeholder="True love">
                     </div>
-                    <button class="btn btn-primary btn-lg" type="submit" id="sonnet-button">Write a sonnet</button>
+                    <div class="input-group mb-3">
+                    <select class="form-select form-select-lg" id="poem-type">
+                        <option value="sonnet" selected>Sonnet</option>
+                        <option value="haiku">Haiku</option>
+                        <option value="limerick">Limerick</option>
+                        <option value="villanelle">Villanelle</option>
+                    </select>
+                    <button class="btn btn-primary btn-lg" type="submit" id="sonnet-button">Write my poem!</button>
+                    </div>
                 </form>
             </div>
             <div class="col-12 col-lg-3 d-none d-lg-block">
