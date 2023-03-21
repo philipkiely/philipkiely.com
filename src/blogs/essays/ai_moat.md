@@ -1,4 +1,4 @@
-Title: Understanding AI Moats Using *Silicon Valley* (the TV Show)
+Title: Understanding AI Moats Using Silicon Valley (the show)
 Date: 2023-03-21
 Modified: 2023-03-21
 Slug: ai_moat
@@ -36,5 +36,3 @@ Dejected, Richard and company head back to their hotel room. Inspired by a lewd 
 The parallel to the show wobbles a bit here. There are companies like [Stability AI](https://stability.ai) and [Anthropic](https://www.anthropic.com) and [Runway ML](https://runwayml.com) and others that are working on their own core models. **But most startups are working to leverage AI to solve specific problems, rather than create foundation models for general use.**
 
 Python is not a moat. Having a website or an app or a REST API or using Kubernetes is not a moat. It's an implementation detail. And AI is heading there.
-
-There is essential work to be done on model quality, prompt engineering, and model chaining. As new models are released, there will always be a race to integrate it first. But traditional differentiators like design, support, price, brand, and, yes, distribution also still matter. 
