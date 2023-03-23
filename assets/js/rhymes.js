@@ -32,6 +32,7 @@ async function processForm(event) {
         document.getElementById("poem-output").innerHTML = "<h3>" + topic + "</h3>" + poem.replaceAll("\n", "<br>")
         document.getElementById("poem-form").reset()
         document.getElementById("sonnet-button").disabled = false;
+        fathom.trackGoal('LZYBY4WB', 0);
     } catch {
         document.getElementById("function-failed").hidden = false
         document.body.scrollTop = document.documentElement.scrollTop = 0;
