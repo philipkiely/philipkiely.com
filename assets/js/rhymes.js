@@ -15,10 +15,12 @@ async function processForm(event) {
     document.getElementById("poem-output").innerHTML = "<p>Your poem is being written. This may take up to one minute.</p>";
     document.getElementById("poem-container").hidden = false;
     document.getElementById("sonnet-button").disabled = true;
+
+    var poemType = document.getElementById("poem-type").value;
     // JSON Data
     var formData = {
         "topic": topic.substring(0, 100),
-        "type": document.getElementById("poem-type").value
+        "type": poemType
     }
     //Send to the blueprint function
     var response = await fetch("https://app.baseten.co/routes/VqKK3Yq/poem", {
@@ -32,7 +34,16 @@ async function processForm(event) {
         document.getElementById("poem-output").innerHTML = "<h3>" + topic + "</h3>" + poem.replaceAll("\n", "<br>")
         document.getElementById("poem-form").reset()
         document.getElementById("sonnet-button").disabled = false;
-        fathom.trackGoal('LZYBY4WB', 0);
+        if (poemType == "haiku") {
+            fathom.trackGoal('20KJR8P8', 0);
+        } else if (poemType == "limerick") {
+            fathom.trackGoal('HLJDNNM0', 0);
+        } else if (poemType == "villanelle") {
+            fathom.trackGoal('1UIQVGVB', 0);
+        } else { //sonnet
+            fathom.trackGoal('LZYBY4WB', 0);
+        }
+        
     } catch {
         document.getElementById("function-failed").hidden = false
         document.body.scrollTop = document.documentElement.scrollTop = 0;
