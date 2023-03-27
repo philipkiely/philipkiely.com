@@ -37,6 +37,10 @@
   to = "/cefip"
 
 [[redirects]]
+  from = "/cefip"
+  to = "https://lifechangingemail.com"
+
+[[redirects]]
   from = "/company"
   to = "https://pkandc.com/"
 
