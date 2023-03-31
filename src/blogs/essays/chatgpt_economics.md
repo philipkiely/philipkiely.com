@@ -5,7 +5,7 @@ Slug: chatgpt_economics
 Authors: Philip Kiely
 Summary: Napkin math on the unit economics of the ChatGPT API (both GPT-3.5 and GPT-4) for various business models. 
 
-GPT 3.5 chat API invocations cost $0.0002 per 1,000 tokens. GPT-4, as of launch, has much higher and more complex prices, ranging from 15x to 60x more expensive. What kind of business models does each support?
+GPT 3.5 chat API invocations cost $0.002 per 1,000 tokens. GPT-4, as of launch, has much higher and more complex prices, ranging from 15x to 60x more expensive. What kind of business models does each support?
 
 ### Unit economics
 
