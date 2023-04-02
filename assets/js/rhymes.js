@@ -34,14 +34,18 @@ async function processForm(event) {
         document.getElementById("poem-output").innerHTML = "<h3>" + topic + "</h3>" + poem.replaceAll("\n", "<br>")
         document.getElementById("poem-form").reset()
         document.getElementById("sonnet-button").disabled = false;
-        if (poemType == "haiku") {
-            fathom.trackGoal('20KJR8P8', 0);
-        } else if (poemType == "limerick") {
-            fathom.trackGoal('HLJDNNM0', 0);
-        } else if (poemType == "villanelle") {
-            fathom.trackGoal('1UIQVGVB', 0);
-        } else { //sonnet
-            fathom.trackGoal('LZYBY4WB', 0);
+        try {
+            if (poemType == "haiku") {
+                fathom.trackGoal('20KJR8P8', 0);
+            } else if (poemType == "limerick") {
+                fathom.trackGoal('HLJDNNM0', 0);
+            } else if (poemType == "villanelle") {
+                fathom.trackGoal('1UIQVGVB', 0);
+            } else { //sonnet
+                fathom.trackGoal('LZYBY4WB', 0);
+            }
+        } catch {
+            //noop
         }
         
     } catch {
