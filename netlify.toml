@@ -22,7 +22,15 @@
 # Redirects to prevent link rot with new build system
 [[redirects]]
   from = "/essays/posts.html"
-  to = "/notes/posts.html"
+  to = "/articles"
+
+[[redirects]]
+  from = "/notes/posts.html"
+  to = "/articles"
+
+[[redirects]]
+  from = "/notes/appearances.html"
+  to = "/press"
 
 [[redirects]]
   from = "/essays/wordpress-scrape.html"
