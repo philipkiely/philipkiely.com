@@ -1,4 +1,4 @@
-Title: Notes from an Informational Interview with Corey Simmonds and Alex Mitchell of 0260 Solutions
+Title: Notes on running a Technical Consultancy
 Date: 2020-05-18
 Modified: 2020-05-18
 Slug: 0260_notes

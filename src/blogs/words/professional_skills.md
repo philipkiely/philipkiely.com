@@ -5,7 +5,7 @@ Slug: professional_skills
 Authors: Philip Kiely
 Summary: The skills needed to get and succeed at a software development internship or job are somewhat different than the skills that most computer science classes teach. In some cases, classes teach exactly the opposite of what you need for a job. In my opinion, the job skills are substantially easier than the class skills and you can pick them up quickly.
 
-A year out of college — the undergraduate equivalent of a grizzled old mountaintop sage — I often find myself in the position of explaining to some new computer science student how to become a professional software developer. This post distills the most essential advice so that kids can get off my lawn more expediently.
+Having achieved the first steps toward success in my career, I sometimes find myself giving advice to college students. This post distills the most essential advice so that kids can get off my lawn more expediently.
 
 The fundamental issue is that the skills needed to get and succeed at a software development internship or job are somewhat different than the skills that most computer science classes teach. In some cases, classes teach exactly the opposite of what you need for a job. In my opinion, the job skills are substantially easier than the class skills and you can pick them up quickly.
 
@@ -69,5 +69,3 @@ Make a GitHub with your real name or a professional alias. A personal website is
 This is an overgeneralization but smaller companies — who really appreciate when you show up with these skills — are also more likely to actually take a look at your projects. Same goes when you get a referral to any company or are able to talk to your prospective boss directly during the hiring process. And small companies or direct referrals are, in my experience, where a lot of students get their first jobs.
 
 There are plenty of other skills that go into being a professional developer. But if you can make these job skills part of your repertoire you'll have a much smoother time getting and excelling in your first job.
-
-P.S. If they don't teach it in class, learn JavaScript. [Eloquent JavaScript](https://eloquentjavascript.net) is a world-class free resource. Do the exercises and the projects from the book and put the code you write for it on your GitHub.

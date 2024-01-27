@@ -1,4 +1,4 @@
-Title: How to Format a PK&C Ebook for Publication
+Title: How I Format and Publish Ebooks
 Date: 2021-09-01
 Modified: 2021-09-01
 Slug: ebook_format

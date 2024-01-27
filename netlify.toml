@@ -55,3 +55,7 @@
 [[redirects]]
   from = "/calendar"
   to = "https://calendly.com/philipkiely/meeting"
+
+[[redirects]]
+  from = "/essays/"
+  to = "/words/"

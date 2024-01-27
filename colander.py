@@ -102,7 +102,7 @@ def build_bytes():
         )
 
 def blogs():
-    blogs = ["essays", "notes", "code"]
+    blogs = ["words", "code"]
     for blog in blogs:
         os.makedirs(os.path.dirname("dist/" + blog + "/"), exist_ok=True)
         posts = ls("src/blogs/" + blog)
@@ -113,7 +113,7 @@ def blogs():
         build_index(blog, articles)
         for article in articles:
             build_article(blog, article)
-    build_bytes()
+    #build_bytes()
     print("Blogs built")
 
 ################

@@ -1,15 +1,15 @@
 Title: Transcribing Audio without Automation or Outsourcing
 Date: 2020-03-02
-Modified: 2020-03-02
+Modified: 2024-01-27
 Slug: transcribe
 Authors: Philip Kiely
-Summary: Recently, I had tens of thousands of spoken words that need to be transcribed into written text. "Hang on," you might be thinking, "why would a college student who, by all accounts, spends his time on reputable pursuits such as Python, need to convert audio into text?" While I was doing interviews for my book, I transcribed about 8 hours of audio, a process that took somewhere between 24 and 32 hours of very focused work over the course of a month or so. Here's what I learned in the process.
+Summary: Recently, I had tens of thousands of spoken words that need to be transcribed into written text. Here is what I learned about manual transcription.
 
 Recently, I had tens of thousands of spoken words that need to be transcribed into written text. "Hang on," you might be thinking, "why would a college student who, by all accounts, spends his time on reputable pursuits such as Python, need to convert audio into text?" While I was doing interviews for [my book](https://philipkiely.com/wfsd/), I transcribed about 8 hours of audio, a process that took somewhere between 24 and 32 hours of very focused work over the course of a month or so. Here's what I learned in the process.
 
-How would you do it? First, you might think of an automated solution. Dictation software has been around for years, so speech-to-text must be good by now, right? Unfortunately, as gathered from [my experiments with AWS speech-to-text](https://www.smashingmagazine.com/2019/10/text-to-speech-aws-part-2/), the technology isn't a viable option for any level of readability. If you have the money, by the time you're done reading this post you'll want to outsource it, and probably should (at a cost of around a hundred dollars per hour of audio, less if you can wait a week or more for delivery). My only recommendation is that if you're going to spend money, spend enough to get a good result. If spending that kind of money isn't viable, and you're not going to single-handedly decrease the error rate of AI speech-to-text systems by a couple orders of magnitude, then you're left with only one option: transcribe it yourself.
+Author's note: this article was written before Whisper, a highly accurate speech-to-text model, was available. Now, I'd just use AI.
 
-These notes only apply to transcribing audio/video files, where you have the ability to pause and rewind the audio. I have no idea how real-time transcription is possible, I assume it is by the use of some sort of shorthand or specialized input device. Ultimately, transcribing is not a fun physical act, but it does help you get familiar with the material you're listening to. With just a few simple pieces of equipment and a sufficient time investment, transcribing audio is an accomplishable task.
+Transcribing audio by hand is hard, but valuable. With just a few simple pieces of equipment and some dedicated focus, it's possible to transcribe audio quickly and accurately by hand.
 
 ### Use a Foot Pedal
 
@@ -21,7 +21,7 @@ If I had a foot pedal to recommend, I'd be linking it right here. However, I did
 
 ### Be(come) a Decent Typist
 
-I don't want to wade too deep into the holy war of [the importance of typing for a programmer](https://blog.codinghorror.com/we-are-typists-first-programmers-second/), but I'll say this. A person talks somewhere around [150 words per minute](https://en.wikipedia.org/wiki/Words_per_minute#Speech_and_listening) in casual conversation. The average person types below [40 words per minute](https://en.wikipedia.org/wiki/Words_per_minute). Unless you have some limiting physical disability, you should be able to get up above a sixty-word-per-minute typing speed with practice. When I say "limiting," I have nine fingers, only six of which are fully functional. I type above sixty words per minute, asterisk.
+I don't want to wade too deep into the holy war of [the importance of typing for a programmer](https://blog.codinghorror.com/we-are-typists-first-programmers-second/), but I'll say this. A person talks somewhere around [150 words per minute](https://en.wikipedia.org/wiki/Words_per_minute#Speech_and_listening) in casual conversation. The average person types below [40 words per minute](https://en.wikipedia.org/wiki/Words_per_minute). Unless you have some limiting physical disability, you should be able to get up above a sixty-word-per-minute typing speed with practice. When I say "limiting," I have nine fingers, only six of which are fully functional. I type above sixty words per minute.
 
 The asterisk here is sustained versus peak typing speed. When people talk about how fast they can type, they're usually referring to their score on a one-minute typing test. Just like sprinting is faster than jogging, you'll type slower when typing actually non-stop for an hour or more straight. My sustained transcribing pace is between 40 and 45 words per minute, which also accounts for play/pause and rewind.
 

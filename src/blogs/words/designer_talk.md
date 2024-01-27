@@ -3,9 +3,9 @@ Date: 2020-12-03
 Modified: 2020-12-03
 Slug: designer_talk
 Authors: Philip Kiely
-Summary: Thanks to a conversation I had with Jack Zerby at Gumroad, I now feel confident asking designers to create a user interface, graphic, visual identity, or any other design artifact and have become much more productive at communicating and delegating design tasks. These are my notes from that conversation.
+Summary: These are notes from a conversation I had with a designer that helped me get more comfortable and effective working with designers. 
 
-Thanks to a conversation I had with [Jack Zerby](https://twitter.com/jackzerby) at Gumroad, I now feel confident asking designers to create a user interface, graphic, visual identity, or any other design artifact and have become much more productive at communicating and delegating design tasks. This is essential because my design skills are non-existent. Fortunately, design skills don't matter in creating a spec, design thinking does. These are my notes from that conversation.
+Thanks to a conversation I had with [Jack Zerby](https://twitter.com/jackzerby) at Gumroad, I now feel more comfortable working with designers to create a user interface, graphic, visual identity, or any other design artifact and have become much more productive at communicating and delegating design tasks. This is essential because my design skills are non-existent. Fortunately, design skills don't matter in creating a spec, design thinking does. These are my notes from that conversation.
 
 Readers familiar with speccing software or anything else may realize that the advice I'm conveying here matches both your use case and the general case. That, in fact, is the insight that I was missing before the conversation. I already knew how to spec a design, I just needed the right words.
 

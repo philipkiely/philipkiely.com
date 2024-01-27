@@ -3,7 +3,7 @@ Date: 2022-09-14
 Modified: 2022-09-14
 Slug: cac_free_lunch
 Authors: Philip Kiely
-Summary: Let's investigate the mechanics and incentives in sports betting apps to figure out how I won $300 for free.
+Summary: A look at paying customer acquisition cost directly to the customer.
 
 *Free lunch: An idiom from economics that means getting something for nothing*
 

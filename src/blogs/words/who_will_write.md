@@ -5,25 +5,7 @@ Slug: who_will_write
 Authors: Philip Kiely
 Summary: If the best strategy for mixing in-house content with various outsourced options was the same for every company, this article would be a lot shorter. However, your company's resources and goals determine the best content strategy.
 
-If the best strategy for mixing in-house content with various outsourced options was the same for every company, this article would be a lot shorter. However, your company's resources and goals determine the best content strategy.
-
-I sometimes have the following conversation with people, though generally not in exactly these words:
-
-![Them: Hi, I run or work for a SaaS or IaaS business that makes tools for software developers. Me: Wow, that's awesome! How can I become just like you when I grow up?](/assets/img/blogs/essays/who_will_write/content_post_panel1.png)
-
-![Them: "It's a fun job, but I have a small problem." Me: "Oh no! How can I help?"](/assets/img/blogs/essays/who_will_write/content_post_panel2.png)
-
-![Them: "You see, all of my friends who run or work for a SaaS or IaaS businesses have these high-quality technical blogs full of compelling, valuable content, which is helping them with reaching new customers, retaining and upselling existing customers, and recruiting employees. All I have are these three blog posts that I found crumpled up in my winter jacket." Me: "I see, and you want to have a streamlined technical content marketing process that builds long-term value for your company and your customers."](/assets/img/blogs/essays/who_will_write/content_post_panel3.png)
-
-Now, this is where the conversation diverges. Very rarely, the conversation continues with:
-
-![Them: "Exactly! Now, I have this big pile of money over here and this legion of dedicated, capable employees with all of the necessary skills over there. How can I turn all of that into great content?" Me: "Oh do I have some ideas from you!"](/assets/img/blogs/essays/who_will_write/content_post_panel4.png)
-
-More often, however, the conversation continues with:
-
-![Them: "Exactly. Issue is, all I have is 37 cents in loose change from buying lunch and five minutes right before I go to sleep every other Thursday. How can I ever hope to make great content?" Me: "I sure do see your problem..."](/assets/img/blogs/essays/who_will_write/content_post_panel5.png)
-
-I wrote this article to explore the most common outcomes of this conversation. There are links at the end of each section if you think you've found a good fit. Feel free to contact me with any questions this article doesn't answer, I'd love to hear from you and potentially make a recommendation for your business's needs.
+If the best strategy for mixing in-house content with various outsourced options was the same for every company, this article would be a lot shorter. However, your company's resources and goals determine the best content strategy. There are links at the end of each section if you think you've found a good fit. Feel free to contact me with any questions this article doesn't answer, I'd love to hear from you and potentially make a recommendation for your business's needs.
 
 ## Do It In-House
 
