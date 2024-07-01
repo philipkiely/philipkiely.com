@@ -5,7 +5,7 @@ Slug: wfsd_sales_page
 Authors: Philip Kiely
 Summary: This post outlines the decisions I made while implementing the landing page for *Writing for Software Developers* and logs changes to the page over time.
 
-I am not an expert marketer or sales page copywriter. However, the sales and feedback from my page for [*Writing for Software Developers*](/wfsd) were strong signals that I got a few things right in creating the page. This post outlines the decisions I made while implementing the landing page for *Writing for Software Developers* and logs changes to the page over time. It is broken down by section, so you can scroll along with the sales page itself to compare the descriptions with the actual website.
+I am not an expert marketer or sales page copywriter. However, the sales and feedback from my page for [*Writing for Software Developers*](https://wfsd.com) were strong signals that I got a few things right in creating the page. This post outlines the decisions I made while implementing the landing page for *Writing for Software Developers* and logs changes to the page over time. It is broken down by section, so you can scroll along with the sales page itself to compare the descriptions with the actual website.
 
 In *Authority*, Nathan Barry describes the two roles of a sales page: introduce the product and overcome objections. Each aspect of the page is designed to achieve at least one of these goals. The order of information on the page is also inspired by the book and is a pretty good starting place for outlining your own landing page.
 

@@ -5,7 +5,7 @@ Slug: wfsd_financials
 Authors: Philip Kiely
 Summary: This post reports income and expenses from creating *Writing for Software Developers*. I update the post as merited.
 
-This post reports income and expenses from creating [*Writing for Software Developers*](/wfsd). I update the post as merited.
+This post reports income and expenses from creating [*Writing for Software Developers*](https://wfsd.com). I update the post as merited.
 
 Writing a book is a huge investment. Mostly, you invest your time. I do not know how many hours I spent working on *Writing for Software Developers*, but it was my main project for six months. During that time, I spent plenty of energy on client projects and school, but this book was my primary focus. While the main investment was time, it also cost over 1,000 dollars to get *Writing for Software Developers* out the door. I hope that this transparency helps other writers know what to expect in terms of expenses and what level of income is possible when self-publishing a technical book. These figures are offered in the spirit of the Open Startups philosophy.
 
@@ -39,7 +39,7 @@ My earnings so far are entirely through Gumroad. To date (January 27, 2024):
 
 I sell the book for $36, $136 for the corporate license, of which I've sold 13. I have purchase power parity enabled and occasionally run discounts, meaning many of my sales are for less than this price. In total, I've sold 1,189 copies.
 
-This post is one of four about [*Writing for Software Developers*](/wfsd).
+This post is one of four about [*Writing for Software Developers*](https://wfsd.com).
 
 1. [Writing *Writing for Software Developers*](/essays/writing_wfsd.html)
 2. [Marketing *Writing for Software Developers*](/essays/marketing_wfsd.html)

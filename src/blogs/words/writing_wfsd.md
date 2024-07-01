@@ -5,7 +5,7 @@ Slug: writing_wfsd
 Authors: Philip Kiely
 Summary: I wrote my first book, *Writing for Software Developers*, in six months. This post details every step of the process. Read about the initial idea, the interviews, the writing process, the editing stage, and putting it all together for publication.
 
-"I have this idea for a book," I told my mother, certainly not for the first time, over Thanksgiving break. "I think I can get it finished by the end of winter break." I ended up launching [*Writing for Software Developers*](/wfsd/) over six months later, achieving my revised goal of launching six days before I graduated from college.
+"I have this idea for a book," I told my mother, certainly not for the first time, over Thanksgiving break. "I think I can get it finished by the end of winter break." I ended up launching [*Writing for Software Developers*](https://wfsd.com/) over six months later, achieving my revised goal of launching six days before I graduated from college.
 
 ![Progress of *Writing for Software Developers*](/assets/img/snowball_charts.jpg)
 
@@ -171,7 +171,7 @@ Despite bad design, an apparent lack of CSS, and truly baffling sessions issues 
 
 With everything in place, I uploaded my book to Gumroad and launched it on Tuesday, May 12, 2020, at 8AM.
 
-This post is one of four about [*Writing for Software Developers*](/wfsd/).
+This post is one of four about [*Writing for Software Developers*](https://wfsd.com/).
 
 1. [The Writing of *Writing for Software Developers*](/essays/writing_wfsd.html) (You are here)
 2. [Marketing *Writing for Software Developers*](/essays/marketing_wfsd.html)

@@ -23,7 +23,7 @@ If you have employees, the question is the same. If you're paying an engineer to
 
 I'm not saying you shouldn't write your own content. Often, the most successful and impactful content is written by startup owners, senior engineers, and other people close to the systems they're writing about. I think that every software engineer becomes better at coding by writing about it. Writing your own content is a great way to get started and inject authenticity into your technical content marketing.
 
-If you're planning to write for a developer audience, check out my book: [Writing for Software Developers](/wfsd).
+If you're planning to write for a developer audience, check out my book: [Writing for Software Developers](https://wfsd.com).
 
 ## Run a Community Writer Program
 

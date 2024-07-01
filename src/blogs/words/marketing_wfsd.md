@@ -70,7 +70,7 @@ The most successful effort along these lines has been my podcast book tour. I us
 
 Here is a video walkthrough of much of this information [on YouTube](https://www.youtube.com/watch?v=uPINzgdfjpw).
 
-This post is one of four about [*Writing for Software Developers*](/wfsd/).
+This post is one of four about [*Writing for Software Developers*](https://wfsd.com).
 
 1. [Writing *Writing for Software Developers*](/essays/writing_wfsd.html)
 2. [Marketing *Writing for Software Developers*](/essays/marketing_wfsd.html) (You are here)

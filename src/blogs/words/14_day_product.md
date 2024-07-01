@@ -19,7 +19,7 @@ Day One is all about coming up with a good idea for a product. Not the perfect i
 
 I totally agree with this advice, expertise is everything here. I’m a good writer and I have training in journalism and creative nonfiction. I have a liberal arts degree, I can do research and write papers. These are skills that help me write about anything.
 
-What matters here is the definition of expertise. Having expertise doesn't have to mean that you are the world's foremost authority on a topic, only that you have earned experience and a [yellow belt mentality](/essays/black-belt-white-belt.html). It helps if you can identify your expertise as the intersection of two or more topics, like I did with [Writing for Software Developers](/wfsd/).
+What matters here is the definition of expertise. Having expertise doesn't have to mean that you are the world's foremost authority on a topic, only that you have earned experience and a [yellow belt mentality](/essays/black-belt-white-belt.html). It helps if you can identify your expertise as the intersection of two or more topics, like I did with [Writing for Software Developers](https://wfsd.com).
 
 ### Keep Your Scope Small
 

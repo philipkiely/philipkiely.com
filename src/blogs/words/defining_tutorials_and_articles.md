@@ -15,7 +15,7 @@ Making this division is useful because I approach each kind of writing different
 The distinction does not mean that topic-based articles cannot have code or project-based tutorials cannot discuss broader themes; it simply refers to the main goal of the piece. Chris on Code, who runs [Scotch.io](https://scotch.io), a website offering programming tutorials that was acquired by Digital Ocean, told me the following about how Scotch.io thinks about different types of content.
 
 * Our main separation is between theory, which is not an article that you can actually create something with, but more of an article that help you understand the concept, and practice. At Scotch we had a category called bar talk, which was simply news. The second category is tutorials, and within tutorials we have theory and practice. Within that, there are other small tags like quick tip, which is an article that you read in about 30 seconds, or real-world project, which is the longer form.
-* -- *Chris on Code*, excerpt from interview in *[Writing for Software Developers](/wfsd)*
+* -- *Chris on Code*, excerpt from interview in *[Writing for Software Developers](https://wfsd.com)*
 
 British writer Anne Isabella Thackeray Ritchie is widely credited with propagating the phrase that became "Give a man a fish, and he will eat for a day. Teach a man to fish, and he will eat for the rest of his life." Her original quote, from the 1885 novel *Mrs. Dymond*: "...if you give a man a fish he is hungry again in an hour. If you teach him to catch a fish you do him a good turn."
 
@@ -26,11 +26,11 @@ English humorist Terry Pratchett turned the fishing quote on its head: "Build a 
 You can develop both project-based tutorials and topic-based articles from the same initial idea. There is value in both, and what you create will depend on your interests, your audience, and your publisher if you have one. The important question is, "what do you want to teach?"
 
 * You have to pick your goal per tutorial. For me, picking tutorial goals is interesting because sometimes I want to get a quick tip out so that people can visit the article, find the code snippet that they need, and get out.... There are other types of articles where we do far more long-form tech tutorials. These articles say, "Hey, do you have a couple hours? Let's build something together. Let's make some random, fun project." For me, those articles are very much learning projects.
-* -- *Chris on Code*, excerpt from interview in *[Writing for Software Developers](/wfsd)*
+* -- *Chris on Code*, excerpt from interview in *[Writing for Software Developers](https://wfsd.com)*
 
 Keeping the right archetype in mind while writing can help your piece achieve its goals.
 
-This discussion was cut from my book *[Writing for Software Developers](/wfsd)* near the end of its editing. For a step-by-step guide on creating technical tutorials, topic-based articles, and whatever else you want to write for a technical audience, read [Writing for Software Developers](/wfsd).
+This discussion was cut from my book *[Writing for Software Developers](https://wfsd.com)* near the end of its editing. For a step-by-step guide on creating technical tutorials, topic-based articles, and whatever else you want to write for a technical audience, read [Writing for Software Developers](https://wfsd.com).
 
 <style>
  ul {

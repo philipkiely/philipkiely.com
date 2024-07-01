@@ -5,7 +5,7 @@ Slug: transcribe
 Authors: Philip Kiely
 Summary: Recently, I had tens of thousands of spoken words that need to be transcribed into written text. Here is what I learned about manual transcription.
 
-Recently, I had tens of thousands of spoken words that need to be transcribed into written text. "Hang on," you might be thinking, "why would a college student who, by all accounts, spends his time on reputable pursuits such as Python, need to convert audio into text?" While I was doing interviews for [my book](https://philipkiely.com/wfsd/), I transcribed about 8 hours of audio, a process that took somewhere between 24 and 32 hours of very focused work over the course of a month or so. Here's what I learned in the process.
+Recently, I had tens of thousands of spoken words that need to be transcribed into written text. "Hang on," you might be thinking, "why would a college student who, by all accounts, spends his time on reputable pursuits such as Python, need to convert audio into text?" While I was doing interviews for [my book](https://wfsd.com), I transcribed about 8 hours of audio, a process that took somewhere between 24 and 32 hours of very focused work over the course of a month or so. Here's what I learned in the process.
 
 Author's note: this article was written before Whisper, a highly accurate speech-to-text model, was available. Now, I'd just use AI.
 

@@ -27,4 +27,4 @@ Using fixtures, you can make a dump of only some tables from the database, and i
 
 Fixtures are mostly intended for testing, not distributing sample data with an article, so there are a few things you need to keep in mind. First, fixtures do not update with migrations, so you must ensure that the data you distribute has the same schema as the the database your readers will be using. Also, IDs and foreign keys are hardcoded. Django generates primary key ids sequentially, so if you create a superuser as your first user and instruct your readers to do the same, you will want to remove your superuser from the data dump. The trick with using fixtures in a technical tutorial is to have your reader load them at the correct time and check that everything works with a run-through of the article in a clean environment prior to publication.
 
-For more on technical content development, check out my book, *[Writing for Software Developers](/wfsd)*
+For more on technical content development, check out my book, *[Writing for Software Developers](https://wfsd.com)*

@@ -49,6 +49,10 @@
   to = "https://lifechangingemail.com"
 
 [[redirects]]
+  from = "/wfsd"
+  to = "https://wfsd.com"
+
+[[redirects]]
   from = "/company"
   to = "https://pkandc.com/"
 
